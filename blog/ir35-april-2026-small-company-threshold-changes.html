@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IR35 April 2026: Small Company Threshold Changes Explained for Contractors | IR35 Guide</title>
+  <meta name="description" content="From 6 April 2026, ~14,000 companies reclassify as 'small' and hand IR35 responsibility back to contractors. What it means, who's affected, and what to do now.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ir35guide.co.uk/blog/ir35-april-2026-small-company-threshold-changes.html">
+  <meta property="og:title" content="IR35 April 2026: Small Company Threshold Changes Explained">
+  <meta property="og:description" content="Around 14,000 companies reclassify as small from 6 April 2026, shifting IR35 responsibility back to contractors. Here's exactly what changes and what to do.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ir35guide.co.uk/blog/ir35-april-2026-small-company-threshold-changes.html">
+  <meta property="og:site_name" content="IR35 Guide">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IR35 April 2026: Small Company Threshold Changes Explained">
+  <meta name="twitter:description" content="Around 14,000 companies reclassify as small from 6 April 2026, shifting IR35 responsibility back to contractors.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "IR35 April 2026: Small Company Threshold Changes Explained for Contractors",
+    "description": "From 6 April 2026, around 14,000 companies reclassify as small, shifting IR35 responsibility back to contractors. What changes, who's affected, and what to do now.",
+    "datePublished": "2026-03-08",
+    "dateModified": "2026-03-08",
+    "author": { "@type": "Organization", "name": "IR35 Guide", "url": "https://ir35guide.co.uk" },
+    "publisher": { "@type": "Organization", "name": "IR35 Guide", "url": "https://ir35guide.co.uk" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ir35guide.co.uk/blog/ir35-april-2026-small-company-threshold-changes.html" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0f172a;
+      --blue: #2563eb;
+      --blue-light: #eff6ff;
+      --green: #16a34a;
+      --green-light: #f0fdf4;
+      --amber: #d97706;
+      --amber-light: #fffbeb;
+      --red: #dc2626;
+      --red-light: #fef2f2;
+      --grey-50: #f8fafc;
+      --grey-100: #f1f5f9;
+      --grey-200: #e2e8f0;
+      --grey-400: #94a3b8;
+      --grey-600: #475569;
+      --grey-800: #1e293b;
+      --text: #1e293b;
+      --text-light: #64748b;
+      --border: #e2e8f0;
+      --radius: 10px;
+      --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -1px rgba(0,0,0,0.04);
+    }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f8fafc;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    /* NAV */
+    nav {
+      background: var(--navy);
+      padding: 0 24px;
+      position: sticky; top: 0; z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    }
+    .nav-inner {
+      max-width: 900px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 56px;
+    }
+    .nav-logo { color: #fff; font-weight: 700; font-size: 1.05rem; text-decoration: none; }
+    .nav-logo span { color: #60a5fa; }
+    .nav-cta {
+      background: var(--blue); color: #fff;
+      padding: 7px 16px; border-radius: 6px;
+      text-decoration: none; font-size: 0.85rem; font-weight: 600;
+      transition: background 0.15s;
+    }
+    .nav-cta:hover { background: #1d4ed8; }
+
+    /* LAYOUT */
+    .page-wrap { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, #1e3a5f 100%);
+      color: #fff;
+      padding: 52px 24px 44px;
+    }
+    .hero-inner { max-width: 900px; margin: 0 auto; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #93c5fd;
+      font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em;
+      padding: 4px 12px; border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-size: clamp(1.7rem, 4vw, 2.4rem);
+      font-weight: 700; line-height: 1.25;
+      margin-bottom: 16px;
+    }
+    .hero-sub {
+      font-size: 1.05rem; color: #cbd5e1;
+      max-width: 640px; margin-bottom: 28px;
+    }
+    .hero-meta { font-size: 0.82rem; color: #94a3b8; display: flex; gap: 20px; flex-wrap: wrap; }
+
+    /* ALERT BOX */
+    .alert-urgent {
+      background: var(--amber-light);
+      border: 1px solid #fbbf24;
+      border-left: 4px solid var(--amber);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      margin: 32px 0;
+    }
+    .alert-urgent strong { color: var(--amber); display: block; margin-bottom: 4px; font-size: 0.85rem; letter-spacing: 0.03em; }
+    .alert-urgent p { color: var(--grey-800); font-size: 0.95rem; }
+
+    /* ARTICLE BODY */
+    .article-layout {
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 40px;
+      padding: 40px 0 60px;
+      align-items: start;
+    }
+    @media (max-width: 720px) {
+      .article-layout { grid-template-columns: 1fr; }
+      .sidebar { display: none; }
+    }
+
+    /* PROSE */
+    .prose h2 {
+      font-size: 1.35rem; font-weight: 700;
+      color: var(--navy);
+      margin: 40px 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--grey-200);
+    }
+    .prose h2:first-child { margin-top: 0; }
+    .prose h3 {
+      font-size: 1.05rem; font-weight: 600;
+      color: var(--navy);
+      margin: 28px 0 10px;
+    }
+    .prose p { margin-bottom: 16px; color: var(--text); line-height: 1.75; }
+    .prose ul, .prose ol { margin: 12px 0 18px 20px; }
+    .prose li { margin-bottom: 8px; line-height: 1.65; }
+    .prose strong { color: var(--navy); font-weight: 600; }
+    .prose a { color: var(--blue); text-decoration: underline; }
+    .prose a:hover { color: #1d4ed8; }
+
+    /* TABLE */
+    .table-wrap { overflow-x: auto; margin: 20px 0 28px; border-radius: var(--radius); border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th {
+      background: var(--navy); color: #fff;
+      padding: 12px 16px; text-align: left;
+      font-weight: 600; font-size: 0.82rem;
+      letter-spacing: 0.03em;
+    }
+    td { padding: 11px 16px; border-bottom: 1px solid var(--border); color: var(--text); }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: var(--grey-50); }
+    .tag-green { background: var(--green-light); color: var(--green); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
+    .tag-red { background: var(--red-light); color: var(--red); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
+    .tag-amber { background: var(--amber-light); color: var(--amber); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
+
+    /* CALLOUT CARDS */
+    .callout {
+      border-radius: var(--radius);
+      padding: 20px 22px;
+      margin: 24px 0;
+    }
+    .callout-blue { background: var(--blue-light); border: 1px solid #bfdbfe; }
+    .callout-green { background: var(--green-light); border: 1px solid #bbf7d0; }
+    .callout-amber { background: var(--amber-light); border: 1px solid #fde68a; }
+    .callout-title { font-weight: 700; font-size: 0.9rem; margin-bottom: 8px; }
+    .callout-blue .callout-title { color: var(--blue); }
+    .callout-green .callout-title { color: var(--green); }
+    .callout-amber .callout-title { color: var(--amber); }
+    .callout p, .callout li { font-size: 0.92rem; line-height: 1.65; }
+    .callout ul { margin: 8px 0 0 18px; }
+
+    /* TIMELINE */
+    .timeline { margin: 24px 0; }
+    .timeline-item {
+      display: flex; gap: 16px;
+      padding: 0 0 24px 0;
+      position: relative;
+    }
+    .timeline-item:not(:last-child)::after {
+      content: '';
+      position: absolute; left: 19px; top: 40px;
+      width: 2px; bottom: 0;
+      background: var(--grey-200);
+    }
+    .timeline-dot {
+      width: 40px; height: 40px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.78rem; font-weight: 700; flex-shrink: 0;
+      position: relative; z-index: 1;
+    }
+    .dot-blue { background: var(--blue); color: #fff; }
+    .dot-green { background: var(--green); color: #fff; }
+    .dot-amber { background: var(--amber); color: #fff; }
+    .dot-grey { background: var(--grey-200); color: var(--grey-600); }
+    .timeline-content h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; color: var(--navy); }
+    .timeline-content p { font-size: 0.88rem; color: var(--text-light); line-height: 1.55; }
+
+    /* SIDEBAR */
+    .sidebar { position: sticky; top: 72px; }
+    .sidebar-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow);
+    }
+    .sidebar-card h3 { font-size: 0.9rem; font-weight: 700; color: var(--navy); margin-bottom: 14px; }
+    .toc-list { list-style: none; padding: 0; margin: 0; }
+    .toc-list li { border-bottom: 1px solid var(--grey-100); }
+    .toc-list li:last-child { border-bottom: none; }
+    .toc-list a {
+      display: block; padding: 8px 0;
+      font-size: 0.83rem; color: var(--text-light);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .toc-list a:hover { color: var(--blue); }
+    .sidebar-cta {
+      display: block;
+      background: var(--blue);
+      color: #fff; text-align: center;
+      padding: 13px; border-radius: 8px;
+      font-weight: 600; font-size: 0.9rem;
+      text-decoration: none;
+      margin-bottom: 12px;
+      transition: background 0.15s;
+    }
+    .sidebar-cta:hover { background: #1d4ed8; }
+    .sidebar-cta-secondary {
+      display: block;
+      background: var(--grey-50);
+      border: 1px solid var(--border);
+      color: var(--text); text-align: center;
+      padding: 11px; border-radius: 8px;
+      font-weight: 500; font-size: 0.88rem;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+    .sidebar-cta-secondary:hover { background: var(--grey-100); }
+    .affiliate-item {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--grey-100);
+    }
+    .affiliate-item:last-child { border-bottom: none; }
+    .affiliate-item a {
+      display: flex; align-items: center; justify-content: space-between;
+      text-decoration: none;
+    }
+    .affiliate-item-name { font-size: 0.85rem; font-weight: 600; color: var(--navy); }
+    .affiliate-item-desc { font-size: 0.78rem; color: var(--text-light); margin-top: 2px; }
+    .affiliate-arrow { color: var(--blue); font-size: 0.9rem; }
+
+    /* FOOTER */
+    footer {
+      background: var(--navy);
+      color: #94a3b8;
+      padding: 32px 24px;
+      font-size: 0.82rem;
+      text-align: center;
+    }
+    footer a { color: #60a5fa; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    .footer-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 12px; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">IR35<span>Guide</span>.co.uk</a>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <a href="/blog.html" style="color:#94a3b8;font-size:0.9rem;text-decoration:none;">Blog</a>
+      <a href="/" class="nav-cta">Free Calculator →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">⚡ Breaking — April 2026</div>
+    <h1>IR35 April 2026: Small Company Threshold Changes Explained for Contractors</h1>
+    <p class="hero-sub">Around 14,000 companies reclassify as "small" next month, handing IR35 responsibility back to contractors. Here's exactly what changes, whether your client is affected, and what you need to do before 6 April.</p>
+    <div class="hero-meta">
+      <span>📅 Published March 2026</span>
+      <span>⏱ 8 min read</span>
+      <span>✅ Updated for 2026/27 tax year</span>
+    </div>
+  </div>
+</div>
+
+<div class="page-wrap">
+  <div class="alert-urgent">
+    <strong>⚠️ TIME SENSITIVE</strong>
+    <p>The new thresholds take effect on <strong>6 April 2026</strong> — less than four weeks away. If your end client currently determines your IR35 status, check now whether they'll reclassify as small. If they do, the responsibility passes to you from day one of the new tax year.</p>
+  </div>
+
+  <div class="article-layout">
+    <article class="prose">
+
+      <h2 id="what-changes">What's Actually Changing on 6 April 2026</h2>
+      <p>The off-payroll working rules (IR35) only apply to medium and large companies. Small companies are exempt — meaning if your client is small, <em>you</em> determine your own IR35 status under the older "Chapter 8" rules, not them.</p>
+      <p>The definition of "small" is changing. For accounting periods beginning on or after 6 April 2025, a company is small if it meets <strong>at least two of these three criteria</strong>:</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Threshold</th>
+              <th>Old limit (to 5 Apr 2025)</th>
+              <th>New limit (from 6 Apr 2025)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Annual turnover</strong></td>
+              <td>≤ £10.2 million</td>
+              <td><span class="tag-green">≤ £15 million</span></td>
+            </tr>
+            <tr>
+              <td><strong>Balance sheet total</strong></td>
+              <td>≤ £5.1 million</td>
+              <td><span class="tag-green">≤ £7.5 million</span></td>
+            </tr>
+            <tr>
+              <td><strong>Average employees</strong></td>
+              <td>≤ 50</td>
+              <td>≤ 50 (unchanged)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>The key nuance: company size for IR35 purposes is determined by the <strong>prior financial year</strong>. So companies that met the new thresholds in their financial year ending in 2025 are the ones reclassifying as small from 6 April 2026. HMRC expects around <strong>14,000 companies</strong> to make this transition.</p>
+
+      <div class="callout callout-blue">
+        <div class="callout-title">🔎 Why Does This Matter So Much?</div>
+        <p>Under the current rules, medium and large clients issue a Status Determination Statement (SDS) and bear liability if they get it wrong. Once a client becomes small, all of that responsibility shifts to you — you assess your own status, and you carry the risk if HMRC disagrees.</p>
+      </div>
+
+      <h2 id="timeline">The Timeline — Why April 2026 and Not 2027</h2>
+      <p>This has caused considerable confusion. Here's a clear timeline:</p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot dot-grey">2024</div>
+          <div class="timeline-content">
+            <h3>Autumn Budget 2024</h3>
+            <p>Government confirms new company size thresholds will apply to IR35/off-payroll rules. Implementing legislation published in December 2024.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot dot-blue">Apr 25</div>
+          <div class="timeline-content">
+            <h3>6 April 2025 — New thresholds become effective for company accounts</h3>
+            <p>The higher turnover (£15m) and balance sheet (£7.5m) thresholds apply to accounting periods starting from this date under the Companies Act 2006.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot dot-amber">Now</div>
+          <div class="timeline-content">
+            <h3>March 2026 — Contractors should be checking client size</h3>
+            <p>Companies whose financial year ended after 6 April 2025 and who met the new thresholds will reclassify as small for IR35 from the start of 2026/27. Contractors should be asking now.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot dot-green">Apr 26</div>
+          <div class="timeline-content">
+            <h3>6 April 2026 — IR35 responsibility shifts</h3>
+            <p>Newly reclassified small companies are no longer required to issue SDSs or apply off-payroll rules. Contractors engaging them determine their own status under Chapter 8 ITEPA 2003.</p>
+          </div>
+        </div>
+      </div>
+
+      <p>There was initial confusion because some advisers suggested the practical impact wouldn't be felt until April 2027. HMRC has since confirmed that companies which qualify as small based on their prior financial year (ending any time up to March 2026) are indeed exempt from April 2026 onwards.</p>
+
+      <h2 id="who-is-affected">Who Is Actually Affected</h2>
+      <p>Not every contractor will feel this. It depends almost entirely on who your end client is.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Your situation</th>
+              <th>What changes for you</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Client currently small (was already exempt)</td>
+              <td><span class="tag-green">No change</span> — you already determine your own status</td>
+            </tr>
+            <tr>
+              <td>Client currently medium, reclassifying as small</td>
+              <td><span class="tag-amber">Big change</span> — IR35 responsibility passes to you on 6 April</td>
+            </tr>
+            <tr>
+              <td>Client currently large (250+ employees or £36m+ turnover)</td>
+              <td><span class="tag-green">No change</span> — large companies are unaffected by this threshold change</td>
+            </tr>
+            <tr>
+              <td>Working via umbrella, inside IR35</td>
+              <td><span class="tag-green">Minimal change</span> — umbrella handles PAYE regardless</td>
+            </tr>
+            <tr>
+              <td>Public sector contract</td>
+              <td><span class="tag-green">No change</span> — off-payroll rules always apply in the public sector</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="what-to-do">What Contractors Should Do Right Now</h2>
+
+      <h3>Step 1: Ask your client to confirm their company size</h3>
+      <p>You have a formal right to do this. Under the off-payroll working rules, contractors can request written confirmation of their client's size. The client has <strong>45 days</strong> to respond. Send the request now so you have clarity before 6 April.</p>
+      <p>Your request should reference HMRC's Employment Status Manual at ESM10011A, which sets out the correct procedure. Kingsbridge has published a template letter you can adapt.</p>
+
+      <h3>Step 2: Understand what "outside IR35" actually means now</h3>
+      <p>If your client reclassifies as small, you'll be responsible for determining your own status — just as contractors were before the 2017/2021 reforms. This means genuinely assessing the three main IR35 tests:</p>
+      <ul>
+        <li><strong>Substitution:</strong> Can you send a suitably qualified substitute to do your work?</li>
+        <li><strong>Control:</strong> Does the client direct how, when and where you work, or do you operate independently?</li>
+        <li><strong>Mutuality of obligation:</strong> Is there an obligation on both sides to offer and accept work continuously?</li>
+      </ul>
+
+      <div class="callout callout-amber">
+        <div class="callout-title">⚠️ Don't Assume You're Automatically Outside IR35</div>
+        <p>A client becoming small does not change your actual working arrangements. If your engagement looks like employment, it still looks like employment — you're just the one who now has to assess and document that properly. Get a contract review from a specialist before assuming you're fine.</p>
+      </div>
+
+      <h3>Step 3: Get your documentation in order</h3>
+      <p>With responsibility on your shoulders, HMRC compliance checks become your problem to defend. Ensure:</p>
+      <ul>
+        <li>Your contract accurately reflects your real working arrangements</li>
+        <li>You have evidence of substitution rights (even if never exercised)</li>
+        <li>You're not subject to the same degree of control as an employee</li>
+        <li>You carry genuine financial risk (your own equipment, professional indemnity insurance)</li>
+      </ul>
+
+      <h3>Step 4: Consider IR35 insurance</h3>
+      <p>With the risk now sitting with you, IR35 investigation insurance becomes much more relevant. Policies from specialists like Qdos and Kingsbridge cover the cost of defending an HMRC inquiry and, in some cases, any additional tax liability found. Premiums start at under £200/year for basic cover.</p>
+
+      <h2 id="group-structures">The Group Structure Catch</h2>
+      <p>One important detail that catches contractors out: the small company test applies to the <strong>group as a whole</strong>, not just the immediate hiring entity. If your client is a subsidiary of a large group, the turnover and balance sheet of all connected entities are aggregated.</p>
+      <p>A subsidiary with 30 employees and £12m turnover might look small on its own — but if it's part of a group turning over £400m, it is emphatically not small for IR35 purposes. Always ask about group structure when you request confirmation of size.</p>
+
+      <h2 id="what-this-means-financially">What This Means for Your Take-Home Pay</h2>
+      <p>If you're currently assessed as <em>inside</em> IR35 by a client who is about to reclassify as small, and you reassess yourself as <em>outside</em> IR35, the financial difference is substantial.</p>
+      <p>On a day rate of £500, working 220 days per year (£110,000 annual contract value):</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Scenario</th>
+              <th>Approx. annual take-home</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Inside IR35 (via umbrella)</td>
+              <td>~£63,000–£65,000</td>
+            </tr>
+            <tr>
+              <td>Outside IR35 (Ltd Co, optimal extraction)</td>
+              <td>~£78,000–£82,000</td>
+            </tr>
+            <tr>
+              <td><strong>Difference</strong></td>
+              <td><strong>~£15,000–£17,000 per year</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Use our <a href="/">free IR35 calculator</a> to model your specific day rate and see the exact difference for your circumstances, including the 2025/26 tax rates with the April 2025 employer NI changes factored in.</p>
+
+      <div class="callout callout-green">
+        <div class="callout-title">✅ Key Takeaways</div>
+        <ul>
+          <li>The small company turnover threshold rises to £15m from 6 April 2026</li>
+          <li>Around 14,000 companies will reclassify as small, shifting IR35 responsibility to contractors</li>
+          <li>You can formally request your client confirms their size — they have 45 days to respond</li>
+          <li>Group structures are assessed in aggregate — subsidiaries of large groups remain non-exempt</li>
+          <li>A small client doesn't automatically mean you're outside IR35 — you must still assess properly</li>
+          <li>If responsibility is shifting to you, get a contract review and consider IR35 insurance</li>
+        </ul>
+      </div>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3>My client hasn't told me anything about this. What should I do?</h3>
+      <p>Many clients won't proactively communicate their size to contractors. You have the right to ask. Send a formal written request citing ESM10011A — they have 45 days to confirm. If they don't respond, proceed as if the off-payroll rules still apply to be safe.</p>
+
+      <h3>Does this affect contractors on day-to-day contracts that have been inside IR35 for years?</h3>
+      <p>Yes. If your medium-sized client reclassifies as small and you're currently operating inside IR35 via umbrella, you'll want to reassess your status. You are not automatically outside IR35 — your working arrangements still need to genuinely reflect self-employment. But if they do, you could gain a significant take-home pay increase.</p>
+
+      <h3>What is "Chapter 8" IR35?</h3>
+      <p>Chapter 8 of ITEPA 2003 is the original IR35 legislation from 2000, under which the contractor's own company determines status. "Chapter 10" is the 2017/2021 off-payroll working rules that shifted responsibility to end clients. When a client becomes small, you revert from Chapter 10 to Chapter 8 rules.</p>
+
+      <h3>Can a client refuse to tell me their company size?</h3>
+      <p>Technically no — the legislation gives you the right to request this information. In practice, if a client refuses or fails to respond within 45 days, HMRC's guidance suggests treating the engagement as if the off-payroll rules apply. Document your attempts to get clarity.</p>
+
+      <h3>I'm at a large company — should I do anything?</h3>
+      <p>Not specifically in relation to this change. Large companies (those meeting two of: 250+ employees, £36m+ turnover, £18m+ balance sheet) remain fully subject to off-payroll rules regardless of these threshold changes.</p>
+
+    </article>
+
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <h3>📋 Contents</h3>
+        <ul class="toc-list">
+          <li><a href="#what-changes">What's changing in April 2026</a></li>
+          <li><a href="#timeline">The full timeline</a></li>
+          <li><a href="#who-is-affected">Who is affected</a></li>
+          <li><a href="#what-to-do">What to do right now</a></li>
+          <li><a href="#group-structures">Group structure trap</a></li>
+          <li><a href="#what-this-means-financially">Take-home pay impact</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>🧮 Free IR35 Calculator</h3>
+        <p style="font-size:0.85rem;color:var(--text-light);margin-bottom:14px;">See exactly what your take-home pay looks like inside vs outside IR35 at your day rate.</p>
+        <a href="/" class="sidebar-cta">Calculate My Take-Home →</a>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>🛡 IR35 Protection</h3>
+        <div class="affiliate-item">
+          <a href="https://www.goqdos.com/ir35-insurance" rel="sponsored noopener" target="_blank">
+            <div>
+              <div class="affiliate-item-name">Qdos IR35 Insurance</div>
+              <div class="affiliate-item-desc">From £199/yr — HMRC defence & tax cover</div>
+            </div>
+            <div class="affiliate-arrow">→</div>
+          </a>
+        </div>
+        <div class="affiliate-item">
+          <a href="https://www.goqdos.com/ir35-contract-review" rel="sponsored noopener" target="_blank">
+            <div>
+              <div class="affiliate-item-name">IR35 Contract Review</div>
+              <div class="affiliate-item-desc">Qdos — from £99, expert assessment</div>
+            </div>
+            <div class="affiliate-arrow">→</div>
+          </a>
+        </div>
+        <div class="affiliate-item">
+          <a href="https://www.kingsbridge.co.uk/ir35-insurance" rel="sponsored noopener" target="_blank">
+            <div>
+              <div class="affiliate-item-name">Kingsbridge IR35 Protect</div>
+              <div class="affiliate-item-desc">Comprehensive cover since 2000</div>
+            </div>
+            <div class="affiliate-arrow">→</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="sidebar-card" style="background:var(--blue-light);border-color:#bfdbfe;">
+        <h3 style="color:var(--blue);">📖 Related Articles</h3>
+        <ul style="list-style:none;padding:0;margin:0;">
+          <li style="padding:8px 0;border-bottom:1px solid #dbeafe;"><a href="/blog/inside-vs-outside-ir35-take-home-pay.html" style="font-size:0.85rem;color:var(--navy);text-decoration:none;">Inside vs Outside IR35: The Real Take-Home Difference →</a></li>
+          <li style="padding:8px 0;"><a href="/blog/hmrc-cest-tool-problems.html" style="font-size:0.85rem;color:var(--navy);text-decoration:none;">Why HMRC's CEST Tool Gets It Wrong →</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="/">Calculator</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/blog/inside-vs-outside-ir35-take-home-pay.html">Inside vs Outside IR35</a>
+    <a href="/blog/hmrc-cest-tool-problems.html">CEST Tool Problems</a>
+  </div>
+  <p>IR35Guide.co.uk — Free contractor tax tools. Not financial or legal advice. Always consult a qualified adviser for your specific circumstances.</p>
+  <p style="margin-top:8px;">© 2026 IR35Guide.co.uk</p>
+</footer>
+
+</body>
+</html>

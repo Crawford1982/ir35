@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inside vs Outside IR35: The Real Take-Home Pay Difference in 2025/26 | IR35 Guide</title>
+  <meta name="description" content="What's the actual take-home pay difference between inside and outside IR35 in 2025/26? Real numbers at every day rate, with the employer NI changes factored in.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ir35guide.co.uk/blog/inside-vs-outside-ir35-take-home-pay.html">
+  <meta property="og:title" content="Inside vs Outside IR35: The Real Take-Home Pay Difference in 2025/26">
+  <meta property="og:description" content="Real take-home pay numbers at every major day rate. What IR35 actually costs you in 2025/26, with the April 2025 employer NI changes factored in.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ir35guide.co.uk/blog/inside-vs-outside-ir35-take-home-pay.html">
+  <meta property="og:site_name" content="IR35 Guide">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Inside vs Outside IR35: The Real Take-Home Pay Difference in 2025/26",
+    "description": "Exact take-home pay numbers at every major contractor day rate for 2025/26, comparing inside IR35 (umbrella) vs outside IR35 (limited company).",
+    "datePublished": "2026-03-08",
+    "dateModified": "2026-03-08",
+    "author": { "@type": "Organization", "name": "IR35 Guide", "url": "https://ir35guide.co.uk" },
+    "publisher": { "@type": "Organization", "name": "IR35 Guide", "url": "https://ir35guide.co.uk" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ir35guide.co.uk/blog/inside-vs-outside-ir35-take-home-pay.html" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0f172a;
+      --blue: #2563eb;
+      --blue-light: #eff6ff;
+      --green: #16a34a;
+      --green-light: #f0fdf4;
+      --amber: #d97706;
+      --amber-light: #fffbeb;
+      --red: #dc2626;
+      --red-light: #fef2f2;
+      --grey-50: #f8fafc;
+      --grey-100: #f1f5f9;
+      --grey-200: #e2e8f0;
+      --grey-400: #94a3b8;
+      --grey-600: #475569;
+      --grey-800: #1e293b;
+      --text: #1e293b;
+      --text-light: #64748b;
+      --border: #e2e8f0;
+      --radius: 10px;
+      --shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #f8fafc; color: var(--text); line-height: 1.7; }
+
+    nav { background: var(--navy); padding: 0 24px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.18); }
+    .nav-inner { max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-logo { color: #fff; font-weight: 700; font-size: 1.05rem; text-decoration: none; }
+    .nav-logo span { color: #60a5fa; }
+    .nav-cta { background: var(--blue); color: #fff; padding: 7px 16px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: 600; transition: background 0.15s; }
+    .nav-cta:hover { background: #1d4ed8; }
+
+    .page-wrap { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+    .hero { background: linear-gradient(135deg, #0f4c2a 0%, #166534 100%); color: #fff; padding: 52px 24px 44px; }
+    .hero-inner { max-width: 900px; margin: 0 auto; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); color: #86efac; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em; padding: 4px 12px; border-radius: 20px; margin-bottom: 16px; }
+    .hero h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); font-weight: 700; line-height: 1.25; margin-bottom: 16px; }
+    .hero-sub { font-size: 1.05rem; color: #bbf7d0; max-width: 640px; margin-bottom: 28px; }
+    .hero-meta { font-size: 0.82rem; color: #86efac; display: flex; gap: 20px; flex-wrap: wrap; }
+
+    .article-layout { display: grid; grid-template-columns: 1fr 280px; gap: 40px; padding: 40px 0 60px; align-items: start; }
+    @media (max-width: 720px) { .article-layout { grid-template-columns: 1fr; } .sidebar { display: none; } }
+
+    .prose h2 { font-size: 1.35rem; font-weight: 700; color: var(--navy); margin: 40px 0 14px; padding-bottom: 8px; border-bottom: 2px solid var(--grey-200); }
+    .prose h2:first-child { margin-top: 0; }
+    .prose h3 { font-size: 1.05rem; font-weight: 600; color: var(--navy); margin: 28px 0 10px; }
+    .prose p { margin-bottom: 16px; color: var(--text); line-height: 1.75; }
+    .prose ul, .prose ol { margin: 12px 0 18px 20px; }
+    .prose li { margin-bottom: 8px; line-height: 1.65; }
+    .prose strong { color: var(--navy); font-weight: 600; }
+    .prose a { color: var(--blue); text-decoration: underline; }
+
+    .table-wrap { overflow-x: auto; margin: 20px 0 28px; border-radius: var(--radius); border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th { background: var(--navy); color: #fff; padding: 12px 16px; text-align: left; font-weight: 600; font-size: 0.82rem; letter-spacing: 0.03em; }
+    td { padding: 11px 16px; border-bottom: 1px solid var(--border); color: var(--text); }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: var(--grey-50); }
+    .num { font-weight: 600; }
+    .num-green { color: var(--green); font-weight: 700; }
+    .num-red { color: var(--red); font-weight: 700; }
+    .num-amber { color: var(--amber); font-weight: 700; }
+    .highlight-row td { background: #fffbeb !important; border-top: 2px solid #fbbf24; border-bottom: 2px solid #fbbf24; }
+
+    /* COMPARISON BARS */
+    .comparison-section { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin: 28px 0; box-shadow: var(--shadow); }
+    .comparison-title { font-size: 0.82rem; font-weight: 700; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px; }
+    .comparison-row { margin-bottom: 18px; }
+    .comparison-label { display: flex; justify-content: space-between; font-size: 0.88rem; margin-bottom: 5px; }
+    .comparison-label-name { font-weight: 600; color: var(--navy); }
+    .comparison-label-val { font-weight: 700; }
+    .bar-track { background: var(--grey-100); border-radius: 4px; height: 10px; overflow: hidden; }
+    .bar-fill { height: 100%; border-radius: 4px; }
+    .bar-outside { background: var(--green); }
+    .bar-umbrella { background: var(--amber); }
+    .bar-inside { background: var(--red); }
+
+    .callout { border-radius: var(--radius); padding: 20px 22px; margin: 24px 0; }
+    .callout-blue { background: var(--blue-light); border: 1px solid #bfdbfe; }
+    .callout-green { background: var(--green-light); border: 1px solid #bbf7d0; }
+    .callout-amber { background: var(--amber-light); border: 1px solid #fde68a; }
+    .callout-red { background: var(--red-light); border: 1px solid #fecaca; }
+    .callout-title { font-weight: 700; font-size: 0.9rem; margin-bottom: 8px; }
+    .callout-blue .callout-title { color: var(--blue); }
+    .callout-green .callout-title { color: var(--green); }
+    .callout-amber .callout-title { color: var(--amber); }
+    .callout-red .callout-title { color: var(--red); }
+    .callout p, .callout li { font-size: 0.92rem; line-height: 1.65; }
+    .callout ul { margin: 8px 0 0 18px; }
+
+    .cta-banner { background: var(--navy); color: #fff; border-radius: var(--radius); padding: 28px; margin: 32px 0; text-align: center; }
+    .cta-banner h3 { font-size: 1.2rem; margin-bottom: 8px; }
+    .cta-banner p { color: #94a3b8; font-size: 0.9rem; margin-bottom: 20px; }
+    .cta-banner a { display: inline-block; background: var(--blue); color: #fff; padding: 12px 28px; border-radius: 8px; font-weight: 600; font-size: 0.95rem; text-decoration: none; }
+    .cta-banner a:hover { background: #1d4ed8; }
+
+    .sidebar { position: sticky; top: 72px; }
+    .sidebar-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin-bottom: 20px; box-shadow: var(--shadow); }
+    .sidebar-card h3 { font-size: 0.9rem; font-weight: 700; color: var(--navy); margin-bottom: 14px; }
+    .toc-list { list-style: none; padding: 0; margin: 0; }
+    .toc-list li { border-bottom: 1px solid var(--grey-100); }
+    .toc-list li:last-child { border-bottom: none; }
+    .toc-list a { display: block; padding: 8px 0; font-size: 0.83rem; color: var(--text-light); text-decoration: none; }
+    .toc-list a:hover { color: var(--blue); }
+    .sidebar-cta { display: block; background: var(--blue); color: #fff; text-align: center; padding: 13px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; text-decoration: none; margin-bottom: 12px; }
+    .sidebar-cta:hover { background: #1d4ed8; }
+    .affiliate-item { padding: 12px 0; border-bottom: 1px solid var(--grey-100); }
+    .affiliate-item:last-child { border-bottom: none; }
+    .affiliate-item a { display: flex; align-items: center; justify-content: space-between; text-decoration: none; }
+    .affiliate-item-name { font-size: 0.85rem; font-weight: 600; color: var(--navy); }
+    .affiliate-item-desc { font-size: 0.78rem; color: var(--text-light); margin-top: 2px; }
+    .affiliate-arrow { color: var(--blue); font-size: 0.9rem; }
+
+    footer { background: var(--navy); color: #94a3b8; padding: 32px 24px; font-size: 0.82rem; text-align: center; }
+    footer a { color: #60a5fa; text-decoration: none; }
+    .footer-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 12px; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">IR35<span>Guide</span>.co.uk</a>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <a href="/blog.html" style="color:#94a3b8;font-size:0.9rem;text-decoration:none;">Blog</a>
+      <a href="/" class="nav-cta">Free Calculator →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">💷 2025/26 Tax Year</div>
+    <h1>Inside vs Outside IR35: The Real Take-Home Pay Difference</h1>
+    <p class="hero-sub">What does IR35 actually cost you in 2025/26? Real pound-for-pound numbers at every major contractor day rate — with the April 2025 employer NI changes correctly factored in.</p>
+    <div class="hero-meta">
+      <span>📅 Updated March 2026</span>
+      <span>⏱ 9 min read</span>
+      <span>✅ 2025/26 tax rates</span>
+    </div>
+  </div>
+</div>
+
+<div class="page-wrap">
+  <div class="article-layout">
+    <article class="prose">
+
+      <h2 id="the-real-numbers">The Real Numbers First</h2>
+      <p>Most articles on IR35 bury the actual figures. Here they are upfront: at a £500/day rate working 220 days per year, inside IR35 costs you <strong>approximately £15,000–£17,000 per year</strong> compared to outside IR35 through a limited company.</p>
+      <p>That is not an accounting technicality. That is a real, substantial reduction to your annual income — equivalent to around 20% of what you'd otherwise take home.</p>
+      <p>Below is a comparison table at the most common UK contractor day rates for 2025/26. Assumptions: 220 billable days, England/Wales tax rates, outside IR35 using optimal salary/dividend split (£9,100 salary), umbrella margin of £25/week.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Day Rate</th>
+              <th>Annual Contract Value</th>
+              <th>Outside IR35 (Ltd)</th>
+              <th>Inside IR35 (Umbrella)</th>
+              <th>Annual Difference</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>£250/day</strong></td>
+              <td>£55,000</td>
+              <td class="num-green">~£43,500</td>
+              <td class="num-amber">~£36,200</td>
+              <td class="num-red">−£7,300</td>
+            </tr>
+            <tr>
+              <td><strong>£350/day</strong></td>
+              <td>£77,000</td>
+              <td class="num-green">~£57,800</td>
+              <td class="num-amber">~£48,400</td>
+              <td class="num-red">−£9,400</td>
+            </tr>
+            <tr>
+              <td><strong>£400/day</strong></td>
+              <td>£88,000</td>
+              <td class="num-green">~£64,200</td>
+              <td class="num-amber">~£53,600</td>
+              <td class="num-red">−£10,600</td>
+            </tr>
+            <tr class="highlight-row">
+              <td><strong>£500/day</strong></td>
+              <td>£110,000</td>
+              <td class="num-green">~£79,500</td>
+              <td class="num-amber">~£63,500</td>
+              <td class="num-red">−£16,000</td>
+            </tr>
+            <tr>
+              <td><strong>£600/day</strong></td>
+              <td>£132,000</td>
+              <td class="num-green">~£91,800</td>
+              <td class="num-amber">~£74,200</td>
+              <td class="num-red">−£17,600</td>
+            </tr>
+            <tr>
+              <td><strong>£700/day</strong></td>
+              <td>£154,000</td>
+              <td class="num-green">~£103,000</td>
+              <td class="num-amber">~£84,600</td>
+              <td class="num-red">−£18,400</td>
+            </tr>
+            <tr>
+              <td><strong>£800/day</strong></td>
+              <td>£176,000</td>
+              <td class="num-green">~£112,400</td>
+              <td class="num-amber">~£94,900</td>
+              <td class="num-red">−£17,500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p style="font-size:0.82rem;color:var(--text-light);margin-top:-16px;margin-bottom:24px;">All figures approximate. Use the <a href="/">free calculator</a> to model your exact circumstances. Outside IR35 assumes salary of £9,100 + remaining profits as dividends. Inside IR35 assumes umbrella company with 15% employer NI applied to assignment rate first.</p>
+
+      <div class="comparison-section">
+        <div class="comparison-title">Take-home at £500/day — 220 days — 2025/26</div>
+        <div class="comparison-row">
+          <div class="comparison-label">
+            <span class="comparison-label-name">🟢 Outside IR35 (Ltd Co)</span>
+            <span class="comparison-label-val" style="color:var(--green);">~£79,500</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill bar-outside" style="width:88%"></div></div>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-label">
+            <span class="comparison-label-name">🟡 Inside IR35 (Umbrella)</span>
+            <span class="comparison-label-val" style="color:var(--amber);">~£63,500</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill bar-umbrella" style="width:70%"></div></div>
+        </div>
+        <p style="font-size:0.8rem;color:var(--text-light);margin-top:10px;">Based on £500/day, 220 days, England. 72% of gross vs 58% of gross.</p>
+      </div>
+
+      <h2 id="why-so-different">Why Is the Difference So Large?</h2>
+      <p>The short answer: inside IR35 stacks multiple layers of tax that outside IR35 largely avoids. Here's what happens to your money in each scenario.</p>
+
+      <h3>Outside IR35 — How It Works</h3>
+      <p>Your limited company invoices the client. The money lands in your company account. You then extract it tax-efficiently:</p>
+      <ol>
+        <li>Pay yourself a salary at the National Insurance secondary threshold (<strong>£9,100 in 2025/26</strong>) — this uses part of your personal allowance, but avoids employee and employer NI entirely</li>
+        <li>Pay corporation tax on company profits — 19% for profits under £50,000 (the small profits rate), rising to 25% for profits above £250,000</li>
+        <li>Extract remaining post-tax profits as dividends — taxed at 8.75% (basic rate), 33.75% (higher rate) after the £500 dividend allowance</li>
+      </ol>
+      <p>No employer NI. Dividends taxed at a much lower rate than income. This is what creates the take-home advantage.</p>
+
+      <h3>Inside IR35 (Umbrella) — How It Works</h3>
+      <p>The assignment rate your client pays goes to the umbrella first. Before you see a penny, the following deductions apply:</p>
+      <ol>
+        <li><strong>Employer's NI at 15%</strong> (on earnings above the £5,000 secondary threshold) — deducted from your assignment rate before your gross pay is calculated</li>
+        <li><strong>Apprenticeship Levy at 0.5%</strong> — also taken from assignment rate</li>
+        <li><strong>Umbrella margin</strong> (~£20–30/week) — the umbrella's fee</li>
+        <li>What remains becomes your gross employment income, then subject to <strong>income tax and employee NI</strong> exactly as if you were a permanent employee</li>
+      </ol>
+
+      <div class="callout callout-red">
+        <div class="callout-title">⚠️ The Employer NI Trap Most Calculators Miss</div>
+        <p>Many online IR35 calculators — and some contractors — make a critical mistake: they treat the day rate as your gross salary when calculating inside IR35 take-home. It is not. <strong>Employer NI is deducted from the assignment rate first</strong>, before your taxable pay is even calculated. From April 2025, employer NI is 15% on earnings above £5,000, up from 13.8% above £9,100. This change alone cost the average IT contractor an extra £1,200–£1,800/year inside IR35. Our calculator models this correctly.</p>
+      </div>
+
+      <h2 id="what-rate-increase">What Day Rate Increase Do You Need to Break Even?</h2>
+      <p>If you're moving from outside to inside IR35 and want to maintain the same take-home pay, you need a meaningful rate increase. The exact figure depends on your day rate and working days, but here are approximate break-even uplifts:</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Current Day Rate (Outside IR35)</th>
+              <th>Equivalent Rate Needed Inside IR35</th>
+              <th>Required Uplift</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>£300/day</td>
+              <td>~£365/day</td>
+              <td class="num-amber">+22%</td>
+            </tr>
+            <tr>
+              <td>£400/day</td>
+              <td>~£490/day</td>
+              <td class="num-amber">+23%</td>
+            </tr>
+            <tr>
+              <td>£500/day</td>
+              <td>~£615/day</td>
+              <td class="num-amber">+23%</td>
+            </tr>
+            <tr>
+              <td>£600/day</td>
+              <td>~£735/day</td>
+              <td class="num-amber">+23%</td>
+            </tr>
+            <tr>
+              <td>£700/day</td>
+              <td>~£855/day</td>
+              <td class="num-amber">+22%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>In practice, the market rarely supports a 20%+ rate increase when a contractor moves inside IR35. Most contractors either accept the pay cut or move on to find outside IR35 contracts elsewhere.</p>
+
+      <div class="cta-banner">
+        <h3>Calculate Your Exact Break-Even Rate</h3>
+        <p>Enter your day rate on our free calculator to see your exact take-home in all scenarios, plus what rate you'd need inside IR35 to match your outside IR35 income.</p>
+        <a href="/">Open Free Calculator →</a>
+      </div>
+
+      <h2 id="the-gap-narrowing">Has the Gap Actually Been Narrowing?</h2>
+      <p>Yes — meaningfully so over the past few years. The take-home advantage of outside IR35 has eroded due to several policy changes that specifically targeted limited company contractors:</p>
+      <ul>
+        <li><strong>Corporation tax increase (2023):</strong> The main rate rose from 19% to 25% for profits above £250,000, with marginal relief between £50k–£250k. Previously all companies paid 19%. This directly reduced the post-tax pot available for dividend extraction.</li>
+        <li><strong>Dividend allowance cuts:</strong> The tax-free dividend allowance has been slashed from £5,000 (2016) to £2,000 (2018) to £1,000 (2023) to just £500 (2024 onwards). Every pound above that is now taxed at dividend rates.</li>
+        <li><strong>Employer NI rise (April 2025):</strong> The rate rose from 13.8% to 15%, and the secondary threshold dropped from £9,100 to £5,000, increasing the cost of inside IR35 engagements.</li>
+      </ul>
+      <p>Despite this erosion, outside IR35 through a limited company remains substantially more tax-efficient than inside IR35 — particularly at higher day rates where the compound effect of avoiding employer NI and dividend vs income tax rates is most powerful.</p>
+
+      <h2 id="scotland">Scotland: The Numbers Are Different</h2>
+      <p>Scottish contractors face a different income tax structure, which affects the inside IR35 calculation more than outside (since dividends are not subject to Scottish income tax rates — they use UK-wide dividend tax rates regardless).</p>
+      <p>Scottish higher rate income tax kicks in at a lower threshold and at 42%, versus 40% in England. This means inside IR35 is generally more painful for Scottish contractors at equivalent day rates — a £500/day contractor in Scotland inside IR35 may take home £1,500–£2,000 less per year than an equivalent English contractor.</p>
+      <p>Select "Scotland" on our calculator to see figures with the correct Scottish bands applied.</p>
+
+      <h2 id="pension-considerations">Pension: The One Area Inside IR35 Can Partially Compete</h2>
+      <p>There is one scenario where inside IR35 starts to look better: large employer pension contributions. Inside IR35, your umbrella can make employer pension contributions that reduce your employer NI liability through salary sacrifice. If your employer (umbrella) makes significant pension contributions on your behalf, the NI savings can meaningfully reduce the gap.</p>
+      <p>Outside IR35, your limited company can also make employer pension contributions — these are deductible against corporation tax and not subject to dividend tax. At high contribution levels, this broadly preserves outside IR35's advantage.</p>
+      <p>This is one area where the maths gets personal quickly. Use the calculator and factor in your pension contributions to see your specific position.</p>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3>Does being inside IR35 mean I'm paying too much tax?</h3>
+      <p>Not necessarily — inside IR35 means you're taxed as a deemed employee, which is the amount the government considers appropriate for someone in an employment-equivalent arrangement. What it means is that you're paying more tax than you would outside IR35, where the limited company structure allows for more tax-efficient extraction. Whether that's "too much" depends on whether your status is correctly assessed.</p>
+
+      <h3>Can I claim expenses inside IR35?</h3>
+      <p>Very few. Inside IR35, the same rules as permanent employees largely apply — you cannot claim travel to a permanent workplace, subsistence, or most business expenses. Home office costs may be claimable in limited circumstances. This is another component of the financial disadvantage of inside IR35 that many calculators omit.</p>
+
+      <h3>What's the difference between inside IR35 and being a permanent employee?</h3>
+      <p>Less than you might think financially, but you retain the flexibility of contracting — no employee rights, no employment protection, no statutory sick pay at normal rates, no employer pension by default. You get the taxes of an employee with fewer of the benefits. This is often called "the worst of both worlds" by contractor advocates.</p>
+
+      <h3>I've heard the gap is £10,000/year. Is it £10,000 or £15,000?</h3>
+      <p>Both figures appear in different publications because the calculation depends heavily on assumptions — particularly whether employer NI is correctly deducted from the assignment rate, the level of business expenses claimed, pension contributions, and the number of billable days. At £500/day and 220 days, with the April 2025 employer NI rate (15%), the gap is closer to £15,000–£17,000. Older calculators using 13.8% employer NI will show smaller figures.</p>
+
+    </article>
+
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <h3>📋 Contents</h3>
+        <ul class="toc-list">
+          <li><a href="#the-real-numbers">The real numbers</a></li>
+          <li><a href="#why-so-different">Why the difference is so large</a></li>
+          <li><a href="#what-rate-increase">Day rate break-even calculator</a></li>
+          <li><a href="#the-gap-narrowing">Has the gap been narrowing?</a></li>
+          <li><a href="#scotland">Scotland: different numbers</a></li>
+          <li><a href="#pension-considerations">Pension strategy</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>🧮 Free IR35 Calculator</h3>
+        <p style="font-size:0.85rem;color:var(--text-light);margin-bottom:14px;">Enter your day rate for exact figures at your income level, including the 2025 employer NI changes.</p>
+        <a href="/" class="sidebar-cta">Calculate My Take-Home →</a>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>🏦 Contractor Accountants</h3>
+        <div class="affiliate-item">
+          <a href="https://www.sjdaccountancy.com" rel="sponsored noopener" target="_blank">
+            <div>
+              <div class="affiliate-item-name">SJD Accountancy</div>
+              <div class="affiliate-item-desc">Specialist contractor accountants</div>
+            </div>
+            <div class="affiliate-arrow">→</div>
+          </a>
+        </div>
+        <div class="affiliate-item">
+          <a href="https://www.goqdos.com/ir35-contract-review" rel="sponsored noopener" target="_blank">
+            <div>
+              <div class="affiliate-item-name">Qdos Contract Review</div>
+              <div class="affiliate-item-desc">From £99 — expert IR35 review</div>
+            </div>
+            <div class="affiliate-arrow">→</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="sidebar-card" style="background:var(--blue-light);border-color:#bfdbfe;">
+        <h3 style="color:var(--blue);">📖 Related Articles</h3>
+        <ul style="list-style:none;padding:0;margin:0;">
+          <li style="padding:8px 0;border-bottom:1px solid #dbeafe;"><a href="/blog/ir35-april-2026-small-company-threshold-changes.html" style="font-size:0.85rem;color:var(--navy);text-decoration:none;">IR35 April 2026 Changes →</a></li>
+          <li style="padding:8px 0;"><a href="/blog/hmrc-cest-tool-problems.html" style="font-size:0.85rem;color:var(--navy);text-decoration:none;">Why HMRC CEST Gets It Wrong →</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="/">Calculator</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/blog/ir35-april-2026-small-company-threshold-changes.html">April 2026 Changes</a>
+    <a href="/blog/hmrc-cest-tool-problems.html">CEST Tool Problems</a>
+  </div>
+  <p>IR35Guide.co.uk — Free contractor tax tools. Not financial or legal advice. Always consult a qualified adviser for your specific circumstances.</p>
+  <p style="margin-top:8px;">© 2026 IR35Guide.co.uk</p>
+</footer>
+
+</body>
+</html>

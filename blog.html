@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog – IR35 Guides &amp; Contractor Tax Articles | ir35guide.co.uk</title>
+  <meta name="description" content="Guides on IR35 April 2026 changes, inside vs outside IR35 take-home pay, and why HMRC's CEST tool gets it wrong. Free UK contractor resources.">
+  <link rel="canonical" href="https://ir35guide.co.uk/blog.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0c10;
+      --bg2: #0f1218;
+      --bg3: #151a22;
+      --border: #1e2a38;
+      --text: #e2e8f0;
+      --text2: #8b9ab0;
+      --text3: #4a5568;
+      --accent: #00d4aa;
+      --accent-dim: rgba(0,212,170,0.12);
+      --mono: 'IBM Plex Mono', monospace;
+      --sans: 'IBM Plex Sans', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10,12,16,0.96);
+      backdrop-filter: blur(12px);
+    }
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      height: 56px;
+    }
+    .logo { font-family: var(--mono); font-size: 16px; font-weight: 600; color: var(--accent); text-decoration: none; letter-spacing: -0.5px; }
+    .logo span { color: var(--text2); font-weight: 400; }
+    .header-badge {
+      background: var(--accent-dim);
+      color: var(--accent);
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      padding: 3px 7px;
+      border-radius: 3px;
+      border: 1px solid rgba(0,212,170,0.2);
+    }
+    nav { margin-left: auto; display: flex; gap: 4px; align-items: center; }
+    .nav-link { color: var(--text2); text-decoration: none; font-size: 13px; padding: 6px 12px; border-radius: 6px; transition: all 0.15s; }
+    .nav-link:hover { color: var(--text); background: var(--bg3); }
+    .nav-link.active { color: var(--accent); }
+
+    .page { max-width: 720px; margin: 0 auto; padding: 48px 24px 60px; }
+    .blog-title { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; }
+    .blog-intro { font-size: 15px; color: var(--text2); margin-bottom: 40px; line-height: 1.7; }
+
+    .article-list { display: flex; flex-direction: column; gap: 24px; }
+    .article-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      transition: border-color 0.15s;
+    }
+    .article-card:hover { border-color: rgba(0,212,170,0.25); }
+    .article-card h2 { font-size: 18px; font-weight: 600; margin-bottom: 8px; line-height: 1.35; }
+    .article-card h2 a { color: var(--text); text-decoration: none; }
+    .article-card h2 a:hover { color: var(--accent); }
+    .article-card p { font-size: 14px; color: var(--text2); line-height: 1.65; margin-bottom: 12px; }
+    .article-meta { font-family: var(--mono); font-size: 11px; color: var(--text3); display: flex; gap: 16px; flex-wrap: wrap; }
+    .article-card .read-more { font-size: 13px; font-weight: 500; color: var(--accent); text-decoration: none; }
+    .article-card .read-more:hover { text-decoration: underline; }
+
+    footer { border-top: 1px solid var(--border); padding: 28px 24px; background: var(--bg2); }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+    .footer-text { font-size: 12px; color: var(--text3); line-height: 1.6; }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-link { font-size: 12px; color: var(--text3); text-decoration: none; }
+    .footer-link:hover { color: var(--text2); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">ir35guide<span>.co.uk</span></a>
+    <span class="header-badge">2025/26</span>
+    <nav>
+      <a href="/" class="nav-link">Calculator</a>
+      <a href="/index.html#about-ir35" class="nav-link">About IR35</a>
+      <a href="/blog.html" class="nav-link active">Blog</a>
+      <a href="/index.html#faq" class="nav-link">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <h1 class="blog-title">Blog</h1>
+  <p class="blog-intro">Guides on IR35, contractor take-home pay, and the April 2026 changes. Use the <a href="/" style="color:var(--accent);">calculator</a> to see your numbers.</p>
+
+  <div class="article-list">
+    <article class="article-card">
+      <h2><a href="/blog/ir35-april-2026-small-company-threshold-changes.html">IR35 April 2026: Small Company Threshold Changes Explained for Contractors</a></h2>
+      <p>From 6 April 2026, around 14,000 companies reclassify as &ldquo;small&rdquo; and hand IR35 responsibility back to contractors. What it means, who&rsquo;s affected, and what to do now.</p>
+      <div class="article-meta">March 2026 · 8 min read</div>
+      <a href="/blog/ir35-april-2026-small-company-threshold-changes.html" class="read-more">Read article →</a>
+    </article>
+
+    <article class="article-card">
+      <h2><a href="/blog/inside-vs-outside-ir35-take-home-pay.html">Inside vs Outside IR35: The Real Take-Home Pay Difference in 2025/26</a></h2>
+      <p>What&rsquo;s the actual take-home pay difference between inside and outside IR35? Real numbers at every day rate, with the April 2025 employer NI changes factored in.</p>
+      <div class="article-meta">March 2026 · 9 min read</div>
+      <a href="/blog/inside-vs-outside-ir35-take-home-pay.html" class="read-more">Read article →</a>
+    </article>
+
+    <article class="article-card">
+      <h2><a href="/blog/hmrc-cest-tool-problems.html">Why HMRC&rsquo;s CEST Tool Gets IR35 Wrong (And What to Use Instead)</a></h2>
+      <p>CEST usage dropped 73% since 2021. One in five results is &ldquo;undetermined&rdquo;. The tool ignores Mutuality of Obligation. Here&rsquo;s what&rsquo;s wrong and what to use instead.</p>
+      <div class="article-meta">March 2026 · 10 min read</div>
+      <a href="/blog/hmrc-cest-tool-problems.html" class="read-more">Read article →</a>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-text">ir35guide.co.uk — Free UK IR35 guide &amp; contractor tax calculator. Not financial advice. Last updated: March 2026.</div>
+    <div class="footer-links">
+      <a href="/" class="footer-link">Calculator</a>
+      <a href="/blog.html" class="footer-link">Blog</a>
+      <a href="/privacy.html" class="footer-link">Privacy</a>
+      <a href="/terms.html" class="footer-link">Terms</a>
+      <a href="mailto:hello@ir35guide.co.uk" class="footer-link">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

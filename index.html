@@ -1,0 +1,2249 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IR35 Calculator 2025/26 – Inside vs Outside IR35 | ir35guide.co.uk</title>
+
+<!-- Google Analytics 4 — loaded only after consent -->
+<script>
+  window.GA_ID = 'G-N961MFHTCS';
+  window._gaLoaded = false;
+  function loadGA() {
+    if (window._gaLoaded) return;
+    window._gaLoaded = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', window.GA_ID, { anonymize_ip: true });
+  }
+  // Fire GA event helper
+  function gaEvent(name, params) {
+    if (window.gtag) window.gtag('event', name, params || {});
+  }
+</script>
+<meta name="description" content="Free UK IR35 calculator for 2025/26 and 2026/27. Compare inside vs outside IR35 take-home pay, umbrella vs limited company, day rate to salary. Updated for April 2025 NI and 2026 dividend rates.">
+<meta name="keywords" content="IR35 calculator, contractor take home pay, inside IR35, outside IR35, umbrella calculator, contractor tax 2025">
+<link rel="canonical" href="https://ir35guide.co.uk/">
+<meta property="og:title" content="IR35 Calculator 2025/26 – Free UK Contractor Tax | ir35guide.co.uk">
+<meta property="og:description" content="Calculate your real take-home pay inside vs outside IR35. Free, instant, no signup. Updated for 2025/26 tax rates.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ir35guide.co.uk/">
+<meta property="og:image" content="https://ir35guide.co.uk/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ir35guide.co.uk/og-image.png">
+<link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/favicon-32x32.png">
+<meta name="twitter:title" content="IR35 Calculator 2025/26">
+<meta name="twitter:description" content="Compare inside vs outside IR35 take-home pay instantly. Free UK contractor calculator.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "IR35 Guide – IR35 Calculator 2025/26",
+  "url": "https://ir35guide.co.uk/",
+  "description": "Free UK IR35 calculator comparing inside vs outside IR35 take-home pay for contractors",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much less do I take home inside IR35?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most contractors take home 20–30% less inside IR35 compared to outside IR35 through a limited company. At a £500/day rate, this typically means £15,000–£25,000 less per year after tax."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the IR35 calculator for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An IR35 calculator estimates your net take-home pay depending on whether your contract is inside IR35 (taxed as an employee) or outside IR35 (taxed as a limited company director). It helps contractors understand the financial impact of IR35 and negotiate appropriate rates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What changed in April 2025 for IR35?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In April 2025, employer National Insurance rose from 13.8% to 15% and the secondary threshold dropped from £9,100 to £5,000. This significantly increased the cost of being inside IR35 or working through an umbrella company."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is changing in April 2026 for IR35?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "From April 2026, the definition of a 'small company' is being widened (turnover threshold rising to £15m). More clients will qualify as small companies, shifting IR35 status responsibility back to contractors and their limited companies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use an umbrella company or limited company?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If your contract is inside IR35, an umbrella company simplifies administration but costs £15–30/week in fees. A limited company outside IR35 is significantly more tax-efficient. Use our umbrella vs limited calculator to compare your specific situation."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #0a0c10;
+    --bg2: #0f1218;
+    --bg3: #151a22;
+    --bg4: #1c2330;
+    --border: #1e2a38;
+    --border2: #253344;
+    --text: #e2e8f0;
+    --text2: #8b9ab0;
+    --text3: #4a5568;
+    --accent: #00d4aa;
+    --accent2: #00b894;
+    --accent-dim: rgba(0,212,170,0.12);
+    --accent-dim2: rgba(0,212,170,0.06);
+    --red: #ff6b6b;
+    --red-dim: rgba(255,107,107,0.12);
+    --amber: #ffd166;
+    --amber-dim: rgba(255,209,102,0.1);
+    --blue: #74b9ff;
+    --mono: 'IBM Plex Mono', monospace;
+    --sans: 'IBM Plex Sans', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ─── HEADER ─── */
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 0 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(10,12,16,0.96);
+    backdrop-filter: blur(12px);
+  }
+  .header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 56px;
+  }
+  .logo {
+    font-family: var(--mono);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--accent);
+    text-decoration: none;
+    letter-spacing: -0.5px;
+  }
+  .logo span { color: var(--text2); font-weight: 400; }
+  .header-badge {
+    background: var(--accent-dim);
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 3px 7px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,212,170,0.2);
+  }
+  nav { margin-left: auto; display: flex; gap: 4px; }
+  .nav-link {
+    color: var(--text2);
+    text-decoration: none;
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: all 0.15s;
+  }
+  .nav-link:hover { color: var(--text); background: var(--bg3); }
+  .nav-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* ─── HERO ─── */
+  .hero {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 52px 24px 40px;
+  }
+  .hero-eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--accent);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 1px;
+    background: var(--accent);
+  }
+  h1 {
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.15;
+    margin-bottom: 14px;
+    color: var(--text);
+  }
+  h1 em {
+    font-style: normal;
+    color: var(--accent);
+  }
+  .hero-sub {
+    font-size: 16px;
+    color: var(--text2);
+    max-width: 600px;
+    margin-bottom: 28px;
+    line-height: 1.7;
+  }
+  .hero-stats {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+  .stat {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+    color: var(--text2);
+  }
+  .stat-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+  }
+
+  /* ─── ALERT BANNER ─── */
+  .alert-banner {
+    max-width: 1100px;
+    margin: 0 auto 8px;
+    padding: 0 24px;
+  }
+  .alert {
+    background: rgba(255,209,102,0.07);
+    border: 1px solid rgba(255,209,102,0.25);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 13px;
+    color: var(--amber);
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .alert-icon { flex-shrink: 0; margin-top: 1px; }
+
+  /* ─── TABS ─── */
+  .tab-bar {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 0;
+  }
+  .tab-bar::-webkit-scrollbar { display: none; }
+  .tab {
+    padding: 12px 18px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text2);
+    background: none;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    transition: all 0.15s;
+    font-family: var(--sans);
+  }
+  .tab:hover { color: var(--text); }
+  .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* ─── MAIN LAYOUT ─── */
+  .main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 28px 24px 60px;
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 24px;
+    align-items: start;
+  }
+  @media (max-width: 860px) {
+    .main { grid-template-columns: 1fr; }
+    .sidebar { order: -1; }
+  }
+
+  /* ─── CALC PANEL ─── */
+  .calc-panel {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .panel-header {
+    padding: 18px 22px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .panel-title {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .panel-body { padding: 22px; }
+
+  /* Mode panels */
+  .mode-panel { display: none; }
+  .mode-panel.active { display: block; }
+
+  /* ─── FORM ELEMENTS ─── */
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+  .form-grid.full { grid-template-columns: 1fr; }
+  .form-group { display: flex; flex-direction: column; gap: 6px; }
+  .form-group.full { grid-column: 1/-1; }
+
+  label {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .input-wrap { position: relative; }
+  .input-prefix, .input-suffix {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--text3);
+    pointer-events: none;
+    user-select: none;
+  }
+  .input-prefix { left: 12px; }
+  .input-suffix { right: 12px; }
+
+  input[type="number"], input[type="text"], select {
+    width: 100%;
+    background: var(--bg3);
+    border: 1px solid var(--border2);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 14px;
+    transition: border-color 0.15s, background 0.15s;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+  }
+  .has-prefix input { padding-left: 28px; }
+  .has-suffix input { padding-right: 36px; }
+  input:focus, select:focus { border-color: var(--accent); background: var(--bg4); }
+  input::placeholder { color: var(--text3); }
+  select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%234a5568' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; padding-right: 32px; cursor: pointer; }
+
+  .toggle-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    background: var(--bg3);
+    border: 1px solid var(--border2);
+    border-radius: 8px;
+  }
+  .toggle-label { font-size: 13px; color: var(--text); }
+  .toggle-sub { font-size: 11px; color: var(--text2); }
+  .toggle { position: relative; display: inline-block; width: 40px; height: 22px; flex-shrink: 0; }
+  .toggle input { opacity: 0; width: 0; height: 0; }
+  .toggle-slider {
+    position: absolute; inset: 0;
+    background: var(--bg4);
+    border: 1px solid var(--border2);
+    border-radius: 11px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .toggle-slider::before {
+    content: '';
+    position: absolute;
+    left: 3px; top: 3px;
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: var(--text3);
+    transition: 0.2s;
+  }
+  .toggle input:checked + .toggle-slider { background: var(--accent-dim); border-color: var(--accent); }
+  .toggle input:checked + .toggle-slider::before { transform: translateX(18px); background: var(--accent); }
+
+  /* ─── CALC BUTTON ─── */
+  .calc-btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--accent);
+    color: #0a0c10;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.15s;
+    margin-top: 4px;
+  }
+  .calc-btn:hover { background: var(--accent2); transform: translateY(-1px); }
+  .calc-btn:active { transform: translateY(0); }
+  .calc-btn:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+
+  /* ─── RESULTS ─── */
+  .results { display: none; margin-top: 24px; }
+  .results.visible { display: block; }
+
+  .results-divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 20px 0;
+  }
+
+  .results-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .result-card {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+  }
+  .result-card.highlight {
+    border-color: rgba(0,212,170,0.3);
+    background: var(--accent-dim2);
+  }
+  .result-card.warning {
+    border-color: rgba(255,107,107,0.25);
+    background: var(--red-dim);
+  }
+  .result-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  .result-value {
+    font-family: var(--mono);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .result-value.green { color: var(--accent); }
+  .result-value.red { color: var(--red); }
+  .result-sub {
+    font-size: 11px;
+    color: var(--text3);
+    margin-top: 4px;
+  }
+
+  .breakdown-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  .breakdown-table tr { border-bottom: 1px solid var(--border); }
+  .breakdown-table tr:last-child { border-bottom: none; }
+  .breakdown-table td { padding: 8px 0; vertical-align: middle; }
+  .breakdown-table td:last-child {
+    text-align: right;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text2);
+  }
+  .breakdown-table .total td {
+    font-weight: 600;
+    color: var(--text);
+    padding-top: 12px;
+  }
+  .breakdown-table .total td:last-child { color: var(--accent); font-size: 13px; }
+
+  .comparison-bar {
+    margin-top: 20px;
+  }
+  .bar-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--text2);
+    margin-bottom: 6px;
+  }
+  .bar-track {
+    height: 8px;
+    background: var(--bg4);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+  .bar-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 4px;
+    transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .bar-fill.red { background: var(--red); }
+
+  .diff-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 14px;
+  }
+  .diff-badge.negative { background: var(--red-dim); color: var(--red); border: 1px solid rgba(255,107,107,0.2); }
+  .diff-badge.positive { background: var(--accent-dim); color: var(--accent); border: 1px solid rgba(0,212,170,0.2); }
+
+  /* ─── SIDEBAR ─── */
+  .sidebar { display: flex; flex-direction: column; gap: 16px; }
+
+  .sidebar-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+  }
+  .sidebar-title {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 14px;
+  }
+
+  .aff-item {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .aff-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .aff-item:first-child { padding-top: 0; }
+  .aff-name { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+  .aff-desc { font-size: 12px; color: var(--text2); margin-bottom: 8px; line-height: 1.5; }
+  .aff-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--accent);
+    text-decoration: none;
+    padding: 5px 10px;
+    background: var(--accent-dim2);
+    border: 1px solid rgba(0,212,170,0.15);
+    border-radius: 5px;
+    transition: all 0.15s;
+  }
+  .aff-link:hover { background: var(--accent-dim); border-color: rgba(0,212,170,0.3); }
+
+  .quick-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .quick-stat:last-child { border-bottom: none; }
+  .qs-label { font-size: 12px; color: var(--text2); }
+  .qs-value {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .qs-value.green { color: var(--accent); }
+  .qs-value.red { color: var(--red); }
+
+  /* ─── SEO CONTENT ─── */
+  .content-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px 60px;
+  }
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+  @media (max-width: 720px) { .content-grid { grid-template-columns: 1fr; } }
+
+  .content-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .content-card h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .content-card p {
+    font-size: 13px;
+    color: var(--text2);
+    line-height: 1.7;
+  }
+
+  .section-heading {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+  }
+  .section-sub {
+    font-size: 14px;
+    color: var(--text2);
+    margin-bottom: 28px;
+    line-height: 1.7;
+  }
+
+  /* ─── FAQ ─── */
+  .faq-list { display: flex; flex-direction: column; gap: 4px; }
+  .faq-item {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .faq-q {
+    width: 100%;
+    padding: 16px 20px;
+    text-align: left;
+    background: none;
+    border: none;
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    transition: background 0.15s;
+  }
+  .faq-q:hover { background: var(--bg3); }
+  .faq-icon {
+    font-size: 18px;
+    color: var(--text3);
+    flex-shrink: 0;
+    transition: transform 0.2s;
+    line-height: 1;
+  }
+  .faq-item.open .faq-icon { transform: rotate(45deg); color: var(--accent); }
+  .faq-a {
+    display: none;
+    padding: 0 20px 16px;
+    font-size: 13px;
+    color: var(--text2);
+    line-height: 1.8;
+    border-top: 1px solid var(--border);
+    padding-top: 14px;
+  }
+  .faq-item.open .faq-a { display: block; }
+
+  /* ─── FOOTER ─── */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 28px 24px;
+    background: var(--bg2);
+  }
+  .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer-text { font-size: 12px; color: var(--text3); line-height: 1.6; }
+  .footer-links { display: flex; gap: 20px; }
+  .footer-link { font-size: 12px; color: var(--text3); text-decoration: none; }
+  .footer-link:hover { color: var(--text2); }
+
+  /* ─── UTILS ─── */
+  .tag {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 2px 7px;
+    border-radius: 3px;
+  }
+  .tag.green { background: var(--accent-dim); color: var(--accent); border: 1px solid rgba(0,212,170,0.2); }
+  .tag.red { background: var(--red-dim); color: var(--red); border: 1px solid rgba(255,107,107,0.2); }
+  .tag.amber { background: var(--amber-dim); color: var(--amber); border: 1px solid rgba(255,209,102,0.2); }
+
+  @media (max-width: 600px) {
+    .form-grid { grid-template-columns: 1fr; }
+    .results-grid { grid-template-columns: 1fr; }
+    h1 { font-size: 26px; }
+    .hero-stats { gap: 16px; }
+  }
+
+  /* scrollbar */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+
+  /* ─── PRINT ─── */
+  @media print {
+    #cookie-banner, header, .alert-banner, .aff-strip, .tab-bar, .calc-btn, nav, .footer-links, .sidebar { display: none !important; }
+    body { background: #fff; color: #111; }
+    .calc-panel, .result-card, .breakdown-table { border-color: #ccc; }
+    .result-value.green { color: #0a7; }
+    .result-value.red { color: #c00; }
+    a { color: #06b; }
+  }
+
+  /* ─── COOKIE BANNER ─── */
+  #cookie-banner {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 999;
+    background: var(--bg2);
+    border-top: 1px solid var(--border2);
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    box-shadow: 0 -8px 32px rgba(0,0,0,0.4);
+    transform: translateY(100%);
+    transition: transform 0.35s cubic-bezier(0.16,1,0.3,1);
+  }
+  #cookie-banner.show { transform: translateY(0); }
+  #cookie-banner p { font-size: 13px; color: var(--text2); flex: 1; min-width: 200px; line-height: 1.6; }
+  #cookie-banner a { color: var(--accent); text-decoration: none; }
+  #cookie-banner a:hover { text-decoration: underline; }
+  .cookie-btns { display: flex; gap: 8px; flex-shrink: 0; }
+  .btn-accept {
+    padding: 8px 18px;
+    background: var(--accent);
+    color: #0a0c10;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .btn-accept:hover { background: var(--accent2); }
+  .btn-decline {
+    padding: 8px 16px;
+    background: none;
+    color: var(--text2);
+    border: 1px solid var(--border2);
+    border-radius: 6px;
+    font-family: var(--mono);
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .btn-decline:hover { color: var(--text); border-color: var(--text3); }
+
+  /* ─── AD SLOTS ─── */
+  .ad-slot {
+    background: var(--bg3);
+    border: 1px dashed var(--border2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text3);
+    text-align: center;
+    min-height: 90px;
+    position: relative;
+    overflow: hidden;
+  }
+  .ad-slot.leaderboard { min-height: 90px; width: 100%; margin: 20px 0; }
+  .ad-slot.rect { min-height: 250px; }
+  .ad-slot-label { position: absolute; top: 6px; right: 8px; font-size: 9px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; }
+
+  /* ─── AFFILIATE STRIP ─── */
+  .aff-strip { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 24px; }
+  .aff-strip-inner { max-width: 1100px; margin: 0 auto; }
+  .aff-strip-label { font-family: var(--mono); font-size: 10px; font-weight: 600; color: var(--text3); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
+  .aff-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+  .aff-card { background: var(--bg3); border: 1px solid var(--border2); border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 6px; transition: border-color 0.15s; }
+  .aff-card:hover { border-color: rgba(0,212,170,0.3); }
+  .aff-card-icon { font-size: 20px; }
+  .aff-card-name { font-size: 13px; font-weight: 600; color: var(--text); }
+  .aff-card-desc { font-size: 12px; color: var(--text2); line-height: 1.5; flex: 1; }
+  .aff-card-cta { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 500; color: var(--accent); text-decoration: none; margin-top: 4px; }
+  .aff-card-cta:hover { text-decoration: underline; }
+  .aff-card-tag { display: inline-block; font-family: var(--mono); font-size: 9px; font-weight: 600; padding: 2px 6px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.5px; background: var(--accent-dim); color: var(--accent); border: 1px solid rgba(0,212,170,0.15); align-self: flex-start; }
+</style>
+</head>
+<body>
+
+<!-- ─── COOKIE CONSENT BANNER ─── -->
+<div id="cookie-banner" role="dialog" aria-label="Cookie consent">
+  <p>
+    We use cookies to understand how you use this tool and improve it. No personal data is sold or shared.
+    See our <a href="/privacy.html">Privacy Policy</a>.
+  </p>
+  <div class="cookie-btns">
+    <button class="btn-decline" onclick="cookieChoice(false)">Decline</button>
+    <button class="btn-accept" onclick="cookieChoice(true)">Accept Analytics</button>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">ir35guide<span>.co.uk</span></a>
+    <span class="header-badge">2025/26 · 2026/27</span>
+    <nav>
+      <a href="#calculator" class="nav-link">Calculator</a>
+      <a href="#about-ir35" class="nav-link">About IR35</a>
+      <a href="/blog.html" class="nav-link">Blog</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow">Free UK Contractor Tax Calculator</div>
+  <h1>What does IR35<br>actually cost you?</h1>
+  <p class="hero-sub">Compare inside vs outside IR35 take-home pay, umbrella vs limited company, and perm vs contract — all in one place. 2025/26 and 2026/27 tax years in the calculator.</p>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-dot"></div>2025/26 & 2026/27 tax years</div>
+    <div class="stat"><div class="stat-dot"></div>Includes employer NI at 15%</div>
+    <div class="stat"><div class="stat-dot"></div>No signup required</div>
+    <div class="stat"><div class="stat-dot"></div>Runs in your browser</div>
+  </div>
+</section>
+
+<!-- ALERT -->
+<div class="alert-banner">
+  <div class="alert">
+    <span class="alert-icon">⚡</span>
+    <span><strong>April 2026:</strong> Small company threshold rises to £15m — more contractors regain IR35 responsibility. Select <strong>2026/27</strong> in the calculator to model the impact. <a href="/blog/ir35-april-2026-small-company-threshold-changes.html" style="color:var(--amber); text-decoration:underline">Full guide →</a> · <a href="#what-changes-2026" style="color:var(--amber); text-decoration:underline">Summary</a></span>
+  </div>
+</div>
+
+<!-- AFFILIATE STRIP -->
+<div class="aff-strip">
+  <div class="aff-strip-inner">
+    <div class="aff-strip-label">Recommended for UK Contractors</div>
+    <div class="aff-cards">
+
+      <div class="aff-card">
+        <div class="aff-card-icon">🛡️</div>
+        <span class="aff-card-tag">Essential</span>
+        <div class="aff-card-name">Qdos IR35 Insurance</div>
+        <div class="aff-card-desc">From £99/year. Covers legal defence + tax liability up to £250k. Used by 50,000+ contractors.</div>
+        <a class="aff-card-cta" href="https://www.goqdos.com/ir35/ir35-insurance" target="_blank" rel="noopener sponsored" onclick="gaEvent('affiliate_click',{affiliate:'qdos',position:'strip'})">Get covered →</a>
+      </div>
+
+      <div class="aff-card">
+        <div class="aff-card-icon">🛡️</div>
+        <span class="aff-card-tag">Essential</span>
+        <div class="aff-card-name">Kingsbridge IR35 Protect</div>
+        <div class="aff-card-desc">Market-leading flexible IR35 insurance. Covers whichever party HMRC investigates.</div>
+        <a class="aff-card-cta" href="https://www.kingsbridge.co.uk/products/legal-ir35-protect-cover/" target="_blank" rel="noopener sponsored" onclick="gaEvent('affiliate_click',{affiliate:'kingsbridge',position:'strip'})">Get covered →</a>
+      </div>
+
+      <div class="aff-card">
+        <div class="aff-card-icon">🧾</div>
+        <span class="aff-card-tag">Saves money</span>
+        <div class="aff-card-name">Specialist Accountant</div>
+        <div class="aff-card-desc">Fixed fees from £95/month. IR35 contract reviews. FreeAgent included. FCSA-accredited options.</div>
+        <a class="aff-card-cta" href="https://www.contractoruk.com/directory/contractor_accountants.html" target="_blank" rel="noopener" onclick="gaEvent('affiliate_click',{affiliate:'accountant_dir',position:'strip'})">Compare accountants →</a>
+      </div>
+
+      <div class="aff-card">
+        <div class="aff-card-icon">🏠</div>
+        <span class="aff-card-tag">Often overlooked</span>
+        <div class="aff-card-name">Contractor Mortgage</div>
+        <div class="aff-card-desc">Lenders that understand day rates, not just salary. Get assessed on your contract income.</div>
+        <a class="aff-card-cta" href="https://www.contractorcalculator.co.uk/contractor_mortgages.aspx" target="_blank" rel="noopener" onclick="gaEvent('affiliate_click',{affiliate:'mortgage',position:'strip'})">Find a broker →</a>
+      </div>
+
+      <div class="aff-card">
+        <div class="aff-card-icon">📋</div>
+        <span class="aff-card-tag">IR35 review</span>
+        <div class="aff-card-name">Contract Review</div>
+        <div class="aff-card-desc">Get your contract professionally reviewed for IR35 status before you sign. From £100.</div>
+        <a class="aff-card-cta" href="https://www.goqdos.com/ir35/ir35-contract-review" target="_blank" rel="noopener sponsored" onclick="gaEvent('affiliate_click',{affiliate:'qdos_review',position:'strip'})">Review contract →</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- TABS -->
+<div class="tab-bar" id="calculator" role="tablist" aria-label="Calculator mode">
+  <button class="tab active" role="tab" aria-selected="true" aria-controls="mode-compare" id="tab-compare" onclick="switchMode('compare', this)">Inside vs Outside IR35</button>
+  <button class="tab" role="tab" aria-selected="false" aria-controls="mode-outside" id="tab-outside" onclick="switchMode('outside', this)">Outside IR35 (Ltd Co)</button>
+  <button class="tab" role="tab" aria-selected="false" aria-controls="mode-umbrella" id="tab-umbrella" onclick="switchMode('umbrella', this)">Umbrella Company</button>
+  <button class="tab" role="tab" aria-selected="false" aria-controls="mode-perm" id="tab-perm" onclick="switchMode('perm', this)">Perm vs Contract</button>
+  <button class="tab" role="tab" aria-selected="false" aria-controls="mode-dayrate" id="tab-dayrate" onclick="switchMode('dayrate', this)">Day Rate / Hourly / Annual</button>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+  <div class="calc-panel">
+
+    <!-- ══════════ MODE: COMPARE ══════════ -->
+    <div class="mode-panel active" id="mode-compare" role="tabpanel" aria-labelledby="tab-compare">
+      <div class="panel-header">
+        <span class="panel-title">Inside vs Outside IR35 — Side-by-Side Comparison</span>
+      </div>
+      <div class="panel-body">
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Daily Rate</label>
+            <div class="input-wrap has-prefix">
+              <span class="input-prefix">£</span>
+              <input type="number" id="c-dayrate" value="500" min="0" step="25">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Days Worked Per Year</label>
+            <div class="input-wrap">
+              <input type="number" id="c-days" value="220" min="1" max="260">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Annual Expenses (Ltd)</label>
+            <div class="input-wrap has-prefix">
+              <span class="input-prefix">£</span>
+              <input type="number" id="c-expenses" value="5000" min="0" step="500">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Pension (Ltd Co, /yr)</label>
+            <div class="input-wrap has-prefix">
+              <span class="input-prefix">£</span>
+              <input type="number" id="c-pension" value="0" min="0" step="1000">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Ltd Co Salary (/yr)</label>
+            <div class="input-wrap has-prefix">
+              <span class="input-prefix">£</span>
+              <input type="number" id="c-salary" value="12570" min="0" step="500" oninput="if(document.getElementById('c-optimise')?.checked) applyOptimalSalary('c');">
+            </div>
+          </div>
+          <div class="form-group full">
+            <label class="toggle-label" style="display:flex;align-items:center;gap:10px;cursor:pointer;">
+              <input type="checkbox" id="c-optimise" onchange="toggleOptimalSalary('c', this.checked)">
+              <span>Optimise salary (best of £9,100 vs £12,570)</span>
+            </label>
+            <span class="toggle-sub" style="display:block;margin-top:4px;">Picks the director salary that gives you the highest take-home.</span>
+          </div>
+          <div class="form-group">
+            <label>Tax Region</label>
+            <div class="input-wrap">
+              <select id="c-region">
+                <option value="england">England / Wales / NI</option>
+                <option value="scotland">Scotland</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <p class="panel-hint" style="font-size:12px;color:var(--text3);margin-bottom:14px;">Enter your figures and click Calculate. Results are estimates only — not financial advice.</p>
+        <button class="calc-btn" onclick="calcCompare()">Calculate Take-Home Pay →</button>
+
+        <div class="results" id="res-compare">
+          <hr class="results-divider">
+          <div class="results-grid">
+            <div class="result-card highlight" id="rc-outside">
+              <div class="result-label">Outside IR35 (Ltd Co)</div>
+              <div class="result-value green" id="rv-outside-annual">—</div>
+              <div class="result-sub" id="rv-outside-monthly">per year</div>
+            </div>
+            <div class="result-card warning" id="rc-inside">
+              <div class="result-label">Inside IR35 (PAYE)</div>
+              <div class="result-value red" id="rv-inside-annual">—</div>
+              <div class="result-sub" id="rv-inside-monthly">per year</div>
+            </div>
+          </div>
+
+          <div id="comp-diff-badge" class="diff-badge negative" style="margin-top:16px"></div>
+
+          <div style="margin-top:20px">
+            <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text2);font-weight:500;margin-bottom:12px;">Detailed Breakdown</div>
+            <table class="breakdown-table" id="comp-breakdown"></table>
+          </div>
+
+          <div class="comparison-bar" id="comp-bar-section">
+            <div class="bar-label"><span>Outside IR35 take-home</span><span id="bar-out-pct">—</span></div>
+            <div class="bar-track"><div class="bar-fill" id="bar-out" style="width:0%"></div></div>
+            <div class="bar-label" style="margin-top:8px"><span>Inside IR35 take-home</span><span id="bar-in-pct">—</span></div>
+            <div class="bar-track"><div class="bar-fill red" id="bar-in" style="width:0%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════ MODE: OUTSIDE IR35 ══════════ -->
+    <div class="mode-panel" id="mode-outside" role="tabpanel" aria-labelledby="tab-outside">
+      <div class="panel-header">
+        <span class="panel-title">Outside IR35 — Limited Company Take-Home</span>
+      </div>
+      <div class="panel-body">
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Daily Rate</label>
+            <div class="input-wrap has-prefix">
+              <span class="input-prefix">£</span>
+              <input type="number" id="o-dayrate" value="500" min="0" step="25">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Days Worked Per Year</label>
+            <div class="input-wrap">
+              <input type="number" id="o-days" value="220" min="1" max="260">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Director Salary (/yr)</label>
+            <div class="input-wrap has-prefix">
+              <span class="input-prefix">£</span>
+              <input type="number" id="o-salary" value="12570" min="0" step="500" oninput="if(document.getElementById('o-optimise')?.checked) applyOptimalSalary('o');">
+            </div>
+          </div>
+          <div class="form-group full">
+            <label class="toggle-label" style="display:flex;align-items:center;gap:10px;cursor:pointer;">
+              <input type="checkbox" id="o-optimise" onchange="toggleOptimalSalary('o', this.checked)">
+              <span>Optimise salary (best of £9,100 vs £12,570)</span>
+            </label>
+            <span class="toggle-sub" style="display:block;margin-top:4px;">Picks the salary that maximises your take-home.</span>
+          </div>
+          <div class="form-group">
+            <label>Annual Expenses</label>
+            <div class="input-wrap has-prefix">
+              <span class="input-prefix">£</span>
+              <input type="number" id="o-expenses" value="5000" min="0" step="500">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Pension Contributions (/yr)</label>
+            <div class="input-wrap has-prefix">
+              <span class="input-prefix">£</span>
+              <input type="number" id="o-pension" value="0" min="0" step="1000">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Accountancy Fees (/yr)</label>
+            <div class="input-wrap has-prefix">
+              <span class="input-prefix">£</span>
+              <input type="number" id="o-accountant" value="1500" min="0" step="100">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>VAT Flat Rate %</label>
+            <div class="input-wrap has-suffix">
+              <input type="number" id="o-vat" value="0" min="0" max="20" step="0.5">
+              <span class="input-suffix">%</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Tax Region</label>
+            <div class="input-wrap">
+              <select id="o-region">
+                <option value="england">England / Wales / NI</option>
+                <option value="scotland">Scotland</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <button class="calc-btn" onclick="calcOutside()">Calculate Take-Home →</button>
+        <div class="results" id="res-outside">
+          <hr class="results-divider">
+          <div class="results-grid">
+            <div class="result-card highlight">
+              <div class="result-label">Annual Take-Home</div>
+              <div class="result-value green" id="o-annual">—</div>
+              <div class="result-sub" id="o-monthly">—/month</div>
+            </div>
+            <div class="result-card">
+              <div class="result-label">Effective Tax Rate</div>
+              <div class="result-value" id="o-effrate">—</div>
+              <div class="result-sub">of gross revenue</div>
+            </div>
+          </div>
+          <div style="margin-top:20px">
+            <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text2);font-weight:500;margin-bottom:12px;">Full Breakdown</div>
+            <table class="breakdown-table" id="o-breakdown"></table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════ MODE: UMBRELLA ══════════ -->
+    <div class="mode-panel" id="mode-umbrella" role="tabpanel" aria-labelledby="tab-umbrella">
+      <div class="panel-header">
+        <span class="panel-title">Umbrella Company Take-Home Pay</span>
+      </div>
+      <div class="panel-body">
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Assignment Rate (Daily)</label>
+            <div class="input-wrap has-prefix">
+              <span class="input-prefix">£</span>
+              <input type="number" id="u-dayrate" value="500" min="0" step="25">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Days Worked Per Year</label>
+            <div class="input-wrap">
+              <input type="number" id="u-days" value="220" min="1" max="260">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Umbrella Margin (/wk)</label>
+            <div class="input-wrap has-prefix">
+              <span class="input-prefix">£</span>
+              <input type="number" id="u-margin" value="20" min="0" max="100">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Pension Contribution</label>
+            <div class="input-wrap has-suffix">
+              <input type="number" id="u-pension" value="5" min="0" max="100" step="0.5">
+              <span class="input-suffix">%</span>
+            </div>
+          </div>
+          <div class="form-group full">
+            <label>Allowable Expenses (/yr)</label>
+            <div class="input-wrap has-prefix">
+              <span class="input-prefix">£</span>
+              <input type="number" id="u-expenses" value="0" min="0" step="500">
+            </div>
+          </div>
+        </div>
+        <button class="calc-btn" onclick="calcUmbrella()">Calculate Umbrella Take-Home →</button>
+        <div class="results" id="res-umbrella">
+          <hr class="results-divider">
+          <div class="results-grid">
+            <div class="result-card highlight">
+              <div class="result-label">Annual Take-Home</div>
+              <div class="result-value green" id="u-annual">—</div>
+              <div class="result-sub" id="u-monthly">—/month</div>
+            </div>
+            <div class="result-card">
+              <div class="result-label">Effective Rate</div>
+              <div class="result-value" id="u-effrate">—</div>
+              <div class="result-sub">of assignment rate</div>
+            </div>
+          </div>
+          <div style="margin-top:20px">
+            <table class="breakdown-table" id="u-breakdown"></table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════ MODE: PERM vs CONTRACT ══════════ -->
+    <div class="mode-panel" id="mode-perm" role="tabpanel" aria-labelledby="tab-perm">
+      <div class="panel-header">
+        <span class="panel-title">Permanent Employment vs Contracting</span>
+      </div>
+      <div class="panel-body">
+        <div style="margin-bottom:16px">
+          <div style="font-size:12px;color:var(--text2);text-transform:uppercase;letter-spacing:0.5px;font-weight:500;margin-bottom:10px;">Permanent Job</div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Salary (/yr)</label>
+              <div class="input-wrap has-prefix">
+                <span class="input-prefix">£</span>
+                <input type="number" id="p-salary" value="65000" min="0" step="1000">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Employer Pension %</label>
+              <div class="input-wrap has-suffix">
+                <input type="number" id="p-emperpension" value="5" min="0" max="30" step="0.5">
+                <span class="input-suffix">%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px;color:var(--text2);text-transform:uppercase;letter-spacing:0.5px;font-weight:500;margin-bottom:10px;">Contract</div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Day Rate</label>
+              <div class="input-wrap has-prefix">
+                <span class="input-prefix">£</span>
+                <input type="number" id="p-dayrate" value="400" min="0" step="25">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Days Worked Per Year</label>
+              <div class="input-wrap">
+                <input type="number" id="p-days" value="200" min="1" max="260">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>IR35 Status</label>
+              <div class="input-wrap">
+                <select id="p-ir35status">
+                  <option value="outside">Outside IR35 (Ltd Co)</option>
+                  <option value="inside">Inside IR35 / Umbrella</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Annual Expenses (Ltd)</label>
+              <div class="input-wrap has-prefix">
+                <span class="input-prefix">£</span>
+                <input type="number" id="p-expenses" value="5000" min="0" step="500">
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="calc-btn" onclick="calcPerm()">Compare Perm vs Contract →</button>
+        <div class="results" id="res-perm">
+          <hr class="results-divider">
+          <div class="results-grid">
+            <div class="result-card">
+              <div class="result-label">Perm Take-Home</div>
+              <div class="result-value" id="perm-annual">—</div>
+              <div class="result-sub" id="perm-monthly">—/month</div>
+            </div>
+            <div class="result-card">
+              <div class="result-label">Contract Take-Home</div>
+              <div class="result-value" id="cont-annual">—</div>
+              <div class="result-sub" id="cont-monthly">—/month</div>
+            </div>
+          </div>
+          <div id="perm-diff-badge" class="diff-badge" style="margin-top:16px"></div>
+          <div style="margin-top:16px;font-size:12px;color:var(--text2);" id="perm-note"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════ MODE: DAY RATE ══════════ -->
+    <div class="mode-panel" id="mode-dayrate" role="tabpanel" aria-labelledby="tab-dayrate">
+      <div class="panel-header">
+        <span class="panel-title">Day Rate, Hourly &amp; Annual Salary Converter</span>
+      </div>
+      <div class="panel-body">
+        <p style="font-size:12px;color:var(--text2);margin-bottom:14px;">Convert between day rate, hourly rate and annual contract value. Enter any one — the rest update automatically.</p>
+        <div style="margin-bottom:14px;">
+          <label for="dr-ratetype" style="font-size:11px;color:var(--text2);text-transform:uppercase;letter-spacing:0.5px;">I have</label>
+          <select id="dr-ratetype" onchange="syncDRFromType()" style="width:100%;max-width:260px;margin-top:4px;background:var(--bg3);border:1px solid var(--border2);border-radius:6px;padding:8px 10px;color:var(--text);font-family:var(--mono);font-size:13px;">
+            <option value="day">Day rate (£/day)</option>
+            <option value="hourly">Hourly rate (£/hr)</option>
+            <option value="annual">Annual contract value (£/yr)</option>
+          </select>
+        </div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label id="dr-label-1">Day Rate (£/day)</label>
+            <div class="input-wrap has-prefix">
+              <span class="input-prefix">£</span>
+              <input type="number" id="dr-dayrate" value="450" min="0" step="25" oninput="syncDR('day')">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Days Worked Per Year</label>
+            <div class="input-wrap">
+              <input type="number" id="dr-days" value="220" min="1" max="260" oninput="syncDR('days')">
+            </div>
+          </div>
+          <div class="form-group">
+            <label id="dr-label-annual">Annual contract value (£)</label>
+            <div class="input-wrap has-prefix">
+              <span class="input-prefix">£</span>
+              <input type="number" id="dr-salary" value="" min="0" step="1000" placeholder="auto" oninput="syncDR('salary')">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Hourly Rate (£/hr)</label>
+            <div class="input-wrap has-prefix">
+              <span class="input-prefix">£</span>
+              <input type="number" id="dr-hourly" value="" min="0" step="0.5" placeholder="auto" oninput="syncDR('hourly')">
+            </div>
+          </div>
+        </div>
+        <button class="calc-btn" onclick="calcDayRate()">Show Full Rate Breakdown →</button>
+        <div class="results" id="res-dayrate">
+          <hr class="results-divider">
+          <div class="results-grid" id="dr-cards"></div>
+          <div style="margin-top:20px">
+            <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text2);font-weight:500;margin-bottom:12px;">Equivalent Salary to Match This Rate</div>
+            <p style="font-size:13px;color:var(--text2);line-height:1.7;" id="dr-note"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /calc-panel -->
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <div class="sidebar-card">
+      <div class="sidebar-title" id="sidebar-tax-year-title">2025/26 Tax Rates Used</div>
+      <div style="margin-bottom:12px;">
+        <label for="tax-year-select" style="font-size:11px;color:var(--text2);text-transform:uppercase;letter-spacing:0.5px;">Tax year</label>
+        <select id="tax-year-select" onchange="setTaxYear(this.value)" style="width:100%;margin-top:4px;background:var(--bg3);border:1px solid var(--border2);border-radius:6px;padding:8px 10px;color:var(--text);font-family:var(--mono);font-size:12px;">
+          <option value="2025/26">2025/26</option>
+          <option value="2026/27">2026/27</option>
+        </select>
+      </div>
+      <div class="quick-stat"><span class="qs-label">Personal Allowance</span><span class="qs-value">£12,570</span></div>
+      <div class="quick-stat"><span class="qs-label">Basic Rate (20%)</span><span class="qs-value">up to £50,270</span></div>
+      <div class="quick-stat"><span class="qs-label">Higher Rate (40%)</span><span class="qs-value">£50,271–£125,140</span></div>
+      <div class="quick-stat"><span class="qs-label">Additional Rate (45%)</span><span class="qs-value">above £125,140</span></div>
+      <div class="quick-stat"><span class="qs-label">Corp Tax (small)</span><span class="qs-value">19%</span></div>
+      <div class="quick-stat"><span class="qs-label">Corp Tax (main)</span><span class="qs-value">25%</span></div>
+      <div class="quick-stat"><span class="qs-label">Employer NI</span><span class="qs-value red">15%</span></div>
+      <div class="quick-stat"><span class="qs-label">Employee NI</span><span class="qs-value">8% / 2%</span></div>
+      <div class="quick-stat"><span class="qs-label">Dividend Tax (basic)</span><span class="qs-value" id="sidebar-dividend-basic">8.75%</span></div>
+      <div class="quick-stat"><span class="qs-label">Dividend Tax (higher)</span><span class="qs-value" id="sidebar-dividend-higher">33.75%</span></div>
+      <div class="quick-stat"><span class="qs-label">Dividend Allowance</span><span class="qs-value">£500</span></div>
+    </div>
+
+    <div class="sidebar-card">
+      <div class="sidebar-title">Recommended Services</div>
+      <div class="aff-item">
+        <div class="aff-name">IR35 Insurance</div>
+        <div class="aff-desc">Qdos & Kingsbridge protect you from HMRC investigation. From £99/year — essential outside IR35.</div>
+        <a href="https://www.goqdos.com/ir35/ir35-insurance" target="_blank" rel="noopener sponsored" class="aff-link" onclick="gaEvent('affiliate_click',{affiliate:'qdos',position:'sidebar'})">Get covered →</a>
+      </div>
+      <div class="aff-item">
+        <div class="aff-name">Specialist Accountant</div>
+        <div class="aff-desc">Fixed fees from £95/month. IR35 contract reviews included. Pays for itself.</div>
+        <a href="https://www.contractoruk.com/directory/contractor_accountants.html" target="_blank" rel="noopener" class="aff-link" onclick="gaEvent('affiliate_click',{affiliate:'accountant',position:'sidebar'})">Compare accountants →</a>
+      </div>
+      <div class="aff-item">
+        <div class="aff-name">Contractor Mortgages</div>
+        <div class="aff-desc">Specialist brokers use your day rate — not your salary. Get the mortgage you deserve.</div>
+        <a href="https://www.contractorcalculator.co.uk/contractor_mortgages.aspx" target="_blank" rel="noopener" class="aff-link" onclick="gaEvent('affiliate_click',{affiliate:'mortgage',position:'sidebar'})">Find a broker →</a>
+      </div>
+    </div>
+
+    <!-- Carbon Ads / EthicalAds slot — apply once traffic reaches 5k+/month -->
+    <div class="sidebar-card" style="padding:0;overflow:hidden;min-height:160px;display:flex;align-items:center;justify-content:center;">
+      <div id="carbonads" style="width:100%;padding:16px;">
+        <!-- Carbon Ads script goes here once approved:
+        <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=XXXXXXXX&placement=ir35guidecauk" id="_carbonads_js"></script>
+        -->
+        <div style="font-size:11px;color:var(--text3);text-align:center;font-family:var(--mono);">
+          Ad slot<br><a href="https://carbonads.net" target="_blank" rel="noopener" style="color:var(--text3);">Carbon Ads</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-card">
+      <div class="sidebar-title">Share</div>
+      <p style="font-size:12px;color:var(--text2);margin-bottom:10px;">Link updates with your inputs. Copy and send to your accountant or compare with a colleague.</p>
+      <button type="button" onclick="copyShareLink()" style="width:100%;padding:10px 14px;background:var(--bg3);border:1px solid var(--border2);border-radius:8px;color:var(--accent);font-family:var(--mono);font-size:12px;font-weight:600;cursor:pointer;">Copy link</button>
+      <span id="copy-feedback" style="font-size:11px;color:var(--accent);display:none;margin-top:6px;">Copied!</span>
+    </div>
+    <div class="sidebar-card" id="what-changes-2026">
+      <div class="sidebar-title">April 2026 Changes</div>
+      <p style="font-size:12px;color:var(--text2);line-height:1.7;margin-bottom:10px;">The small company threshold is rising. From April 2026, companies with turnover up to <strong style="color:var(--text)">£15m</strong> (up from £10.2m) qualify as small.</p>
+      <p style="font-size:12px;color:var(--text2);line-height:1.7;margin-bottom:10px;">This shifts IR35 status responsibility back to the contractor's PSC — meaning more contractors can self-assess and potentially operate outside IR35 again.</p>
+      <p style="font-size:12px;color:var(--amber);">💡 Review your contracts with a specialist before April 2026.</p>
+    </div>
+
+  </div>
+</div><!-- /main -->
+
+<!-- SEO CONTENT SECTION -->
+<section class="content-section" id="about-ir35">
+  <h2 class="section-heading">Understanding IR35 in 2025/26</h2>
+  <p class="section-sub">IR35 is the tax legislation that determines whether contractors are treated as employees or genuine businesses for tax purposes. Getting it wrong is expensive — in either direction.</p>
+
+  <div class="content-grid">
+    <div class="content-card">
+      <h3>Outside IR35: The Tax-Efficient Route</h3>
+      <p>Operating outside IR35 through a limited company allows you to pay a tax-efficient combination of salary and dividends, claim business expenses, and pay corporation tax on profits rather than income tax on all earnings. Most contractors outside IR35 retain 70–80% of their gross rate.</p>
+    </div>
+    <div class="content-card">
+      <h3>Inside IR35: Employee Tax Without the Benefits</h3>
+      <p>Inside IR35, your income is treated as employment income. You pay PAYE income tax and employee NI — but also your employer (the agency or end client) deducts employer NI at 15% before you see a penny. You lose all the tax efficiency without gaining employment benefits.</p>
+    </div>
+    <div class="content-card">
+      <h3>The April 2025 NI Changes</h3>
+      <p>Employer National Insurance rose from 13.8% to 15% in April 2025, with the secondary threshold dropping from £9,100 to £5,000. This increased the cost of being inside IR35 by roughly £1,500–£3,000/year at typical contractor rates. Our calculator reflects these 2025/26 rates.</p>
+    </div>
+  </div>
+
+  <!-- Ad slot: leaderboard between content sections -->
+  <div class="ad-slot leaderboard" id="ad-leaderboard">
+    <span class="ad-slot-label">Advertisement</span>
+    <!-- Google AdSense / Carbon Ads slot goes here -->
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
+    <span style="font-size:11px;color:var(--text3);">Ad · <a href="https://carbonads.net" target="_blank" rel="noopener" style="color:var(--text3);">Advertise here</a></span>
+  </div>
+
+  <div class="content-grid">
+    <div class="content-card">
+      <h3>The Three Key IR35 Tests</h3>
+      <p><strong style="color:var(--text)">Control:</strong> Does the client dictate how, when, and where you work? More control = more likely inside IR35.<br><br><strong style="color:var(--text)">Substitution:</strong> Can you send a suitably skilled substitute to do the work? A genuine substitution clause helps outside IR35.<br><br><strong style="color:var(--text)">Mutuality of Obligation:</strong> Must the client offer work, and must you accept it? Yes = inside IR35.</p>
+    </div>
+    <div class="content-card">
+      <h3>Umbrella vs Limited Company</h3>
+      <p>If your contract is inside IR35, an umbrella company handles the PAYE and NI administration. You lose 20–25% more than outside IR35, but the umbrella handles compliance. The main cost is the margin (£15–30/week). Outside IR35, a limited company is nearly always more tax-efficient.</p>
+    </div>
+    <div class="content-card">
+      <h3>What the Perm vs Contract Calculator Shows</h3>
+      <p>Going permanent feels safer but often pays less. Our perm vs contract calculator accounts for holiday pay, sick pay, employer pension, and the missing benefits contractors self-fund — giving you a true comparison of what both options put in your pocket each month.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="content-section" id="faq">
+  <h2 class="section-heading">Frequently Asked Questions</h2>
+  <p class="section-sub">Common questions about IR35, contractor take-home pay, and how our calculator works.</p>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFAQ(this)">
+        How much less do I take home inside IR35?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        Most contractors take home 20–30% less inside IR35 versus outside IR35 through a limited company. At a £500/day rate working 220 days, this typically represents £15,000–£25,000 less per year. The exact amount depends on your salary structure, expenses, and pension contributions. Use the Inside vs Outside IR35 tab above to calculate your specific difference.
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFAQ(this)">
+        What changed in April 2025 for contractors?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        Two significant changes hit contractors in April 2025. First, employer National Insurance rose from 13.8% to 15%. Second, the secondary threshold (the income level above which employer NI is charged) dropped from £9,100 to just £5,000. Together, these changes increased the cost of being inside IR35 or working through an umbrella company by approximately £1,500–£3,500 per year at typical contractor rates.
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFAQ(this)">
+        What is changing with IR35 in April 2026?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        From April 2026, the definition of a "small company" is being widened. Companies with turnover up to £15m (previously £10.2m), balance sheet up to £7.5m, and/or up to 50 employees will qualify as small. When your client is a small company, the responsibility for determining IR35 status shifts back to you (the contractor's PSC), rather than the end client. This means more contractors can self-assess their IR35 status again — but also means more responsibility and risk if you get it wrong.
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFAQ(this)">
+        Is the HMRC CEST tool accurate?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        HMRC's Check Employment Status for Tax (CEST) tool is widely criticised by IR35 specialists. It notoriously fails to properly account for Mutuality of Obligation — a key IR35 test that courts and tribunals rely on. CEST has also returned "undetermined" results in up to 21% of cases. Tax courts have ruled against HMRC in cases where CEST gave an inside IR35 result. While HMRC states it stands by CEST results, most specialist IR35 advisers recommend using it alongside an independent contract review.
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFAQ(this)">
+        How accurate is this IR35 calculator?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        This calculator uses the official 2025/26 and 2026/27 HMRC tax rates (select tax year in the sidebar). Dividend rates from April 2026 are included for 2026/27. All calculations run in your browser — no data is sent to any server. The results are indicative estimates based on your inputs and assume standard working arrangements. Results may vary if you have other income sources, complex expenses, or unusual salary/dividend splits. Always consult a qualified contractor accountant before making financial decisions.
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFAQ(this)">
+        Do I need IR35 insurance?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        If you operate outside IR35 through a limited company, IR35 insurance is strongly recommended. HMRC can open enquiries into past tax years — up to 6 years for careless behaviour — meaning you're not protected just because you're currently inside IR35. Policies from providers like Qdos and Kingsbridge start from around £99/year and cover both legal defence costs and any resulting tax liability, typically up to £250,000.
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFAQ(this)">
+        What salary should I take as a limited company contractor?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        Most contractor accountants recommend a salary of £12,570 per year (matching the personal allowance) if you don't have employees. This avoids employer NI while still counting as a qualifying year for State Pension. If your company has employees (including a co-director paying a salary), you may benefit from the Employment Allowance (£5,000 in 2025/26), which can make a higher salary more tax-efficient. Speak to a contractor accountant to optimise your salary/dividend split.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG / GUIDES -->
+<section class="content-section" style="border-top:1px solid var(--border);padding-top:32px;">
+  <h2 class="section-heading">Guides</h2>
+  <p class="section-sub">Deep dives on IR35, take-home pay, and the April 2026 changes.</p>
+  <div class="content-grid">
+    <div class="content-card">
+      <h3><a href="/blog/ir35-april-2026-small-company-threshold-changes.html" style="color:var(--text);text-decoration:none;">IR35 April 2026: Small Company Threshold Changes</a></h3>
+      <p>Who's affected when ~14,000 companies reclassify as small, what to do now, and the group-structure trap.</p>
+      <a href="/blog/ir35-april-2026-small-company-threshold-changes.html" style="font-size:13px;font-weight:500;color:var(--accent);">Read guide →</a>
+    </div>
+    <div class="content-card">
+      <h3><a href="/blog/inside-vs-outside-ir35-take-home-pay.html" style="color:var(--text);text-decoration:none;">Inside vs Outside IR35: Real Take-Home Numbers</a></h3>
+      <p>Exact take-home at £250–£800/day, why the gap is so large, and what rate uplift you need to break even.</p>
+      <a href="/blog/inside-vs-outside-ir35-take-home-pay.html" style="font-size:13px;font-weight:500;color:var(--accent);">Read guide →</a>
+    </div>
+    <div class="content-card">
+      <h3><a href="/blog/hmrc-cest-tool-problems.html" style="color:var(--text);text-decoration:none;">Why HMRC's CEST Tool Gets It Wrong</a></h3>
+      <p>What CEST ignores (including MOO), why the 2025 update didn't fix it, and what to use instead.</p>
+      <a href="/blog/hmrc-cest-tool-problems.html" style="font-size:13px;font-weight:500;color:var(--accent);">Read guide →</a>
+    </div>
+  </div>
+  <p style="text-align:center;margin-top:8px;"><a href="/blog.html" style="color:var(--text2);font-size:13px;">All blog posts →</a></p>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-text">
+      ir35guide.co.uk — Free UK IR35 guide & contractor tax calculator.<br>
+      Results are estimates only. Not financial advice. Always consult a qualified accountant.<br>
+      <span style="font-size:11px;color:var(--text3);">Last updated: March 2026</span>
+    </div>
+    <div class="footer-links">
+      <a href="/blog.html" class="footer-link">Blog</a>
+      <a href="/privacy.html" class="footer-link">Privacy</a>
+      <a href="/terms.html" class="footer-link">Terms</a>
+      <a href="#about-ir35" class="footer-link">About</a>
+      <a href="mailto:hello@ir35guide.co.uk" class="footer-link">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ═══════════════════════════════════════════════════
+// TAX CONSTANTS — 2025/26 and 2026/27 (employer NI unchanged Apr 2026; dividend rates rise Apr 2026)
+// ═══════════════════════════════════════════════════
+const TAX_2025_26 = {
+  personalAllowance: 12570,
+  basicRate: 0.20,
+  higherRate: 0.40,
+  additionalRate: 0.45,
+  basicThreshold: 50270,
+  higherThreshold: 125140,
+  niPrimary1: 0.08,
+  niPrimary2: 0.02,
+  niPrimaryLower: 12570,
+  niPrimaryUpper: 50270,
+  niSecondary: 0.15,
+  niSecondaryThreshold: 5000,
+  corpTaxSmall: 0.19,
+  corpTaxMain: 0.25,
+  corpTaxThreshold: 50000,
+  corpTaxUpper: 250000,
+  dividendAllowance: 500,
+  dividendBasic: 0.0875,
+  dividendHigher: 0.3375,
+  dividendAdditional: 0.3938,
+};
+const TAX_2026_27 = {
+  ...TAX_2025_26,
+  dividendBasic: 0.1075,   // Apr 2026
+  dividendHigher: 0.3575,
+  dividendAdditional: 0.3935,
+};
+let TAX = { ...TAX_2025_26 };
+
+function setTaxYear(yr) {
+  TAX = yr === '2026/27' ? { ...TAX_2026_27 } : { ...TAX_2025_26 };
+  const el = document.getElementById('tax-year-select');
+  if (el) el.value = yr;
+  updateSidebarTaxRates();
+}
+function updateSidebarTaxRates() {
+  const is26 = TAX.dividendBasic > 0.09;
+  const title = document.getElementById('sidebar-tax-year-title');
+  if (title) title.textContent = (is26 ? '2026/27' : '2025/26') + ' Tax Rates Used';
+  const db = document.getElementById('sidebar-dividend-basic');
+  if (db) db.textContent = (TAX.dividendBasic * 100).toFixed(2) + '%';
+  const dh = document.getElementById('sidebar-dividend-higher');
+  if (dh) dh.textContent = (TAX.dividendHigher * 100).toFixed(2) + '%';
+}
+
+// Scotland income tax
+const SCOTLAND = {
+  bands: [
+    { from: 12570, to: 14667, rate: 0.19 },
+    { from: 14667, to: 25296, rate: 0.20 },
+    { from: 25296, to: 43662, rate: 0.21 },
+    { from: 43662, to: 75000, rate: 0.42 },
+    { from: 75000, to: 125140, rate: 0.45 },
+    { from: 125140, to: Infinity, rate: 0.48 }
+  ]
+};
+
+// ── Helpers ──
+function fmt(n) {
+  return '£' + Math.round(n).toLocaleString('en-GB');
+}
+function fmtPct(n) {
+  return (n * 100).toFixed(1) + '%';
+}
+function personalAllowanceTapered(grossIncome) {
+  if (grossIncome <= 100000) return TAX.personalAllowance;
+  if (grossIncome >= 125140) return 0;
+  return TAX.personalAllowance - Math.floor((grossIncome - 100000) / 2);
+}
+
+// ── Income Tax ──
+function calcIncomeTax(income, region) {
+  const pa = personalAllowanceTapered(income);
+  const taxable = Math.max(0, income - pa);
+  if (region === 'scotland') {
+    let tax = 0;
+    let rem = taxable;
+    const adjBands = SCOTLAND.bands.map(b => ({ from: Math.max(0, b.from - 12570), to: b.to === Infinity ? Infinity : b.to - 12570, rate: b.rate }));
+    for (const band of adjBands) {
+      if (rem <= 0) break;
+      const bandWidth = band.to === Infinity ? rem : Math.max(0, Math.min(band.to, taxable) - band.from);
+      const inBand = Math.min(rem, bandWidth);
+      tax += inBand * band.rate;
+      rem -= inBand;
+    }
+    return tax;
+  }
+  let tax = 0;
+  const b1 = Math.min(taxable, TAX.basicThreshold - pa);
+  tax += Math.max(0, b1) * TAX.basicRate;
+  const h1 = Math.min(taxable, TAX.higherThreshold - pa) - Math.max(0, TAX.basicThreshold - pa);
+  tax += Math.max(0, h1) * TAX.higherRate;
+  const a1 = taxable - Math.max(0, TAX.higherThreshold - pa);
+  tax += Math.max(0, a1) * TAX.additionalRate;
+  return tax;
+}
+
+// ── Employee NI ──
+function calcEmployeeNI(income) {
+  const lower = TAX.niPrimaryLower;
+  const upper = TAX.niPrimaryUpper;
+  if (income <= lower) return 0;
+  let ni = 0;
+  const band1 = Math.min(income, upper) - lower;
+  ni += Math.max(0, band1) * TAX.niPrimary1;
+  const band2 = income - upper;
+  ni += Math.max(0, band2) * TAX.niPrimary2;
+  return ni;
+}
+
+// ── Employer NI ──
+function calcEmployerNI(salary) {
+  return Math.max(0, salary - TAX.niSecondaryThreshold) * TAX.niSecondary;
+}
+
+// ── Corporation Tax ──
+function calcCorpTax(profit) {
+  if (profit <= 0) return 0;
+  if (profit <= TAX.corpTaxThreshold) return profit * TAX.corpTaxSmall;
+  if (profit >= TAX.corpTaxUpper) return profit * TAX.corpTaxMain;
+  // Marginal relief
+  const fraction = (TAX.corpTaxUpper - profit) / (TAX.corpTaxUpper - TAX.corpTaxThreshold);
+  const marginalRelief = (TAX.corpTaxMain - TAX.corpTaxSmall) * fraction * profit;
+  return profit * TAX.corpTaxMain - marginalRelief;
+}
+
+// ── Dividend Tax ──
+function calcDividendTax(dividends, otherIncome, region) {
+  if (dividends <= TAX.dividendAllowance) return 0;
+  const taxableDivs = dividends - TAX.dividendAllowance;
+  // determine which tax band the dividends fall in
+  const pa = personalAllowanceTapered(otherIncome + dividends);
+  const basicBandUsed = Math.max(0, Math.min(otherIncome, TAX.basicThreshold) - pa);
+  const basicRemaining = Math.max(0, (TAX.basicThreshold - pa) - basicBandUsed);
+  let tax = 0;
+  let rem = taxableDivs;
+  const inBasic = Math.min(rem, basicRemaining);
+  tax += inBasic * TAX.dividendBasic;
+  rem -= inBasic;
+  const inHigher = Math.min(rem, TAX.higherThreshold - TAX.basicThreshold);
+  tax += Math.max(0, inHigher) * TAX.dividendHigher;
+  rem -= Math.max(0, inHigher);
+  tax += Math.max(0, rem) * TAX.dividendAdditional;
+  return tax;
+}
+
+// ═══════════════════════════════════════════════════
+// OUTSIDE IR35 CALCULATION
+// ═══════════════════════════════════════════════════
+function outsideIR35(gross, salary, expenses, pension, accountant, vatFlatRate, region) {
+  const empNI = calcEmployerNI(salary);
+  const grossAfterExpPension = gross - expenses - pension - accountant;
+  const profit = grossAfterExpPension - salary - empNI;
+  const corpTax = calcCorpTax(Math.max(0, profit));
+  const afterCorpTax = Math.max(0, profit) - corpTax;
+
+  // VAT flat rate benefit (if using flat rate scheme)
+  let vatBenefit = 0;
+  if (vatFlatRate > 0) {
+    const vatCollected = gross * 0.20;
+    const vatPaid = gross * 1.20 * (vatFlatRate / 100);
+    vatBenefit = vatCollected - vatPaid;
+  }
+
+  const dividends = afterCorpTax + vatBenefit;
+  const incomeForBands = salary;
+  const incomeTax = calcIncomeTax(salary, region);
+  const employeeNI = calcEmployeeNI(salary);
+  const divTax = calcDividendTax(dividends, salary, region);
+  const personalTake = salary - incomeTax - employeeNI + dividends - divTax;
+  return {
+    gross,
+    salary,
+    empNI,
+    profit: Math.max(0, profit),
+    corpTax,
+    dividends,
+    incomeTax,
+    employeeNI,
+    divTax,
+    expenses,
+    pension,
+    accountant,
+    vatBenefit,
+    net: personalTake,
+    effRate: 1 - (personalTake / gross)
+  };
+}
+
+// ═══════════════════════════════════════════════════
+// INSIDE IR35 CALCULATION (Off-Payroll / PAYE)
+// ═══════════════════════════════════════════════════
+function insideIR35(gross, region) {
+  // Deemed payment: employer NI deducted first, then PAYE on the rest
+  const empNI = Math.max(0, gross - TAX.niSecondaryThreshold) * TAX.niSecondary;
+  const deemed = gross - empNI;
+  const incomeTax = calcIncomeTax(deemed, region);
+  const employeeNI = calcEmployeeNI(deemed);
+  const net = deemed - incomeTax - employeeNI;
+  return {
+    gross,
+    empNI,
+    deemed,
+    incomeTax,
+    employeeNI,
+    net,
+    effRate: 1 - (net / gross)
+  };
+}
+
+// ═══════════════════════════════════════════════════
+// UMBRELLA CALCULATION
+// ═══════════════════════════════════════════════════
+function umbrellaCalc(assignmentRate, daysPerYear, weeklyMargin, pensionPct, expenses) {
+  const gross = assignmentRate * daysPerYear;
+  const weeksWorked = daysPerYear / 5;
+  const marginTotal = weeklyMargin * weeksWorked;
+  const pensionAmt = gross * (pensionPct / 100);
+  // Employer NI deducted from assignment rate before employee sees anything
+  // Assignment rate = employer cost; subtract employer NI and umbrella margin
+  const employerNI = Math.max(0, gross - marginTotal - TAX.niSecondaryThreshold) * TAX.niSecondary;
+  const grossSalary = gross - marginTotal - employerNI - pensionAmt - expenses;
+  const incomeTax = calcIncomeTax(Math.max(0, grossSalary), 'england');
+  const employeeNI = calcEmployeeNI(Math.max(0, grossSalary));
+  const net = Math.max(0, grossSalary) - incomeTax - employeeNI + expenses;
+  return {
+    assignmentRate: gross,
+    margin: marginTotal,
+    employerNI,
+    pensionAmt,
+    grossSalary: Math.max(0, grossSalary),
+    incomeTax,
+    employeeNI,
+    net,
+    effRate: gross > 0 ? 1 - (net / gross) : 0
+  };
+}
+
+// ═══════════════════════════════════════════════════
+// PERM INCOME TAX
+// ═══════════════════════════════════════════════════
+function permCalc(salary, region) {
+  const incomeTax = calcIncomeTax(salary, region);
+  const employeeNI = calcEmployeeNI(salary);
+  return { net: salary - incomeTax - employeeNI, incomeTax, employeeNI };
+}
+
+// ── Optimal director salary (best of £9,100 vs £12,570) ──
+function getOptimalSalary(gross, expenses, pension, accountant, vat, region) {
+  const r1 = outsideIR35(gross, 9100, expenses, pension, accountant || 0, vat || 0, region);
+  const r2 = outsideIR35(gross, 12570, expenses, pension, accountant || 0, vat || 0, region);
+  return r1.net >= r2.net ? 9100 : 12570;
+}
+function applyOptimalSalary(prefix) {
+  if (prefix === 'c') {
+    const gross = +document.getElementById('c-dayrate').value * +document.getElementById('c-days').value;
+    const best = getOptimalSalary(gross, +document.getElementById('c-expenses').value || 0, +document.getElementById('c-pension').value || 0, 0, 0, document.getElementById('c-region').value || 'england');
+    document.getElementById('c-salary').value = best;
+  } else {
+    const gross = +document.getElementById('o-dayrate').value * +document.getElementById('o-days').value;
+    const best = getOptimalSalary(gross, +document.getElementById('o-expenses').value || 0, +document.getElementById('o-pension').value || 0, +document.getElementById('o-accountant').value || 0, +document.getElementById('o-vat').value || 0, document.getElementById('o-region').value || 'england');
+    document.getElementById('o-salary').value = best;
+  }
+}
+function toggleOptimalSalary(prefix, checked) {
+  const salEl = document.getElementById(prefix + '-salary');
+  if (!salEl) return;
+  salEl.disabled = !!checked;
+  if (checked) applyOptimalSalary(prefix);
+}
+
+// ═══════════════════════════════════════════════════
+// TABLE BUILDER
+// ═══════════════════════════════════════════════════
+function buildTable(rows) {
+  return rows.map(([label, value, cls]) =>
+    `<tr class="${cls||''}"><td>${label}</td><td>${typeof value === 'number' ? fmt(value) : value}</td></tr>`
+  ).join('');
+}
+
+// ═══════════════════════════════════════════════════
+// MODE: COMPARE
+// ═══════════════════════════════════════════════════
+function calcCompare() {
+  if (document.getElementById('c-optimise')?.checked) applyOptimalSalary('c');
+  const dayRate = +document.getElementById('c-dayrate').value;
+  const days = +document.getElementById('c-days').value;
+  const expenses = +document.getElementById('c-expenses').value;
+  const pension = +document.getElementById('c-pension').value;
+  const salary = +document.getElementById('c-salary').value;
+  const region = document.getElementById('c-region').value;
+  const gross = dayRate * days;
+
+  const out = outsideIR35(gross, salary, expenses, pension, 0, 0, region);
+  const ins = insideIR35(gross, region);
+
+  document.getElementById('rv-outside-annual').textContent = fmt(out.net);
+  document.getElementById('rv-outside-monthly').textContent = fmt(out.net/12) + '/month';
+  document.getElementById('rv-inside-annual').textContent = fmt(ins.net);
+  document.getElementById('rv-inside-monthly').textContent = fmt(ins.net/12) + '/month';
+
+  const diff = out.net - ins.net;
+  const badge = document.getElementById('comp-diff-badge');
+  badge.className = 'diff-badge negative';
+  badge.textContent = `Being inside IR35 costs you ${fmt(diff)} per year (${fmt(diff/12)}/month)`;
+
+  document.getElementById('comp-breakdown').innerHTML = buildTable([
+    ['Gross Revenue', gross, ''],
+    ['– Employer NI (inside)', ins.empNI, ''],
+    ['– Employer NI (outside, on salary)', out.empNI, ''],
+    ['Inside IR35 — Income Tax', ins.incomeTax, ''],
+    ['Inside IR35 — Employee NI', ins.employeeNI, ''],
+    ['Outside — Corporation Tax', out.corpTax, ''],
+    ['Outside — Dividend Tax', out.divTax, ''],
+    ['Outside — Expenses claimed', expenses, ''],
+    ['Outside IR35 Net', out.net, 'total'],
+    ['Inside IR35 Net', ins.net, 'total'],
+  ]);
+
+  const maxNet = out.net;
+  const outPct = Math.round(out.net / gross * 100);
+  const inPct = Math.round(ins.net / gross * 100);
+  document.getElementById('bar-out-pct').textContent = outPct + '% of gross';
+  document.getElementById('bar-in-pct').textContent = inPct + '% of gross';
+  document.getElementById('bar-out').style.width = outPct + '%';
+  document.getElementById('bar-in').style.width = inPct + '%';
+
+  document.getElementById('res-compare').classList.add('visible');
+  gaEvent('calculate', { mode: 'compare', day_rate: dayRate, days: days });
+}
+
+// ═══════════════════════════════════════════════════
+// MODE: OUTSIDE
+// ═══════════════════════════════════════════════════
+function calcOutside() {
+  if (document.getElementById('o-optimise')?.checked) applyOptimalSalary('o');
+  const dayRate = +document.getElementById('o-dayrate').value;
+  const days = +document.getElementById('o-days').value;
+  const salary = +document.getElementById('o-salary').value;
+  const expenses = +document.getElementById('o-expenses').value;
+  const pension = +document.getElementById('o-pension').value;
+  const accountant = +document.getElementById('o-accountant').value;
+  const vatFlatRate = +document.getElementById('o-vat').value;
+  const region = document.getElementById('o-region').value;
+  const gross = dayRate * days;
+
+  const r = outsideIR35(gross, salary, expenses, pension, accountant, vatFlatRate, region);
+
+  document.getElementById('o-annual').textContent = fmt(r.net);
+  document.getElementById('o-monthly').textContent = fmt(r.net/12) + '/month';
+  document.getElementById('o-effrate').textContent = fmtPct(r.effRate);
+
+  document.getElementById('o-breakdown').innerHTML = buildTable([
+    ['Gross Revenue (day rate × days)', gross, ''],
+    ['– Business expenses', expenses, ''],
+    ['– Pension contributions', pension, ''],
+    ['– Accountancy fees', accountant, ''],
+    ['– Employer NI on salary', r.empNI, ''],
+    ['= Taxable Profit', r.profit, ''],
+    ['Corporation Tax', r.corpTax, ''],
+    ['= Available for Dividend', r.dividends, ''],
+    ['Director Salary taken', salary, ''],
+    ['– Income Tax on salary', r.incomeTax, ''],
+    ['– Employee NI', r.employeeNI, ''],
+    ['– Dividend Tax', r.divTax, ''],
+    ...(vatFlatRate > 0 ? [['+ VAT flat rate benefit', r.vatBenefit, '']] : []),
+    ['NET TAKE-HOME', r.net, 'total'],
+    ['Effective Tax Rate', fmtPct(r.effRate), 'total'],
+  ]);
+
+  document.getElementById('res-outside').classList.add('visible');
+  gaEvent('calculate', { mode: 'outside_ir35', day_rate: dayRate });
+}
+
+// ═══════════════════════════════════════════════════
+// MODE: UMBRELLA
+// ═══════════════════════════════════════════════════
+function calcUmbrella() {
+  const dayRate = +document.getElementById('u-dayrate').value;
+  const days = +document.getElementById('u-days').value;
+  const margin = +document.getElementById('u-margin').value;
+  const pensionPct = +document.getElementById('u-pension').value;
+  const expenses = +document.getElementById('u-expenses').value;
+
+  const r = umbrellaCalc(dayRate, days, margin, pensionPct, expenses);
+
+  document.getElementById('u-annual').textContent = fmt(r.net);
+  document.getElementById('u-monthly').textContent = fmt(r.net/12) + '/month';
+  document.getElementById('u-effrate').textContent = fmtPct(r.effRate);
+
+  document.getElementById('u-breakdown').innerHTML = buildTable([
+    ['Assignment Rate (gross)', r.assignmentRate, ''],
+    ['– Umbrella margin', r.margin, ''],
+    ['– Employer NI (15%)', r.employerNI, ''],
+    ['– Pension contributions', r.pensionAmt, ''],
+    ['= Gross PAYE salary', r.grossSalary, ''],
+    ['– Income Tax', r.incomeTax, ''],
+    ['– Employee NI', r.employeeNI, ''],
+    ['+ Expenses reimbursed', expenses, ''],
+    ['NET TAKE-HOME', r.net, 'total'],
+    ['Effective Rate', fmtPct(r.effRate), 'total'],
+  ]);
+
+  document.getElementById('res-umbrella').classList.add('visible');
+}
+
+// ═══════════════════════════════════════════════════
+// MODE: PERM VS CONTRACT
+// ═══════════════════════════════════════════════════
+function calcPerm() {
+  const permSalary = +document.getElementById('p-salary').value;
+  const empPension = +document.getElementById('p-emperpension').value;
+  const dayRate = +document.getElementById('p-dayrate').value;
+  const days = +document.getElementById('p-days').value;
+  const ir35 = document.getElementById('p-ir35status').value;
+  const expenses = +document.getElementById('p-expenses').value;
+  const gross = dayRate * days;
+
+  const perm = permCalc(permSalary, 'england');
+  const permPensionValue = permSalary * (empPension / 100);
+  const permTotal = perm.net + permPensionValue;
+
+  let contNet;
+  if (ir35 === 'outside') {
+    const r = outsideIR35(gross, 12570, expenses, 0, 0, 0, 'england');
+    contNet = r.net;
+  } else {
+    const r = insideIR35(gross, 'england');
+    contNet = r.net;
+  }
+
+  document.getElementById('perm-annual').textContent = fmt(perm.net);
+  document.getElementById('perm-monthly').textContent = fmt(perm.net/12) + '/month';
+  document.getElementById('cont-annual').textContent = fmt(contNet);
+  document.getElementById('cont-monthly').textContent = fmt(contNet/12) + '/month';
+
+  const diff = contNet - perm.net;
+  const badge = document.getElementById('perm-diff-badge');
+  if (diff > 0) {
+    badge.className = 'diff-badge positive';
+    badge.textContent = `Contracting pays ${fmt(diff)}/year more after tax`;
+  } else {
+    badge.className = 'diff-badge negative';
+    badge.textContent = `Permanent pays ${fmt(Math.abs(diff))}/year more after tax`;
+  }
+
+  const noteLine = ir35 === 'outside'
+    ? `Note: Contract figure assumes outside IR35 (limited company). The equivalent salary to match your contract take-home is approximately ${fmt(contNet * 1.45)} — use this when comparing job offers.`
+    : `Note: Contract figure assumes inside IR35/umbrella. Contractors also self-fund holiday pay, sick pay, and public liability insurance which aren't included here.`;
+  document.getElementById('perm-note').textContent = noteLine;
+
+  document.getElementById('res-perm').classList.add('visible');
+}
+
+// ═══════════════════════════════════════════════════
+// MODE: DAY RATE
+// ═══════════════════════════════════════════════════
+let drSync = false;
+function syncDR(source) {
+  if (drSync) return;
+  drSync = true;
+  const days = +document.getElementById('dr-days').value || 220;
+  if (source === 'day') {
+    const day = +document.getElementById('dr-dayrate').value;
+    document.getElementById('dr-salary').value = Math.round(day * days);
+    document.getElementById('dr-hourly').value = (day / 7.5).toFixed(2);
+  } else if (source === 'salary') {
+    const sal = +document.getElementById('dr-salary').value;
+    const day = sal / days;
+    document.getElementById('dr-dayrate').value = Math.round(day);
+    document.getElementById('dr-hourly').value = (day / 7.5).toFixed(2);
+  } else if (source === 'hourly') {
+    const hr = +document.getElementById('dr-hourly').value;
+    const day = hr * 7.5;
+    document.getElementById('dr-dayrate').value = Math.round(day);
+    document.getElementById('dr-salary').value = Math.round(day * days);
+  } else if (source === 'days') {
+    const day = +document.getElementById('dr-dayrate').value;
+    document.getElementById('dr-salary').value = Math.round(day * days);
+  }
+  drSync = false;
+}
+function syncDRFromType() {
+  const t = document.getElementById('dr-ratetype').value;
+  if (t) syncDR(t);
+}
+
+function calcDayRate() {
+  const dayRate = +document.getElementById('dr-dayrate').value;
+  const days = +document.getElementById('dr-days').value;
+  const gross = dayRate * days;
+
+  const out = outsideIR35(gross, 12570, 5000, 0, 1500, 0, 'england');
+  const ins = insideIR35(gross, 'england');
+  const umb = umbrellaCalc(dayRate, days, 20, 5, 0);
+
+  document.getElementById('dr-cards').innerHTML = `
+    <div class="result-card highlight">
+      <div class="result-label">Gross Revenue</div>
+      <div class="result-value">${fmt(gross)}</div>
+      <div class="result-sub">${fmt(dayRate)}/day × ${days} days</div>
+    </div>
+    <div class="result-card">
+      <div class="result-label">Hourly Rate</div>
+      <div class="result-value">${fmt(dayRate/7.5)}</div>
+      <div class="result-sub">7.5 hr working day</div>
+    </div>
+    <div class="result-card highlight">
+      <div class="result-label">Outside IR35 Take-Home</div>
+      <div class="result-value green">${fmt(out.net)}</div>
+      <div class="result-sub">${fmtPct(1 - out.effRate)} of gross</div>
+    </div>
+    <div class="result-card warning">
+      <div class="result-label">Inside IR35 Take-Home</div>
+      <div class="result-value red">${fmt(ins.net)}</div>
+      <div class="result-sub">${fmtPct(1 - ins.effRate)} of gross</div>
+    </div>
+  `;
+
+  const equivSalary = Math.round(out.net * 1.45);
+  document.getElementById('dr-note').textContent =
+    `To match your outside IR35 take-home of ${fmt(out.net)}/year, a permanent employer would need to offer you approximately ${fmt(equivSalary)} gross salary — accounting for employer pension, employer NI, and the tax efficiency of the limited company structure. Inside IR35, the equivalent gross salary would be approximately ${fmt(Math.round(ins.net * 1.3))}.`;
+
+  document.getElementById('res-dayrate').classList.add('visible');
+}
+
+// ═══════════════════════════════════════════════════
+// SHAREABLE URL (hash state)
+// ═══════════════════════════════════════════════════
+function parseHash() {
+  const h = location.hash.slice(1);
+  if (!h) return {};
+  const o = {};
+  h.split('&').forEach(pair => {
+    const i = pair.indexOf('=');
+    if (i > 0) o[decodeURIComponent(pair.slice(0,i))] = decodeURIComponent((pair.slice(i+1) || '').replace(/\+/g, ' '));
+  });
+  return o;
+}
+function getStateFromForm() {
+  const mode = document.querySelector('.tab.active')?.id?.replace('tab-','') || 'compare';
+  const state = { m: mode };
+  const set = (key, id) => { const el = document.getElementById(id); if (el) state[key] = el.value; };
+  state.dr = document.getElementById('c-dayrate')?.value;
+  state.dy = document.getElementById('c-days')?.value;
+  set('ex', 'c-expenses'); set('sal', 'c-salary'); set('pn', 'c-pension'); set('reg', 'c-region');
+  set('acc', 'o-accountant'); set('vat', 'o-vat'); set('margin', 'u-margin'); set('pnpct', 'u-pension'); set('uex', 'u-expenses');
+  set('psal', 'p-salary'); set('empp', 'p-emperpension'); set('ir35', 'p-ir35status'); set('pex', 'p-expenses');
+  const ty = document.getElementById('tax-year-select');
+  if (ty) state.ty = ty.value;
+  return state;
+}
+function applyHashState() {
+  const q = parseHash();
+  if (!q.m && !q.dr && !q.ty) return;
+  const set = (id, val) => { const el = document.getElementById(id); if (el && val !== undefined && val !== '') el.value = val; };
+  if (q.ty === '2026/27') setTaxYear('2026/27');
+  if (q.m) {
+    const btn = document.getElementById('tab-' + q.m);
+    if (btn) switchMode(q.m, btn);
+  }
+  set('c-dayrate', q.dr); set('c-days', q.dy); set('c-expenses', q.ex); set('c-salary', q.sal); set('c-pension', q.pn); set('c-region', q.reg);
+  set('o-dayrate', q.dr); set('o-days', q.dy); set('o-salary', q.sal); set('o-expenses', q.ex); set('o-pension', q.pn); set('o-accountant', q.acc); set('o-vat', q.vat); set('o-region', q.reg);
+  set('u-dayrate', q.dr); set('u-days', q.dy); set('u-margin', q.margin); set('u-pension', q.pnpct); set('u-expenses', q.uex);
+  set('p-salary', q.psal); set('p-emperpension', q.empp); set('p-dayrate', q.dr); set('p-days', q.dy); set('p-ir35status', q.ir35); set('p-expenses', q.pex);
+  set('dr-dayrate', q.dr); set('dr-days', q.dy);
+  syncDR('day');
+}
+function writeHashState() {
+  const s = getStateFromForm();
+  const parts = [];
+  ['m','dr','dy','ex','sal','reg','pn','acc','vat','margin','pnpct','psal','empp','ir35','uex','pex','ty'].forEach(k => {
+    if (s[k] !== undefined && s[k] !== '' && s[k] != null) parts.push(k + '=' + encodeURIComponent(s[k]));
+  });
+  const h = parts.join('&');
+  if (h) location.replace('#' + h);
+}
+let hashWriteTimer;
+function scheduleHashWrite() {
+  clearTimeout(hashWriteTimer);
+  hashWriteTimer = setTimeout(writeHashState, 400);
+}
+function copyShareLink() {
+  writeHashState();
+  const url = location.href;
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(url).then(() => {
+      const fb = document.getElementById('copy-feedback');
+      if (fb) { fb.style.display = 'inline'; setTimeout(() => { fb.style.display = 'none'; }, 2000); }
+    });
+  }
+}
+
+// ═══════════════════════════════════════════════════
+// UI
+// ═══════════════════════════════════════════════════
+function switchMode(mode, btn) {
+  if (!btn) btn = document.getElementById('tab-' + mode);
+  document.querySelectorAll('.mode-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+  document.getElementById('mode-' + mode).classList.add('active');
+  if (btn) { btn.classList.add('active'); btn.setAttribute('aria-selected', 'true'); }
+  scheduleHashWrite();
+  gaEvent('tab_switch', { tab: mode });
+}
+
+function toggleFAQ(btn) {
+  const item = btn.closest('.faq-item');
+  item.classList.toggle('open');
+  if (item.classList.contains('open')) {
+    gaEvent('faq_open', { question: btn.textContent.trim().slice(0, 60) });
+  }
+}
+
+// ═══════════════════════════════════════════════════
+// COOKIE CONSENT
+// ═══════════════════════════════════════════════════
+function cookieChoice(accepted) {
+  localStorage.setItem('cookie_consent', accepted ? 'accepted' : 'declined');
+  document.getElementById('cookie-banner').classList.remove('show');
+  if (accepted) {
+    loadGA();
+    gaEvent('consent_granted');
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  applyHashState();
+  syncDR('day');
+
+  document.getElementById('calculator')?.addEventListener('input', scheduleHashWrite);
+  document.getElementById('calculator')?.addEventListener('change', scheduleHashWrite);
+  document.querySelector('.calc-panel')?.addEventListener('input', scheduleHashWrite);
+  document.querySelector('.calc-panel')?.addEventListener('change', scheduleHashWrite);
+
+  const consent = localStorage.getItem('cookie_consent');
+  if (!consent) {
+    setTimeout(() => {
+      document.getElementById('cookie-banner').classList.add('show');
+    }, 1200);
+  } else if (consent === 'accepted') {
+    loadGA();
+  }
+});
+</script>
+</body>
+</html>
