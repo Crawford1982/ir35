@@ -27,10 +27,8 @@
     if (window.gtag) window.gtag('event', name, params || {});
   }
 </script>
-<meta name="description" content="Free UK IR35 calculator for 2025/26 and 2026/27. Compare inside vs outside IR35 take-home pay, umbrella vs limited company, day rate to salary. Updated for April 2025 NI and 2026 dividend rates.">
-<meta name="keywords" content="IR35 calculator, contractor take home pay, inside IR35, outside IR35, umbrella calculator, contractor tax 2025">
-<link rel="canonical" href="https://ir35guide.co.uk/">
-<meta property="og:title" content="IR35 Calculator 2025/26 – Free UK Contractor Tax | ir35guide.co.uk">
+<meta name="description" content="Free UK IR35 calculator for 2025/26 and 2026/27. Compare inside vs outside IR35 take-home pay, umbrella vs limited company, day rate to salary. Updated for April 2025 NI and 2026 dividend rates."><link rel="canonical" href="https://ir35guide.co.uk/">
+<meta property="og:title" content="IR35 Calculator 2025/26 & 2026/27 – Inside vs Outside IR35 | ir35guide.co.uk">
 <meta property="og:description" content="Calculate your real take-home pay inside vs outside IR35. Free, instant, no signup. Updated for 2025/26 tax rates.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ir35guide.co.uk/">
@@ -41,7 +39,7 @@
 <meta name="twitter:image" content="https://ir35guide.co.uk/og-image.png">
 <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/favicon-32x32.png">
-<meta name="twitter:title" content="IR35 Calculator 2025/26">
+<meta name="twitter:title" content="IR35 Calculator 2025/26 & 2026/27 – Inside vs Outside IR35">
 <meta name="twitter:description" content="Compare inside vs outside IR35 take-home pay instantly. Free UK contractor calculator.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -893,13 +891,24 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-eyebrow">Free UK Contractor Tax Calculator</div>
-  <h1>What does IR35<br>actually cost you?</h1>
+  <h1>IR35 Calculator 2025/26 &amp; 2026/27:<br><em>Inside vs Outside IR35</em></h1>
   <p class="hero-sub">Compare inside vs outside IR35 take-home pay, umbrella vs limited company, and perm vs contract — all in one place. 2025/26 and 2026/27 tax years in the calculator.</p>
   <div class="hero-stats">
     <div class="stat"><div class="stat-dot"></div>2025/26 & 2026/27 tax years</div>
     <div class="stat"><div class="stat-dot"></div>Includes employer NI at 15%</div>
     <div class="stat"><div class="stat-dot"></div>No signup required</div>
     <div class="stat"><div class="stat-dot"></div>Runs in your browser</div>
+  </div>
+  <div style="margin-top:20px;">
+    <a href="/ir35_calculator.xlsx" download="IR35_Calculator_ir35guide.co.uk.xlsx"
+       onclick="gaEvent('excel_download',{location:'hero'})"
+       style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;background:var(--accent-dim);border:1px solid rgba(0,212,170,0.3);border-radius:8px;color:var(--accent);font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:0.5px;text-decoration:none;transition:all 0.15s;"
+       onmouseover="this.style.background='rgba(0,212,170,0.18)';this.style.borderColor='rgba(0,212,170,0.5)'"
+       onmouseout="this.style.background='var(--accent-dim)';this.style.borderColor='rgba(0,212,170,0.3)'">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      DOWNLOAD EXCEL CALCULATOR
+    </a>
+    <span style="margin-left:10px;font-size:11px;color:var(--text3);font-family:var(--mono);">Free · No signup · .xlsx</span>
   </div>
 </section>
 
@@ -1387,6 +1396,20 @@
       <div class="quick-stat"><span class="qs-label">Dividend Tax (basic)</span><span class="qs-value" id="sidebar-dividend-basic">8.75%</span></div>
       <div class="quick-stat"><span class="qs-label">Dividend Tax (higher)</span><span class="qs-value" id="sidebar-dividend-higher">33.75%</span></div>
       <div class="quick-stat"><span class="qs-label">Dividend Allowance</span><span class="qs-value">£500</span></div>
+    </div>
+
+    <div class="sidebar-card" style="border-color:rgba(0,212,170,0.25);background:linear-gradient(135deg,var(--bg2) 0%,rgba(0,212,170,0.04) 100%);">
+      <div class="sidebar-title" style="color:var(--accent);">📥 Excel Calculator</div>
+      <p style="font-size:12px;color:var(--text2);line-height:1.6;margin-bottom:12px;">Take this calculator offline. Inside vs outside IR35, umbrella, day rate converter &amp; full 2025/26 tax rates — all in one <strong style="color:var(--text)">.xlsx</strong> file.</p>
+      <a href="/ir35_calculator.xlsx" download="IR35_Calculator_ir35guide.co.uk.xlsx"
+         onclick="gaEvent('excel_download',{location:'sidebar'})"
+         style="display:flex;align-items:center;justify-content:center;gap:7px;width:100%;padding:10px 14px;background:var(--accent);color:#0a0c10;border:none;border-radius:8px;font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:0.5px;text-decoration:none;transition:all 0.15s;box-sizing:border-box;"
+         onmouseover="this.style.background='var(--accent2)'"
+         onmouseout="this.style.background='var(--accent)'">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        DOWNLOAD FREE (.XLSX)
+      </a>
+      <p style="font-size:10px;color:var(--text3);text-align:center;margin-top:7px;font-family:var(--mono);">No email · No signup · Updated Mar 2026</p>
     </div>
 
     <div class="sidebar-card">
