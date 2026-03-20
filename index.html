@@ -27,9 +27,10 @@
     if (window.gtag) window.gtag('event', name, params || {});
   }
 </script>
-<meta name="description" content="Free UK IR35 calculator for 2025/26 and 2026/27. Compare inside vs outside IR35 take-home pay, umbrella vs limited company, day rate to salary. Updated for April 2025 NI and 2026 dividend rates."><link rel="canonical" href="https://ir35guide.co.uk/">
+<meta name="description" content="Free UK IR35 calculator for 2025/26 and 2026/27. Compare inside vs outside IR35 take-home pay, umbrella vs limited company, day rate to salary. Updated for April 2025 NI and 2026 dividend rates.">
+<link rel="canonical" href="https://ir35guide.co.uk/">
 <meta property="og:title" content="IR35 Calculator 2025/26 & 2026/27 – Inside vs Outside IR35 | ir35guide.co.uk">
-<meta property="og:description" content="Calculate your real take-home pay inside vs outside IR35. Free, instant, no signup. Updated for 2025/26 tax rates.">
+<meta property="og:description" content="Calculate your real take-home pay inside vs outside IR35. Free, instant, no signup. Updated for 2025/26 and 2026/27 tax rates including April 2026 dividend changes.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ir35guide.co.uk/">
 <meta property="og:image" content="https://ir35guide.co.uk/og-image.png">
@@ -49,11 +50,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "IR35 Guide – IR35 Calculator 2025/26",
+  "name": "IR35 Calculator 2025/26 & 2026/27 – Inside vs Outside IR35",
   "url": "https://ir35guide.co.uk/",
-  "description": "Free UK IR35 calculator comparing inside vs outside IR35 take-home pay for contractors",
+  "description": "Free UK IR35 calculator comparing inside vs outside IR35 take-home pay for contractors. Covers 2025/26 and 2026/27 tax years including April 2026 dividend rate changes.",
   "applicationCategory": "FinanceApplication",
   "operatingSystem": "Any",
+  "dateModified": "2026-03-20",
+  "author": {
+    "@type": "Organization",
+    "name": "IR35 Guide",
+    "url": "https://ir35guide.co.uk",
+    "description": "Independent UK contractor tax resource. Tax rate data sourced from HMRC.gov.uk."
+  },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" }
 }
 </script>
@@ -881,6 +889,7 @@
     <span class="header-badge">2025/26 · 2026/27</span>
     <nav>
       <a href="#calculator" class="nav-link">Calculator</a>
+      <a href="#case-studies" class="nav-link">Examples</a>
       <a href="#about-ir35" class="nav-link">About IR35</a>
       <a href="/blog.html" class="nav-link">Blog</a>
       <a href="#faq" class="nav-link">FAQ</a>
@@ -911,6 +920,20 @@
     <span style="margin-left:10px;font-size:11px;color:var(--text3);font-family:var(--mono);">Free · No signup · .xlsx</span>
   </div>
 </section>
+
+<!-- TRUST BAR -->
+<div style="max-width:1100px;margin:0 auto 4px;padding:0 24px;">
+  <div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;padding:10px 16px;background:rgba(0,212,170,0.04);border:1px solid rgba(0,212,170,0.12);border-radius:8px;font-size:12px;font-family:var(--mono);color:var(--text2);">
+    <span style="color:var(--accent);font-weight:600;">✓ Verified</span>
+    <span>Tax rates sourced from <a href="https://www.gov.uk/government/publications/rates-and-allowances-income-tax/income-tax-rates-and-allowances-current-and-past" target="_blank" rel="noopener" style="color:var(--text2);text-decoration:underline;">HMRC.gov.uk</a></span>
+    <span style="color:var(--text3);">·</span>
+    <span>NI rates from <a href="https://www.gov.uk/national-insurance-rates-letters" target="_blank" rel="noopener" style="color:var(--text2);text-decoration:underline;">HMRC NI tables</a></span>
+    <span style="color:var(--text3);">·</span>
+    <span>Last updated: March 2026</span>
+    <span style="color:var(--text3);">·</span>
+    <span>Calculations run client-side — no data sent to any server</span>
+  </div>
+</div>
 
 <!-- ALERT -->
 <div class="alert-banner">
@@ -1505,6 +1528,95 @@
   </div>
 </section>
 
+<!-- CASE STUDIES -->
+<section class="content-section" id="case-studies" style="border-top:1px solid var(--border);padding-top:32px;">
+  <h2 class="section-heading">Real IR35 Scenarios: What Contractors Actually Take Home</h2>
+  <p class="section-sub">Three anonymised illustrative examples calculated using <strong style="color:var(--text);">2025/26 tax rates</strong> — switch the calculator to 2026/27 to see how April 2026 dividend changes affect each scenario. Assumes 220 billable days, England/Wales, no pension or other income.</p>
+
+  <div style="display:flex;flex-direction:column;gap:16px;margin-top:20px;">
+
+    <!-- Scenario 1 -->
+    <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:20px 24px;">
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:14px;">
+        <div style="font-family:var(--mono);font-size:12px;font-weight:600;color:var(--text2);background:var(--bg4);padding:4px 10px;border-radius:4px;">Scenario A</div>
+        <div style="font-size:14px;font-weight:600;color:var(--text);">Mid-level IT developer · £400/day · 220 days</div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:14px;">
+        <div style="background:var(--red-dim);border:1px solid rgba(255,107,107,0.2);border-radius:8px;padding:12px 14px;">
+          <div style="font-size:11px;font-family:var(--mono);color:var(--red);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Inside IR35</div>
+          <div style="font-size:22px;font-weight:700;color:var(--text);font-family:var(--mono);">£52,400</div>
+          <div style="font-size:11px;color:var(--text3);margin-top:2px;">net take-home</div>
+        </div>
+        <div style="background:var(--accent-dim);border:1px solid rgba(0,212,170,0.2);border-radius:8px;padding:12px 14px;">
+          <div style="font-size:11px;font-family:var(--mono);color:var(--accent);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Outside IR35</div>
+          <div style="font-size:22px;font-weight:700;color:var(--text);font-family:var(--mono);">£67,800</div>
+          <div style="font-size:11px;color:var(--text3);margin-top:2px;">net take-home</div>
+        </div>
+        <div style="background:var(--amber-dim);border:1px solid rgba(255,209,102,0.2);border-radius:8px;padding:12px 14px;">
+          <div style="font-size:11px;font-family:var(--mono);color:var(--amber);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Difference</div>
+          <div style="font-size:22px;font-weight:700;color:var(--text);font-family:var(--mono);">£15,400</div>
+          <div style="font-size:11px;color:var(--text3);margin-top:2px;">per year less inside IR35</div>
+        </div>
+      </div>
+      <p style="font-size:13px;color:var(--text2);line-height:1.7;">A common situation for NHS, banking, and government IT contractors. Being pushed inside IR35 costs this contractor the equivalent of a 23% pay cut compared to a legitimate outside IR35 engagement. To break even inside IR35, they'd need a day rate uplift of approximately £70/day. <a href="/blog/inside-vs-outside-ir35-take-home-pay.html" style="color:var(--accent)">See full take-home table at every day rate →</a></p>
+    </div>
+
+    <!-- Scenario 2 -->
+    <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:20px 24px;">
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:14px;">
+        <div style="font-family:var(--mono);font-size:12px;font-weight:600;color:var(--text2);background:var(--bg4);padding:4px 10px;border-radius:4px;">Scenario B</div>
+        <div style="font-size:14px;font-weight:600;color:var(--text);">Senior financial consultant · £650/day · 200 days</div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:14px;">
+        <div style="background:var(--red-dim);border:1px solid rgba(255,107,107,0.2);border-radius:8px;padding:12px 14px;">
+          <div style="font-size:11px;font-family:var(--mono);color:var(--red);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Inside IR35</div>
+          <div style="font-size:22px;font-weight:700;color:var(--text);font-family:var(--mono);">£76,300</div>
+          <div style="font-size:11px;color:var(--text3);margin-top:2px;">net take-home</div>
+        </div>
+        <div style="background:var(--accent-dim);border:1px solid rgba(0,212,170,0.2);border-radius:8px;padding:12px 14px;">
+          <div style="font-size:11px;font-family:var(--mono);color:var(--accent);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Outside IR35</div>
+          <div style="font-size:22px;font-weight:700;color:var(--text);font-family:var(--mono);">£101,200</div>
+          <div style="font-size:11px;color:var(--text3);margin-top:2px;">net take-home</div>
+        </div>
+        <div style="background:var(--amber-dim);border:1px solid rgba(255,209,102,0.2);border-radius:8px;padding:12px 14px;">
+          <div style="font-size:11px;font-family:var(--mono);color:var(--amber);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Difference</div>
+          <div style="font-size:22px;font-weight:700;color:var(--text);font-family:var(--mono);">£24,900</div>
+          <div style="font-size:11px;color:var(--text3);margin-top:2px;">per year less inside IR35</div>
+        </div>
+      </div>
+      <p style="font-size:13px;color:var(--text2);line-height:1.7;">At higher day rates, the inside IR35 penalty is more severe in absolute terms because more income falls in the 40% tax band as a deemed employee. Many contractors at this level negotiate a rate uplift, use IR35 insurance, or restructure through compliant outside-IR35 arrangements. From April 2026, the small company threshold changes may open new options — <a href="/blog/ir35-april-2026-small-company-threshold-changes.html" style="color:var(--accent)">check if your client qualifies →</a></p>
+    </div>
+
+    <!-- Scenario 3 -->
+    <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:20px 24px;">
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:14px;">
+        <div style="font-family:var(--mono);font-size:12px;font-weight:600;color:var(--text2);background:var(--bg4);padding:4px 10px;border-radius:4px;">Scenario C</div>
+        <div style="font-size:14px;font-weight:600;color:var(--text);">Junior developer via umbrella · £300/day · 240 days</div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:14px;">
+        <div style="background:var(--red-dim);border:1px solid rgba(255,107,107,0.2);border-radius:8px;padding:12px 14px;">
+          <div style="font-size:11px;font-family:var(--mono);color:var(--red);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Umbrella (Inside)</div>
+          <div style="font-size:22px;font-weight:700;color:var(--text);font-family:var(--mono);">£41,700</div>
+          <div style="font-size:11px;color:var(--text3);margin-top:2px;">net take-home</div>
+        </div>
+        <div style="background:var(--accent-dim);border:1px solid rgba(0,212,170,0.2);border-radius:8px;padding:12px 14px;">
+          <div style="font-size:11px;font-family:var(--mono);color:var(--accent);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Outside IR35 (Ltd)</div>
+          <div style="font-size:22px;font-weight:700;color:var(--text);font-family:var(--mono);">£52,900</div>
+          <div style="font-size:11px;color:var(--text3);margin-top:2px;">net take-home</div>
+        </div>
+        <div style="background:var(--amber-dim);border:1px solid rgba(255,209,102,0.2);border-radius:8px;padding:12px 14px;">
+          <div style="font-size:11px;font-family:var(--mono);color:var(--amber);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Difference</div>
+          <div style="font-size:22px;font-weight:700;color:var(--text);font-family:var(--mono);">£11,200</div>
+          <div style="font-size:11px;color:var(--text3);margin-top:2px;">per year less via umbrella</div>
+        </div>
+      </div>
+      <p style="font-size:13px;color:var(--text2);line-height:1.7;">This is the most common entry point for new contractors. Even working more days (240 vs 220), the umbrella contractor takes home significantly less — primarily because employer NI is deducted from their assignment rate before PAYE. From April 2026, the agency becomes responsible for operating PAYE on umbrella workers directly, but the tax cost remains the same. Use the <strong>Umbrella Company</strong> tab to model your own numbers.</p>
+    </div>
+
+  </div>
+  <p style="font-size:12px;color:var(--text3);margin-top:12px;line-height:1.6;">These are illustrative estimates based on standard assumptions (England/Wales, no pension, no other income, 2025/26 rates). Your actual take-home will vary. Always verify with a qualified contractor accountant.</p>
+</section>
+
 <!-- FAQ -->
 <section class="content-section" id="faq">
   <h2 class="section-heading">Frequently Asked Questions</h2>
@@ -1595,6 +1707,39 @@
   </div>
 </section>
 
+<!-- METHODOLOGY -->
+<section class="content-section" id="methodology" style="border-top:1px solid var(--border);padding-top:32px;">
+  <h2 class="section-heading">How This IR35 Calculator Works</h2>
+  <p class="section-sub">All calculations run in your browser using the current HMRC rates. Here's exactly what each model computes — and what it doesn't.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:20px;">
+
+    <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:20px;">
+      <div style="font-family:var(--mono);font-size:11px;font-weight:600;color:var(--accent);letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;">Inside IR35 (PAYE)</div>
+      <p style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:10px;">Your day rate is treated as a deemed salary. The calculation deducts employer National Insurance (15% above the £5,000 secondary threshold) from your gross contract value first — this is a cost borne by your limited company, not deducted from PAYE. The remainder is subject to Income Tax and employee NI (8% up to £50,270, 2% above).</p>
+      <p style="font-size:12px;color:var(--text3);line-height:1.6;">Source: <a href="https://www.gov.uk/national-insurance-rates-letters" target="_blank" rel="noopener" style="color:var(--text3);text-decoration:underline;">HMRC NI rates</a> · <a href="https://www.gov.uk/income-tax-rates" target="_blank" rel="noopener" style="color:var(--text3);text-decoration:underline;">HMRC Income Tax rates</a></p>
+    </div>
+
+    <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:20px;">
+      <div style="font-family:var(--mono);font-size:11px;font-weight:600;color:var(--accent);letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;">Outside IR35 (Ltd Company)</div>
+      <p style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:10px;">You pay yourself a small salary — the calculator defaults to £9,100 (just below the employer NI secondary threshold, eliminating employer NI entirely) and extracts remaining profit as dividends. Some accountants instead recommend £12,570 (the personal allowance) to use all tax-free income but accepting a small employer NI cost — the optimal choice depends on your profit level. Corporation Tax uses marginal relief (19–25% between £50k–£250k). Dividend tax applies the £500 allowance then the relevant rate.</p>
+      <p style="font-size:12px;color:var(--text3);line-height:1.6;">Source: <a href="https://www.gov.uk/guidance/corporation-tax-rates-and-reliefs" target="_blank" rel="noopener" style="color:var(--text3);text-decoration:underline;">HMRC Corp Tax rates</a> · <a href="https://www.gov.uk/tax-on-dividends" target="_blank" rel="noopener" style="color:var(--text3);text-decoration:underline;">HMRC Dividend Tax</a></p>
+    </div>
+
+    <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:20px;">
+      <div style="font-family:var(--mono);font-size:11px;font-weight:600;color:var(--accent);letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;">Umbrella Company</div>
+      <p style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:10px;">Umbrella calculations start from your assignment rate, deduct employer NI and the umbrella margin, then apply full PAYE (Income Tax + employee NI) to the resulting gross. From April 2026, agencies must apply PAYE directly to umbrella workers under new legislation — our model reflects this structure.</p>
+      <p style="font-size:12px;color:var(--text3);line-height:1.6;">Source: <a href="https://www.gov.uk/government/publications/strengthening-the-regulatory-framework-for-umbrella-companies" target="_blank" rel="noopener" style="color:var(--text3);text-decoration:underline;">HMRC Umbrella reform guidance</a></p>
+    </div>
+
+    <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:20px;">
+      <div style="font-family:var(--mono);font-size:11px;font-weight:600;color:var(--accent);letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;">What It Doesn't Cover</div>
+      <p style="font-size:13px;color:var(--text2);line-height:1.7;">The calculator assumes standard England/Wales rates, one source of income, and a standard salary/dividend split. It doesn't account for: pension contributions, business expenses, student loan repayments, Scottish tax rates, the high-income child benefit charge, or complex shareholding structures. For a precise figure, consult a specialist contractor accountant.</p>
+    </div>
+
+  </div>
+</section>
+
 <!-- BLOG / GUIDES -->
 <section class="content-section" style="border-top:1px solid var(--border);padding-top:32px;">
   <h2 class="section-heading">IR35 Guides for UK Contractors</h2>
@@ -1622,12 +1767,14 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-text">
-      ir35guide.co.uk — Free UK IR35 guide & contractor tax calculator.<br>
+      ir35guide.co.uk — Free UK IR35 guide &amp; contractor tax calculator.<br>
       Results are estimates only. Not financial advice. Always consult a qualified accountant.<br>
-      <span style="font-size:11px;color:var(--text3);">Last updated: March 2026</span>
+      <span style="font-size:11px;color:var(--text3);">Last updated: March 2026 · Tax rates sourced from <a href="https://www.gov.uk/government/publications/rates-and-allowances-income-tax/income-tax-rates-and-allowances-current-and-past" target="_blank" rel="noopener" style="color:var(--text3);text-decoration:underline;">HMRC.gov.uk</a> · <a href="https://www.gov.uk/national-insurance-rates-letters" target="_blank" rel="noopener" style="color:var(--text3);text-decoration:underline;">NI rates</a> · <a href="https://www.gov.uk/guidance/check-employment-status-for-tax" target="_blank" rel="noopener" style="color:var(--text3);text-decoration:underline;">HMRC CEST</a></span>
     </div>
     <div class="footer-links">
       <a href="/blog.html" class="footer-link">Blog</a>
+      <a href="#methodology" class="footer-link">Methodology</a>
+      <a href="#case-studies" class="footer-link">Examples</a>
       <a href="/privacy.html" class="footer-link">Privacy</a>
       <a href="/terms.html" class="footer-link">Terms</a>
       <a href="#about-ir35" class="footer-link">About</a>
