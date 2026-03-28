@@ -2,15 +2,34 @@
 <html lang="en-GB">
 <head>
   <meta charset="UTF-8">
+
+<!-- Google Analytics 4 — loaded only after consent -->
+<script>
+  window.GA_ID = 'G-N961MFHTCS';
+  window._gaLoaded = false;
+  function loadGA() {
+    if (window._gaLoaded) return;
+    window._gaLoaded = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', window.GA_ID, { anonymize_ip: true });
+  }
+</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Why HMRC's CEST Tool Gets IR35 Wrong (And What to Use Instead) | IR35 Guide</title>
-  <meta name="description" content="CEST usage dropped 73% since 2021. One in five results is 'undetermined'. The tool ignores Mutuality of Obligation. Here's what's actually wrong with it — and better alternatives.">
+  <title>Why HMRC's CEST Tool Gets IR35 Wrong (Updated 2026)</title>
+  <meta name="description" content="CEST usage dropped 73% since 2021. One in five results is 'undetermined'. It ignores Mutuality of Obligation — here's what's wrong and what to use instead.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://ir35guide.co.uk/blog/hmrc-cest-tool-problems.html">
   <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="/favicon-32x32.png">
-  <meta property="og:title" content="Why HMRC's CEST Tool Gets IR35 Wrong (And What to Use Instead)">
-  <meta property="og:description" content="CEST usage dropped 73% since 2021. One in five results is undetermined. The tool ignores Mutuality of Obligation. Here's what's wrong and what to use instead.">
+  <meta property="og:title" content="Why HMRC's CEST Tool Gets IR35 Wrong (Updated 2026)">
+  <meta property="og:description" content="CEST usage dropped 73% since 2021. One in five results is 'undetermined'. It ignores Mutuality of Obligation — here's what's wrong and what to use instead.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://ir35guide.co.uk/blog/hmrc-cest-tool-problems.html">
   <meta property="og:site_name" content="IR35 Guide">
@@ -27,7 +46,7 @@
     "headline": "Why HMRC's CEST Tool Gets IR35 Wrong (And What to Use Instead)",
     "description": "A detailed look at the specific problems with HMRC's Check Employment Status for Tax tool — what it gets wrong, why the April 2025 update didn't fix it, and what contractors should use instead.",
     "datePublished": "2026-03-08",
-    "dateModified": "2026-03-20",
+    "dateModified": "2026-03-28",
     "author": { "@type": "Organization", "name": "IR35 Guide", "url": "https://ir35guide.co.uk" },
     "publisher": { "@type": "Organization", "name": "IR35 Guide", "url": "https://ir35guide.co.uk" },
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ir35guide.co.uk/blog/hmrc-cest-tool-problems.html" }
@@ -218,6 +237,58 @@
     footer { background: var(--navy); color: #94a3b8; padding: 32px 24px; font-size: 0.82rem; text-align: center; }
     footer a { color: #60a5fa; text-decoration: none; }
     .footer-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 12px; }
+  
+    /* ─── COOKIE BANNER ─── */
+    #cookie-banner {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 999;
+      background: #1e293b;
+      border-top: 1px solid #334155;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      box-shadow: 0 -8px 32px rgba(0,0,0,0.3);
+      transform: translateY(100%);
+      transition: transform 0.35s cubic-bezier(0.16,1,0.3,1);
+    }
+    #cookie-banner.show { transform: translateY(0); }
+    #cookie-banner p { font-size: 13px; color: #94a3b8; flex: 1; min-width: 200px; line-height: 1.6; margin: 0; }
+    #cookie-banner a { color: #60a5fa; text-decoration: none; }
+    #cookie-banner a:hover { text-decoration: underline; }
+    .cookie-btns { display: flex; gap: 8px; flex-shrink: 0; }
+    .btn-accept {
+      padding: 8px 18px;
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .btn-accept:hover { background: #1d4ed8; }
+    .btn-decline {
+      padding: 8px 16px;
+      background: none;
+      color: #94a3b8;
+      border: 1px solid #475569;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .btn-decline:hover { color: #cbd5e1; border-color: #64748b; }
+  
+    @media print {
+      header, nav, footer, .sidebar, #cookie-banner,
+      [class*="affiliate"], .alert-banner, .cookie-btns { display: none !important; }
+      body { background: #fff !important; color: #111 !important; }
+      a { color: #111 !important; }
+    }
   </style>
 </head>
 <body>
@@ -532,5 +603,35 @@
   <p style="margin-top:8px;">© 2026 IR35Guide.co.uk</p>
 </footer>
 
+
+<!-- ─── COOKIE CONSENT BANNER ─── -->
+<div id="cookie-banner" role="dialog" aria-label="Cookie consent">
+  <p>
+    We use cookies to understand how you use this site and improve it. No personal data is sold or shared.
+    See our <a href="/privacy.html">Privacy Policy</a>.
+  </p>
+  <div class="cookie-btns">
+    <button class="btn-decline" onclick="cookieChoice(false)">Decline</button>
+    <button class="btn-accept" onclick="cookieChoice(true)">Accept Analytics</button>
+  </div>
+</div>
+
+<script>
+function cookieChoice(accepted) {
+  localStorage.setItem('cookie_consent', accepted ? 'accepted' : 'declined');
+  document.getElementById('cookie-banner').classList.remove('show');
+  if (accepted) loadGA();
+}
+document.addEventListener('DOMContentLoaded', function() {
+  var consent = localStorage.getItem('cookie_consent');
+  if (!consent) {
+    setTimeout(function() {
+      document.getElementById('cookie-banner').classList.add('show');
+    }, 1200);
+  } else if (consent === 'accepted') {
+    loadGA();
+  }
+});
+</script>
 </body>
 </html>
