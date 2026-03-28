@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+
+<!-- Google Analytics 4 — loaded only after consent -->
+<script>
+  window.GA_ID = 'G-N961MFHTCS';
+  window._gaLoaded = false;
+  function loadGA() {
+    if (window._gaLoaded) return;
+    window._gaLoaded = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', window.GA_ID, { anonymize_ip: true });
+  }
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HMRC IR35 Investigation: What Happens and How to Prepare</title>
+  <meta name="description" content="Find out what triggers an HMRC IR35 investigation, what happens at each stage, how far back HMRC can go (up to 6 years), and the steps to protect yourself now.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ir35guide.co.uk/blog/hmrc-ir35-investigation.html">
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/favicon-32x32.png">
+  <meta property="og:title" content="HMRC IR35 Investigation: What Happens and How to Prepare">
+  <meta property="og:description" content="Find out what triggers an HMRC IR35 investigation, what happens at each stage, how far back HMRC can go (up to 6 years), and the steps to protect yourself now.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ir35guide.co.uk/blog/hmrc-ir35-investigation.html">
+  <meta property="og:site_name" content="IR35 Guide">
+  <meta property="og:image" content="https://ir35guide.co.uk/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://ir35guide.co.uk/og-image.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "HMRC IR35 Investigation: What Happens and How to Prepare",
+    "description": "A plain English guide to HMRC IR35 compliance checks — what triggers them, how the process works, how far back HMRC can go, and what contractors can do to protect themselves.",
+    "datePublished": "2026-03-28",
+    "dateModified": "2026-03-28",
+    "author": { "@type": "Organization", "name": "IR35 Guide", "url": "https://ir35guide.co.uk" },
+    "publisher": { "@type": "Organization", "name": "IR35 Guide", "url": "https://ir35guide.co.uk" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ir35guide.co.uk/blog/hmrc-ir35-investigation.html" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What triggers an HMRC IR35 investigation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "HMRC selects cases using a combination of risk-profiling, data analytics, and intelligence. Common triggers include: long-term single-client engagements that look like employment, contractors who have been inside IR35 at some point but paid outside IR35 tax, high day rates with no apparent business structure, operating in sectors HMRC considers high risk (IT, financial services, public sector), mismatches between reported income and lifestyle signals, and anonymous tip-offs. From 2025/26, HMRC is using AI and machine learning to identify cases at scale."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How far back can HMRC investigate IR35?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "HMRC can investigate up to 4 years back from the end of the relevant tax year in standard cases. If HMRC considers that 'careless' behaviour contributed to the underpayment, this extends to 6 years. In cases of fraud or deliberate understatement, HMRC can go back up to 20 years. This means a compliance check opened today could potentially review contracts going back to 2022 (4-year limit) or 2020 (6-year careless behaviour limit)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if HMRC finds I was wrongly outside IR35?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If HMRC determines your contracts should have been inside IR35, you will owe the unpaid income tax and employee's National Insurance for the relevant period, plus interest. Penalties can also apply: 30% of unpaid tax for careless behaviour, up to 100% for deliberate understatement. HMRC can also charge employer's NI. For contracts on or after April 2021 (medium/large clients), the liability falls primarily on the fee payer in the supply chain rather than the contractor personally."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is IR35 insurance and do I need it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "IR35 insurance (also called tax investigation insurance or IR35 defence insurance) covers the cost of professional fees to defend an HMRC IR35 enquiry and, in some policies, the tax liability if the investigation goes against you. It typically costs £300–£1,000 per year for a contractor. Given that an IR35 investigation can cost £10,000+ in professional fees alone — before any tax owed — insurance is worth serious consideration for any contractor operating outside IR35."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I represent myself in an HMRC IR35 investigation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Technically yes, but it is strongly not recommended. HMRC's investigators are specialists in IR35 case law and compliance. A professional tax adviser or IR35 specialist who understands the case law, knows how to present evidence, and can negotiate with HMRC significantly improves your chances of a favourable outcome — and can often achieve a better result than the initial compliance letter suggests. This is why IR35 investigation insurance, which covers professional fees, is so valuable."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0f172a; --blue: #2563eb; --blue-light: #eff6ff;
+      --green: #16a34a; --green-light: #f0fdf4;
+      --amber: #d97706; --amber-light: #fffbeb;
+      --red: #dc2626; --red-light: #fef2f2;
+      --purple: #7c3aed; --purple-light: #f5f3ff;
+      --grey-50: #f8fafc; --grey-100: #f1f5f9; --grey-200: #e2e8f0;
+      --grey-400: #94a3b8; --grey-600: #475569;
+      --text: #1e293b; --text-light: #64748b; --border: #e2e8f0;
+      --radius: 10px; --shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #f8fafc; color: var(--text); line-height: 1.7; }
+    nav { background: var(--navy); padding: 0 24px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.18); }
+    .nav-inner { max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-logo { color: #fff; font-weight: 700; font-size: 1.05rem; text-decoration: none; }
+    .nav-logo span { color: #60a5fa; }
+    .nav-cta { background: var(--blue); color: #fff; padding: 7px 16px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: 600; }
+    .nav-cta:hover { background: #1d4ed8; }
+    .page-wrap { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+    .hero { background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); color: #fff; padding: 52px 24px 44px; }
+    .hero-inner { max-width: 900px; margin: 0 auto; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); color: #c7d2fe; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em; padding: 4px 12px; border-radius: 20px; margin-bottom: 16px; }
+    .hero h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); font-weight: 700; line-height: 1.25; margin-bottom: 16px; }
+    .hero-sub { font-size: 1.05rem; color: #c7d2fe; max-width: 640px; margin-bottom: 28px; }
+    .hero-meta { font-size: 0.82rem; color: #a5b4fc; display: flex; gap: 20px; flex-wrap: wrap; }
+    .article-layout { display: grid; grid-template-columns: 1fr 280px; gap: 40px; padding: 40px 0 60px; align-items: start; }
+    @media (max-width: 720px) { .article-layout { grid-template-columns: 1fr; } .sidebar { display: none; } }
+    .prose h2 { font-size: 1.35rem; font-weight: 700; color: var(--navy); margin: 40px 0 14px; padding-bottom: 8px; border-bottom: 2px solid var(--grey-200); }
+    .prose h2:first-child { margin-top: 0; }
+    .prose h3 { font-size: 1.05rem; font-weight: 600; color: var(--navy); margin: 28px 0 10px; }
+    .prose p { margin-bottom: 16px; color: var(--text); line-height: 1.75; }
+    .prose ul, .prose ol { margin: 12px 0 18px 20px; }
+    .prose li { margin-bottom: 8px; line-height: 1.65; }
+    .prose strong { color: var(--navy); font-weight: 600; }
+    .prose a { color: var(--blue); text-decoration: underline; }
+    .table-wrap { overflow-x: auto; margin: 20px 0 28px; border-radius: var(--radius); border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th { background: var(--navy); color: #fff; padding: 12px 16px; text-align: left; font-weight: 600; font-size: 0.82rem; letter-spacing: 0.03em; }
+    td { padding: 11px 16px; border-bottom: 1px solid var(--border); color: var(--text); }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: var(--grey-50); }
+    .callout { border-radius: var(--radius); padding: 20px 22px; margin: 24px 0; }
+    .callout-blue { background: var(--blue-light); border: 1px solid #bfdbfe; }
+    .callout-green { background: var(--green-light); border: 1px solid #bbf7d0; }
+    .callout-amber { background: var(--amber-light); border: 1px solid #fde68a; }
+    .callout-red { background: var(--red-light); border: 1px solid #fecaca; }
+    .callout-purple { background: var(--purple-light); border: 1px solid #ddd6fe; }
+    .callout-title { font-weight: 700; font-size: 0.9rem; margin-bottom: 8px; }
+    .callout-blue .callout-title { color: var(--blue); }
+    .callout-green .callout-title { color: var(--green); }
+    .callout-amber .callout-title { color: var(--amber); }
+    .callout-red .callout-title { color: var(--red); }
+    .callout-purple .callout-title { color: var(--purple); }
+    .callout p, .callout li { font-size: 0.92rem; line-height: 1.65; }
+    .callout ul { margin: 8px 0 0 18px; }
+
+    .timeline { margin: 28px 0; }
+    .timeline-item { display: flex; gap: 16px; margin-bottom: 0; position: relative; }
+    .timeline-item::before { content: ''; position: absolute; left: 17px; top: 36px; bottom: -20px; width: 2px; background: var(--grey-200); }
+    .timeline-item:last-child::before { display: none; }
+    .timeline-dot { flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; position: relative; z-index: 1; }
+    .dot-grey { background: var(--grey-100); color: var(--grey-600); border: 2px solid var(--grey-400); }
+    .dot-amber { background: var(--amber-light); color: var(--amber); border: 2px solid var(--amber); }
+    .dot-blue { background: var(--blue-light); color: var(--blue); border: 2px solid var(--blue); }
+    .dot-red { background: var(--red-light); color: var(--red); border: 2px solid var(--red); }
+    .dot-green { background: var(--green-light); color: var(--green); border: 2px solid var(--green); }
+    .timeline-content { padding: 4px 0 28px; }
+    .timeline-label { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-light); margin-bottom: 4px; }
+    .timeline-title { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+    .timeline-text { font-size: 0.9rem; color: var(--text); line-height: 1.65; }
+
+    .risk-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0; }
+    @media (max-width: 560px) { .risk-grid { grid-template-columns: 1fr; } }
+    .risk-card { border-radius: var(--radius); padding: 16px 18px; border: 1px solid var(--border); background: #fff; }
+    .risk-card-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
+    .risk-card.high .risk-card-label { color: var(--red); }
+    .risk-card.medium .risk-card-label { color: var(--amber); }
+    .risk-card ul { margin: 0 0 0 16px; padding: 0; }
+    .risk-card li { font-size: 0.85rem; color: var(--text); margin-bottom: 6px; line-height: 1.5; }
+
+    .cta-banner { background: var(--navy); color: #fff; border-radius: var(--radius); padding: 28px; margin: 32px 0; text-align: center; }
+    .cta-banner h3 { font-size: 1.2rem; margin-bottom: 8px; }
+    .cta-banner p { color: #94a3b8; font-size: 0.9rem; margin-bottom: 20px; }
+    .cta-banner a { display: inline-block; background: var(--blue); color: #fff; padding: 12px 28px; border-radius: 8px; font-weight: 600; font-size: 0.95rem; text-decoration: none; }
+    .cta-banner a:hover { background: #1d4ed8; }
+    .faq-item { border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 12px; overflow: hidden; }
+    .faq-q { font-weight: 600; font-size: 0.95rem; padding: 16px 20px; background: #fff; color: var(--navy); }
+    .faq-a { padding: 0 20px 16px; background: var(--grey-50); font-size: 0.88rem; color: var(--text-light); line-height: 1.65; }
+    .sidebar { position: sticky; top: 72px; }
+    .sidebar-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin-bottom: 20px; box-shadow: var(--shadow); }
+    .sidebar-card h3 { font-size: 0.9rem; font-weight: 700; color: var(--navy); margin-bottom: 14px; }
+    .toc-list { list-style: none; padding: 0; margin: 0; }
+    .toc-list li { border-bottom: 1px solid var(--grey-100); }
+    .toc-list li:last-child { border-bottom: none; }
+    .toc-list a { display: block; padding: 8px 0; font-size: 0.83rem; color: var(--text-light); text-decoration: none; }
+    .toc-list a:hover { color: var(--blue); }
+    .sidebar-cta { display: block; background: var(--blue); color: #fff; text-align: center; padding: 13px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; text-decoration: none; margin-bottom: 12px; }
+    .sidebar-cta:hover { background: #1d4ed8; }
+    .sidebar-link { display: block; padding: 9px 0; font-size: 0.83rem; color: var(--text-light); text-decoration: none; border-bottom: 1px solid var(--grey-100); }
+    .sidebar-link:last-child { border-bottom: none; }
+    .sidebar-link:hover { color: var(--blue); }
+    footer { background: var(--navy); color: #94a3b8; padding: 32px 24px; font-size: 0.82rem; text-align: center; }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 24px; margin-bottom: 16px; }
+    .footer-links a { color: #94a3b8; text-decoration: none; }
+    .footer-links a:hover { color: #fff; }
+    #cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; z-index: 999; background: #1e293b; border-top: 1px solid #334155; padding: 14px 24px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; box-shadow: 0 -8px 32px rgba(0,0,0,0.3); transform: translateY(100%); transition: transform 0.35s cubic-bezier(0.16,1,0.3,1); }
+    #cookie-banner.show { transform: translateY(0); }
+    #cookie-banner p { font-size: 13px; color: #94a3b8; flex: 1; min-width: 200px; line-height: 1.6; margin: 0; }
+    #cookie-banner a { color: #60a5fa; text-decoration: none; }
+    .cookie-btns { display: flex; gap: 8px; flex-shrink: 0; }
+    .btn-accept { padding: 8px 18px; background: #2563eb; color: #fff; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; }
+    .btn-accept:hover { background: #1d4ed8; }
+    .btn-decline { padding: 8px 16px; background: none; color: #94a3b8; border: 1px solid #475569; border-radius: 6px; font-size: 12px; cursor: pointer; }
+    @media print { header, nav, footer, .sidebar, #cookie-banner, .cookie-btns { display: none !important; } body { background: #fff !important; color: #111 !important; } a { color: #111 !important; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">ir35guide<span>.co.uk</span></a>
+    <a href="/" class="nav-cta">IR35 Calculator →</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">⚠️ HMRC Compliance · Updated March 2026</div>
+    <h1>HMRC IR35 Investigation: What Happens and How to Prepare</h1>
+    <p class="hero-sub">Receiving an HMRC compliance check letter is alarming — but understanding the process and being prepared makes all the difference. This guide explains what triggers an IR35 investigation, what happens at each stage, and how to protect yourself before one starts.</p>
+    <div class="hero-meta">
+      <span>⏱ 10 min read</span>
+      <span>📅 March 2026</span>
+      <span>🔍 Includes HMRC's new AI approach</span>
+    </div>
+  </div>
+</div>
+
+<div class="page-wrap">
+  <div class="article-layout">
+    <article class="prose">
+
+      <h2 id="how-hmrc-selects">How HMRC Selects Cases in 2026</h2>
+      <p>HMRC has significantly modernised its approach to IR35 compliance checks. Historically, many investigations were triggered by obvious red flags or anonymous tip-offs. From 2025/26, HMRC is using <strong>AI and machine learning</strong> to identify cases at scale — analysing patterns across millions of tax records to flag anomalies that human investigators would miss.</p>
+      <p>HMRC's data-matching capabilities mean it can now cross-reference your company tax returns, personal self-assessment, Companies House filings, and data provided by clients and agencies — all without you ever knowing you're being assessed. By the time you receive a compliance check letter, HMRC has often already built a picture of your engagement history.</p>
+
+      <div class="callout callout-red">
+        <div class="callout-title">🔍 What HMRC is looking for</div>
+        <ul>
+          <li>Long-term single-client engagements that pattern-match to employment</li>
+          <li>Contractors whose day rate and client profile suggests inside IR35 but who are filing outside IR35</li>
+          <li>High earners in high-risk sectors (IT, financial services, professional services)</li>
+          <li>Mismatches between what contractors report and what clients/agencies report</li>
+          <li>Companies with minimal overheads, no other clients, and year-on-year continuous engagement with the same client</li>
+        </ul>
+      </div>
+
+      <h3>Common investigation triggers</h3>
+      <div class="risk-grid">
+        <div class="risk-card high">
+          <div class="risk-card-label">🔴 High-risk triggers</div>
+          <ul>
+            <li>Single client for 3+ years continuously</li>
+            <li>Inside IR35 on some contracts, outside on others with the same client</li>
+            <li>Client or agency reports your income differently to HMRC than you do</li>
+            <li>Anonymous tip-off from a disgruntled party</li>
+            <li>Company investigation leads HMRC to review all contractors that client used</li>
+          </ul>
+        </div>
+        <div class="risk-card medium">
+          <div class="risk-card-label">🟡 Moderate-risk factors</div>
+          <ul>
+            <li>High-value single-client contract in IT, banking, or professional services</li>
+            <li>No evidence of other business activity (marketing, multiple clients)</li>
+            <li>Limited company with very low expenses relative to turnover</li>
+            <li>Sector-wide HMRC sweep (HMRC periodically targets specific industries)</li>
+            <li>Using HMRC's CEST tool and getting "outside IR35" in a borderline case</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 id="investigation-stages">What Happens: The Investigation Process Step by Step</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot dot-amber">1</div>
+          <div class="timeline-content">
+            <div class="timeline-label">Stage 1</div>
+            <div class="timeline-title">The compliance check letter</div>
+            <div class="timeline-text">Everything starts with a letter from HMRC's off-payroll working team. This is a formal compliance check notice — not an accusation, and not a determination that you are non-compliant. The letter will outline HMRC's intent to review your IR35 position and invite you to make contact. HMRC stresses this is a review, not a presumption of wrongdoing. However, you should treat it extremely seriously from the moment it arrives.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot dot-amber">2</div>
+          <div class="timeline-content">
+            <div class="timeline-label">Stage 2</div>
+            <div class="timeline-title">Engage a specialist immediately</div>
+            <div class="timeline-text">Before responding to HMRC in any way, engage a qualified IR35 specialist or tax adviser. What you say in your initial response — and how you say it — can significantly affect the outcome. A specialist will manage communications with HMRC on your behalf and help you frame your position correctly from the start.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot dot-blue">3</div>
+          <div class="timeline-content">
+            <div class="timeline-label">Stage 3</div>
+            <div class="timeline-title">Information requests</div>
+            <div class="timeline-text">HMRC will request documents and information. Typical requests include: copies of all relevant contracts, evidence of how you actually worked (working practices), details of substitution rights and whether they were exercised, invoices, bank statements, and details of any other clients you worked for. HMRC will also often want to speak with the client (engager) directly — what the client says about the working practices is critically important and can contradict what your contract says.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot dot-blue">4</div>
+          <div class="timeline-content">
+            <div class="timeline-label">Stage 4</div>
+            <div class="timeline-title">Review and assessment</div>
+            <div class="timeline-text">HMRC reviews all the information and assesses whether your contracts should have been inside or outside IR35. This stage can take weeks to months. HMRC may request further information if something doesn't add up. They may broaden the scope beyond the original contract — investigations that start with one year frequently expand to cover multiple years and multiple contracts.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot dot-green">5a</div>
+          <div class="timeline-content">
+            <div class="timeline-label">Outcome — Favourable</div>
+            <div class="timeline-title">Check closed, no further action</div>
+            <div class="timeline-text">If HMRC is satisfied with your position and evidence, the compliance check is closed with no liability. A good specialist can often achieve this outcome even in cases where the initial situation looks difficult, by presenting working practices evidence effectively and correcting mischaracterisations of the engagement.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot dot-red">5b</div>
+          <div class="timeline-content">
+            <div class="timeline-label">Outcome — Unfavourable</div>
+            <div class="timeline-title">Liability assessed, potential appeal</div>
+            <div class="timeline-text">If HMRC determines you were inside IR35, they will issue a tax assessment for the unpaid tax plus interest. You can accept this, negotiate a settlement, or appeal. Appeals go to the First-tier Tribunal and, if necessary, the Upper Tribunal. Many cases are settled before tribunal — a specialist can often negotiate down the initial assessment, including which years are in scope.</div>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="how-far-back">How Far Back Can HMRC Go?</h2>
+      <p>This is one of the most important and least understood aspects of IR35 investigations. The time limits depend on the circumstances:</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Scenario</th>
+              <th>How far back HMRC can go</th>
+              <th>Example (check opened 2026)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Standard case — reasonable care taken</td>
+              <td><strong>4 years</strong> from end of relevant tax year</td>
+              <td>Back to 2021/22</td>
+            </tr>
+            <tr>
+              <td>Careless behaviour — insufficient care taken</td>
+              <td><strong>6 years</strong></td>
+              <td>Back to 2019/20</td>
+            </tr>
+            <tr>
+              <td>Deliberate understatement or fraud</td>
+              <td><strong>20 years</strong></td>
+              <td>Back to 2005/06</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>"Reasonable care" in HMRC's view means having considered your IR35 status seriously — getting professional contract reviews, keeping evidence of working practices, and not simply assuming you are outside IR35 because it's financially convenient. Contractors who have never had a contract reviewed and kept no working practices evidence are at risk of being assessed as having taken insufficient care.</p>
+
+      <div class="callout callout-amber">
+        <div class="callout-title">⚠️ The scope expansion risk</div>
+        <p>Investigations rarely stay contained to the original contract or year flagged. HMRC routinely expands the scope once they open an inquiry — examining all years within the applicable time limit and all contracts in scope. A compliance check that starts with one contract from 2024 can quickly become an investigation into every contract you've held since 2020.</p>
+      </div>
+
+      <h2 id="liability">What You Could Owe</h2>
+      <p>If HMRC determines your contracts were inside IR35, the exposure can be substantial:</p>
+      <ul>
+        <li><strong>Unpaid income tax and employee's NI</strong> — typically the largest element. At a £500/day rate, being inside IR35 for a full year costs roughly £15,000–£20,000 in extra tax. Multiply by the number of years in scope.</li>
+        <li><strong>Interest</strong> — charged from the date the tax was originally due. Currently around 7.5–8% annually, which adds up quickly on multi-year assessments.</li>
+        <li><strong>Penalties</strong> — 0% if you cooperate fully and HMRC accepts you took reasonable care; up to 30% for careless behaviour; up to 100% for deliberate understatement.</li>
+        <li><strong>Professional costs</strong> — even if you win, defending an investigation typically costs £5,000–£20,000+ in adviser fees, depending on complexity and how far it progresses.</li>
+      </ul>
+
+      <div class="callout callout-blue">
+        <div class="callout-title">Who pays after April 2021?</div>
+        <p>For engagements with medium and large private sector clients (or any public sector client) on or after 6 April 2021, the primary liability for unpaid PAYE and NI sits with the <strong>fee payer</strong> in the supply chain — typically the agency or the end client. Contractors are not usually the primary target in post-2021 cases. However, HMRC can still pursue the contractor if the fee payer cannot pay, or if the contractor provided fraudulent information about their IR35 status.</p>
+      </div>
+
+      <h2 id="how-to-protect">How to Protect Yourself Before an Investigation Starts</h2>
+      <p>The best time to prepare for an IR35 investigation is before it happens. The steps below reduce both the likelihood of being selected and the exposure if you are.</p>
+
+      <h3>1. Get your contracts professionally reviewed</h3>
+      <p>Every new engagement and every renewal. See our <a href="/blog/ir35-contract-review-checklist.html">IR35 contract review checklist</a> for what to look for. A professional review from a specialist like Qdos, Bauer &amp; Cottrell, or IR35 Shield provides a written opinion you can rely on if HMRC investigates — and costs £100–£250 per contract.</p>
+
+      <h3>2. Keep an evidence file for each engagement</h3>
+      <p>Create a simple folder for each contract containing: the signed contract, invoices, evidence of project deliverables (not just timesheets), evidence of working autonomously (emails showing you make methodology decisions independently), any substitution evidence, and records of other clients if applicable. This can be a simple folder of PDFs — the important thing is that you can show HMRC the reality of how you worked, not just what the contract says.</p>
+
+      <h3>3. Ensure your working practices match your contract</h3>
+      <p>This is where most contractors have a problem. The contract says you have a substitution right, but the client would never allow it. The contract says flexible hours, but you work 9-5 every day. HMRC will look at both, and inconsistencies are damaging. If the working practices can't support an outside IR35 position, the contract can't save you.</p>
+
+      <h3>4. Get IR35 investigation insurance</h3>
+      <p>IR35 insurance covers professional fees if HMRC investigates — typically £5,000–£50,000 in cover per policy. Some policies also cover the tax liability. Insurance typically costs £300–£1,000 per year. This is one of the most cost-effective risk management steps a contractor can take — even one investigation can cost more in adviser fees than a decade of premiums.</p>
+
+      <h3>5. Don't rely on CEST</h3>
+      <p>HMRC's own CEST tool is not reliable and HMRC has declined to be bound by favourable CEST results in tribunal. Using CEST as your only basis for an outside IR35 determination is a weak position. See our guide to <a href="/blog/hmrc-cest-tool-problems.html">why CEST gets IR35 wrong</a>.</p>
+
+      <div class="cta-banner">
+        <h3>Know the financial stakes</h3>
+        <p>Use our calculator to see exactly how much extra tax an inside IR35 determination would mean at your day rate.</p>
+        <a href="/">Calculate your exposure →</a>
+      </div>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <div class="faq-q">What triggers an HMRC IR35 investigation?</div>
+        <div class="faq-a">Common triggers include: long-term single-client engagements, discrepancies between what you report and what your client/agency reports, sector-wide HMRC sweeps, anonymous tip-offs, and HMRC's AI-driven risk-profiling that flags contractors whose profile looks like employment. From 2025/26, HMRC is using machine learning at scale to identify cases — you may not know you're being assessed until you receive a letter.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">How far back can HMRC investigate IR35?</div>
+        <div class="faq-a">4 years in standard cases. 6 years if HMRC considers you were careless (e.g. never had contracts reviewed, kept no evidence). 20 years in cases of deliberate fraud. A compliance check opened in 2026 could therefore reach back to 2020 in careless cases.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">What happens if HMRC finds I was inside IR35 and I didn't pay the right tax?</div>
+        <div class="faq-a">You owe unpaid income tax and NI for the relevant years, plus interest (currently ~7.5–8% annually). Penalties can apply: 0% if you cooperate and took reasonable care, up to 30% for carelessness, up to 100% for deliberate understatement. For contracts with medium/large clients after April 2021, the fee payer (agency/client) is the primary target — but HMRC can still pursue you if they cannot pay or if you provided misleading information.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">What is IR35 insurance and do I need it?</div>
+        <div class="faq-a">IR35 insurance covers professional fees for defending an HMRC enquiry. Some policies also cover any resulting tax liability. It typically costs £300–£1,000/year. Given that defending an investigation can cost £5,000–£20,000+ in adviser fees alone, insurance is worth serious consideration for any contractor operating outside IR35.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">I just received a compliance check letter. What should I do first?</div>
+        <div class="faq-a">Do not respond to HMRC before getting professional advice. The letter is not a determination — it's the start of a process. Engage an IR35 specialist or tax adviser immediately; many offer a free initial consultation. Gather all relevant documents (contracts, invoices, working practices evidence) and do not destroy anything. Prompt, professional engagement with HMRC tends to produce better outcomes than ignoring or delaying.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Can I represent myself in an HMRC IR35 investigation?</div>
+        <div class="faq-a">Technically yes, but strongly not recommended. HMRC's investigators are specialists. A professional adviser who understands IR35 case law can present your position more effectively, challenge HMRC's interpretation where it's wrong, and negotiate a settlement if needed. This is the primary value of IR35 insurance — it funds the specialist representation that significantly improves your odds of a favourable outcome.</div>
+      </div>
+
+    </article>
+
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <h3>On this page</h3>
+        <ul class="toc-list">
+          <li><a href="#how-hmrc-selects">How HMRC selects cases</a></li>
+          <li><a href="#investigation-stages">The process step by step</a></li>
+          <li><a href="#how-far-back">How far back HMRC can go</a></li>
+          <li><a href="#liability">What you could owe</a></li>
+          <li><a href="#how-to-protect">How to protect yourself</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <a href="/" class="sidebar-cta">IR35 Calculator →</a>
+        <p style="font-size:0.8rem;color:var(--text-light);text-align:center;margin:0;">See inside vs outside take-home at your rate</p>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Related guides</h3>
+        <a href="/blog/ir35-contract-review-checklist.html" class="sidebar-link">IR35 contract review checklist</a>
+        <a href="/blog/ir35-status-tests-explained.html" class="sidebar-link">The 3 IR35 status tests</a>
+        <a href="/blog/hmrc-cest-tool-problems.html" class="sidebar-link">Why CEST gets IR35 wrong</a>
+        <a href="/blog/what-is-ir35-explained.html" class="sidebar-link">What is IR35?</a>
+        <a href="/blog/ir35-april-2026-small-company-threshold-changes.html" class="sidebar-link">April 2026 threshold changes</a>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="/">Calculator</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+  </div>
+  <p>ir35guide.co.uk — For information only. Not legal or tax advice. Always consult a qualified adviser for your specific situation.</p>
+</footer>
+
+<div id="cookie-banner" role="dialog" aria-label="Cookie consent">
+  <p>We use cookies to measure site usage and improve your experience. See our <a href="/privacy.html">privacy policy</a>.</p>
+  <div class="cookie-btns">
+    <button class="btn-accept" onclick="cookieChoice(true)">Accept</button>
+    <button class="btn-decline" onclick="cookieChoice(false)">Decline</button>
+  </div>
+</div>
+
+<script>
+  function cookieChoice(accepted) {
+    localStorage.setItem('cookie_consent', accepted ? 'accepted' : 'declined');
+    document.getElementById('cookie-banner').classList.remove('show');
+    if (accepted) loadGA();
+  }
+  document.addEventListener('DOMContentLoaded', function() {
+    var consent = localStorage.getItem('cookie_consent');
+    if (!consent) {
+      setTimeout(function() { document.getElementById('cookie-banner').classList.add('show'); }, 1200);
+    } else if (consent === 'accepted') { loadGA(); }
+  });
+</script>
+</body>
+</html>

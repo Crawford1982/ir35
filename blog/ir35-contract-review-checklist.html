@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+
+<!-- Google Analytics 4 — loaded only after consent -->
+<script>
+  window.GA_ID = 'G-N961MFHTCS';
+  window._gaLoaded = false;
+  function loadGA() {
+    if (window._gaLoaded) return;
+    window._gaLoaded = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', window.GA_ID, { anonymize_ip: true });
+  }
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IR35 Contract Review: What to Check Before You Sign (2026)</title>
+  <meta name="description" content="A practical IR35 contract review checklist — which clauses support outside IR35 status, which ones HMRC will flag, and why your working practices matter as much as the wording.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ir35guide.co.uk/blog/ir35-contract-review-checklist.html">
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/favicon-32x32.png">
+  <meta property="og:title" content="IR35 Contract Review: What to Check Before You Sign (2026)">
+  <meta property="og:description" content="A practical IR35 contract review checklist — which clauses support outside IR35 status, which ones HMRC will flag, and why your working practices matter as much as the wording.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ir35guide.co.uk/blog/ir35-contract-review-checklist.html">
+  <meta property="og:site_name" content="IR35 Guide">
+  <meta property="og:image" content="https://ir35guide.co.uk/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://ir35guide.co.uk/og-image.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "IR35 Contract Review: What to Check Before You Sign (2026)",
+    "description": "A practical checklist for reviewing your contract for IR35. Covers the key clauses, red flag language, working practices evidence, and when to get a professional review.",
+    "datePublished": "2026-03-28",
+    "dateModified": "2026-03-28",
+    "author": { "@type": "Organization", "name": "IR35 Guide", "url": "https://ir35guide.co.uk" },
+    "publisher": { "@type": "Organization", "name": "IR35 Guide", "url": "https://ir35guide.co.uk" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ir35guide.co.uk/blog/ir35-contract-review-checklist.html" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is an IR35 contract review?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An IR35 contract review is an assessment of your contractor contract by a qualified IR35 specialist. They examine whether the contract's clauses support an outside IR35 position — particularly around substitution, control, and mutuality of obligation. A professional review also considers whether your actual working practices are consistent with the contract, since HMRC looks at both."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does an IR35 contract review cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Professional IR35 contract reviews typically cost £100–£250 from specialist providers like Qdos, Bauer & Cottrell, or IR35 Shield. Some contractor accountants include reviews as part of their monthly fee. Given that being wrongly classified as inside IR35 can cost £10,000–£20,000 per year in extra tax, the cost of a review is small by comparison."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I review my own contract for IR35?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can do an initial self-review using a checklist — and this guide helps you do that. However, for any contract you intend to rely on as outside IR35, a professional review from a qualified IR35 specialist is strongly recommended. Self-reviews can miss nuanced language and cannot provide the expert opinion you may need if HMRC investigates."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a new contract review each time my contract is renewed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — your IR35 status is assessed contract-by-contract. A previous outside IR35 determination doesn't carry over to a renewal, especially if anything in the contract or working practices has changed. If the contract is renewed with exactly the same wording and nothing has changed in practice, a brief check is still advisable. If the wording has changed at all, a full review is recommended."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a Status Determination Statement (SDS)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Status Determination Statement (SDS) is a written document that a medium or large client must issue to a contractor before the engagement begins, stating whether they consider the contractor to be inside or outside IR35 and the reasons for that determination. Clients must take reasonable care when making the determination. If you disagree with the SDS, you can formally challenge it and the client must respond within 45 days."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0f172a; --blue: #2563eb; --blue-light: #eff6ff;
+      --green: #16a34a; --green-light: #f0fdf4;
+      --amber: #d97706; --amber-light: #fffbeb;
+      --red: #dc2626; --red-light: #fef2f2;
+      --purple: #7c3aed; --purple-light: #f5f3ff;
+      --grey-50: #f8fafc; --grey-100: #f1f5f9; --grey-200: #e2e8f0;
+      --grey-400: #94a3b8; --grey-600: #475569; --grey-800: #1e293b;
+      --text: #1e293b; --text-light: #64748b; --border: #e2e8f0;
+      --radius: 10px; --shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #f8fafc; color: var(--text); line-height: 1.7; }
+    nav { background: var(--navy); padding: 0 24px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.18); }
+    .nav-inner { max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-logo { color: #fff; font-weight: 700; font-size: 1.05rem; text-decoration: none; }
+    .nav-logo span { color: #60a5fa; }
+    .nav-cta { background: var(--blue); color: #fff; padding: 7px 16px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: 600; transition: background 0.15s; }
+    .nav-cta:hover { background: #1d4ed8; }
+    .page-wrap { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+    .hero { background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); color: #fff; padding: 52px 24px 44px; }
+    .hero-inner { max-width: 900px; margin: 0 auto; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); color: #c7d2fe; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em; padding: 4px 12px; border-radius: 20px; margin-bottom: 16px; }
+    .hero h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); font-weight: 700; line-height: 1.25; margin-bottom: 16px; }
+    .hero-sub { font-size: 1.05rem; color: #c7d2fe; max-width: 640px; margin-bottom: 28px; }
+    .hero-meta { font-size: 0.82rem; color: #a5b4fc; display: flex; gap: 20px; flex-wrap: wrap; }
+    .article-layout { display: grid; grid-template-columns: 1fr 280px; gap: 40px; padding: 40px 0 60px; align-items: start; }
+    @media (max-width: 720px) { .article-layout { grid-template-columns: 1fr; } .sidebar { display: none; } }
+    .prose h2 { font-size: 1.35rem; font-weight: 700; color: var(--navy); margin: 40px 0 14px; padding-bottom: 8px; border-bottom: 2px solid var(--grey-200); }
+    .prose h2:first-child { margin-top: 0; }
+    .prose h3 { font-size: 1.05rem; font-weight: 600; color: var(--navy); margin: 28px 0 10px; }
+    .prose p { margin-bottom: 16px; color: var(--text); line-height: 1.75; }
+    .prose ul, .prose ol { margin: 12px 0 18px 20px; }
+    .prose li { margin-bottom: 8px; line-height: 1.65; }
+    .prose strong { color: var(--navy); font-weight: 600; }
+    .prose a { color: var(--blue); text-decoration: underline; }
+    .table-wrap { overflow-x: auto; margin: 20px 0 28px; border-radius: var(--radius); border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th { background: var(--navy); color: #fff; padding: 12px 16px; text-align: left; font-weight: 600; font-size: 0.82rem; letter-spacing: 0.03em; }
+    td { padding: 11px 16px; border-bottom: 1px solid var(--border); color: var(--text); }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: var(--grey-50); }
+    .tag-yes { background: var(--green-light); color: var(--green); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
+    .tag-no { background: var(--red-light); color: var(--red); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
+    .tag-maybe { background: var(--amber-light); color: var(--amber); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
+    .callout { border-radius: var(--radius); padding: 20px 22px; margin: 24px 0; }
+    .callout-blue { background: var(--blue-light); border: 1px solid #bfdbfe; }
+    .callout-green { background: var(--green-light); border: 1px solid #bbf7d0; }
+    .callout-amber { background: var(--amber-light); border: 1px solid #fde68a; }
+    .callout-red { background: var(--red-light); border: 1px solid #fecaca; }
+    .callout-purple { background: var(--purple-light); border: 1px solid #ddd6fe; }
+    .callout-title { font-weight: 700; font-size: 0.9rem; margin-bottom: 8px; }
+    .callout-blue .callout-title { color: var(--blue); }
+    .callout-green .callout-title { color: var(--green); }
+    .callout-amber .callout-title { color: var(--amber); }
+    .callout-red .callout-title { color: var(--red); }
+    .callout-purple .callout-title { color: var(--purple); }
+    .callout p, .callout li { font-size: 0.92rem; line-height: 1.65; }
+    .callout ul { margin: 8px 0 0 18px; }
+
+    .checklist { margin: 20px 0 28px; }
+    .check-section { margin-bottom: 24px; }
+    .check-section-title { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 16px; border-radius: 6px 6px 0 0; }
+    .check-section-title.green { background: var(--green); color: #fff; }
+    .check-section-title.red { background: var(--red); color: #fff; }
+    .check-section-title.amber { background: var(--amber); color: #fff; }
+    .check-item { display: flex; align-items: flex-start; gap: 12px; padding: 12px 16px; border: 1px solid var(--border); border-top: none; background: #fff; font-size: 0.88rem; line-height: 1.55; }
+    .check-item:last-child { border-radius: 0 0 6px 6px; }
+    .check-icon { font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
+
+    .cta-banner { background: var(--navy); color: #fff; border-radius: var(--radius); padding: 28px; margin: 32px 0; text-align: center; }
+    .cta-banner h3 { font-size: 1.2rem; margin-bottom: 8px; }
+    .cta-banner p { color: #94a3b8; font-size: 0.9rem; margin-bottom: 20px; }
+    .cta-banner a { display: inline-block; background: var(--blue); color: #fff; padding: 12px 28px; border-radius: 8px; font-weight: 600; font-size: 0.95rem; text-decoration: none; }
+    .cta-banner a:hover { background: #1d4ed8; }
+    .faq-item { border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 12px; overflow: hidden; }
+    .faq-q { font-weight: 600; font-size: 0.95rem; padding: 16px 20px; background: #fff; color: var(--navy); }
+    .faq-a { padding: 0 20px 16px; background: var(--grey-50); font-size: 0.88rem; color: var(--text-light); line-height: 1.65; }
+    .sidebar { position: sticky; top: 72px; }
+    .sidebar-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin-bottom: 20px; box-shadow: var(--shadow); }
+    .sidebar-card h3 { font-size: 0.9rem; font-weight: 700; color: var(--navy); margin-bottom: 14px; }
+    .toc-list { list-style: none; padding: 0; margin: 0; }
+    .toc-list li { border-bottom: 1px solid var(--grey-100); }
+    .toc-list li:last-child { border-bottom: none; }
+    .toc-list a { display: block; padding: 8px 0; font-size: 0.83rem; color: var(--text-light); text-decoration: none; }
+    .toc-list a:hover { color: var(--blue); }
+    .sidebar-cta { display: block; background: var(--blue); color: #fff; text-align: center; padding: 13px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; text-decoration: none; margin-bottom: 12px; }
+    .sidebar-cta:hover { background: #1d4ed8; }
+    .sidebar-link { display: block; padding: 9px 0; font-size: 0.83rem; color: var(--text-light); text-decoration: none; border-bottom: 1px solid var(--grey-100); }
+    .sidebar-link:last-child { border-bottom: none; }
+    .sidebar-link:hover { color: var(--blue); }
+    footer { background: var(--navy); color: #94a3b8; padding: 32px 24px; font-size: 0.82rem; text-align: center; }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 24px; margin-bottom: 16px; }
+    .footer-links a { color: #94a3b8; text-decoration: none; }
+    .footer-links a:hover { color: #fff; }
+    #cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; z-index: 999; background: #1e293b; border-top: 1px solid #334155; padding: 14px 24px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; box-shadow: 0 -8px 32px rgba(0,0,0,0.3); transform: translateY(100%); transition: transform 0.35s cubic-bezier(0.16,1,0.3,1); }
+    #cookie-banner.show { transform: translateY(0); }
+    #cookie-banner p { font-size: 13px; color: #94a3b8; flex: 1; min-width: 200px; line-height: 1.6; margin: 0; }
+    #cookie-banner a { color: #60a5fa; text-decoration: none; }
+    #cookie-banner a:hover { text-decoration: underline; }
+    .cookie-btns { display: flex; gap: 8px; flex-shrink: 0; }
+    .btn-accept { padding: 8px 18px; background: #2563eb; color: #fff; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; }
+    .btn-accept:hover { background: #1d4ed8; }
+    .btn-decline { padding: 8px 16px; background: none; color: #94a3b8; border: 1px solid #475569; border-radius: 6px; font-size: 12px; cursor: pointer; }
+    .btn-decline:hover { color: #cbd5e1; border-color: #64748b; }
+    @media print { header, nav, footer, .sidebar, #cookie-banner, [class*="affiliate"], .alert-banner, .cookie-btns { display: none !important; } body { background: #fff !important; color: #111 !important; } a { color: #111 !important; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">ir35guide<span>.co.uk</span></a>
+    <a href="/" class="nav-cta">IR35 Calculator →</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">✅ Contract Checklist · Updated March 2026</div>
+    <h1>IR35 Contract Review: What to Check Before You Sign</h1>
+    <p class="hero-sub">Your contract is your first line of defence against IR35. This checklist walks through every key clause, explains what HMRC looks for, and shows you which red-flag phrases could put your outside IR35 status at risk.</p>
+    <div class="hero-meta">
+      <span>⏱ 8 min read</span>
+      <span>📅 March 2026</span>
+      <span>📋 Includes working practices checklist</span>
+    </div>
+  </div>
+</div>
+
+<div class="page-wrap">
+  <div class="article-layout">
+    <article class="prose">
+
+      <h2 id="why-review">Why Your Contract Matters So Much</h2>
+      <p>When HMRC investigates a contractor's IR35 status, the first thing they ask for is the contract. It's the written record of what was agreed between you and the engager — and it either supports or undermines your outside IR35 position from the very first page.</p>
+      <p>A well-drafted contract can't guarantee you're outside IR35 on its own, because HMRC also looks at your actual working practices. But a badly drafted contract can <strong>put you inside IR35 even if you work in a genuinely self-employed way</strong> — because the contract tells a different story.</p>
+      <p>The checklist below covers the key areas in order of importance. Work through it for any new contract before you sign, and repeat it at every renewal.</p>
+
+      <div class="callout callout-amber">
+        <div class="callout-title">⚠️ The contract vs reality problem</div>
+        <p>HMRC can look behind the contract. A spotless set of clauses won't save you if your actual working practices look like employment. Both the contract <em>and</em> the day-to-day reality need to support an outside IR35 position. See the <a href="#working-practices">working practices section</a> below.</p>
+      </div>
+
+      <h2 id="substitution-clause">1. The Substitution Clause</h2>
+      <p>This is the most important clause in your contract. A genuine, unconditional right of substitution is the strongest single indicator of outside IR35 status — because employees cannot send someone else to do their job.</p>
+
+      <div class="checklist">
+        <div class="check-section">
+          <div class="check-section-title green">✅ What a strong substitution clause looks like</div>
+          <div class="check-item"><span class="check-icon">✅</span><span>The right rests with your <strong>limited company</strong>, not you personally</span></div>
+          <div class="check-item"><span class="check-icon">✅</span><span>The client can only refuse a substitute on <strong>defined, reasonable grounds</strong> (skills, security clearance) — not at will</span></div>
+          <div class="check-item"><span class="check-icon">✅</span><span>The cost of any substitute is borne by your company, not the client</span></div>
+          <div class="check-item"><span class="check-icon">✅</span><span>The substitute does not need to be individually approved — just suitably qualified</span></div>
+          <div class="check-item"><span class="check-icon">✅</span><span>There is no language saying "personal services" or "you must personally perform"</span></div>
+        </div>
+        <div class="check-section">
+          <div class="check-section-title red">🚩 Red flags to watch for</div>
+          <div class="check-item"><span class="check-icon">🚩</span><span>"Subject to client consent" with no defined criteria — gives the client an unlimited veto</span></div>
+          <div class="check-item"><span class="check-icon">🚩</span><span>Contract specifies you personally by name or role ("[Name] must personally provide the services")</span></div>
+          <div class="check-item"><span class="check-icon">🚩</span><span>Substitution clause exists but is contradicted elsewhere by "personal services" language</span></div>
+          <div class="check-item"><span class="check-icon">🚩</span><span>No substitution clause at all</span></div>
+        </div>
+      </div>
+
+      <h2 id="control-clause">2. Control and Direction</h2>
+      <p>The contract should make clear that the client specifies the <em>outcome</em>, but not the <em>method</em>. You should be engaged to deliver a result using your professional expertise, not to follow the client's internal process as a directed employee would.</p>
+
+      <div class="checklist">
+        <div class="check-section">
+          <div class="check-section-title green">✅ Strong control language</div>
+          <div class="check-item"><span class="check-icon">✅</span><span>Contract is outcome-based: specifies deliverables, not working method</span></div>
+          <div class="check-item"><span class="check-icon">✅</span><span>Hours and location are at your discretion ("as necessary to complete the services")</span></div>
+          <div class="check-item"><span class="check-icon">✅</span><span>No obligation to attend specific meetings beyond what's needed to deliver the project</span></div>
+          <div class="check-item"><span class="check-icon">✅</span><span>No reference to client's internal policies, performance reviews, or appraisal processes</span></div>
+          <div class="check-item"><span class="check-icon">✅</span><span>No line management or reporting structure within the client's hierarchy</span></div>
+        </div>
+        <div class="check-section">
+          <div class="check-section-title red">🚩 Red flags</div>
+          <div class="check-item"><span class="check-icon">🚩</span><span>"The contractor shall work such hours as directed by the client" — this is employment language</span></div>
+          <div class="check-item"><span class="check-icon">🚩</span><span>Obligation to follow the client's internal policies and procedures as if an employee</span></div>
+          <div class="check-item"><span class="check-icon">🚩</span><span>Mandatory core hours or fixed location requirements</span></div>
+          <div class="check-item"><span class="check-icon">🚩</span><span>Contract places you within the client's management structure with a named line manager</span></div>
+        </div>
+      </div>
+
+      <h2 id="moo-clause">3. Mutuality of Obligation</h2>
+      <p>Following the 2024 PGMOL ruling, MOO arguments have less standalone weight — but the contract should still reflect that neither party has ongoing obligations once the project ends. Avoid open-ended, continuously renewing arrangements where possible.</p>
+
+      <div class="checklist">
+        <div class="check-section">
+          <div class="check-section-title green">✅ What to look for</div>
+          <div class="check-item"><span class="check-icon">✅</span><span>Contract has a <strong>defined end date</strong> — not open-ended or indefinitely rolling</span></div>
+          <div class="check-item"><span class="check-icon">✅</span><span>No obligation on the client to offer further work beyond the contract term</span></div>
+          <div class="check-item"><span class="check-icon">✅</span><span>No obligation on you to accept any further work offered at renewal</span></div>
+          <div class="check-item"><span class="check-icon">✅</span><span>Payment is for services delivered — not a salary-style regular payment regardless of output</span></div>
+        </div>
+        <div class="check-section">
+          <div class="check-section-title amber">⚠️ Watch for</div>
+          <div class="check-item"><span class="check-icon">⚠️</span><span>Contracts that have been rolled over continuously for years without renegotiation</span></div>
+          <div class="check-item"><span class="check-icon">⚠️</span><span>Language implying ongoing retention ("the client wishes to retain the contractor on an ongoing basis")</span></div>
+          <div class="check-item"><span class="check-icon">⚠️</span><span>Fixed monthly retainer regardless of actual work done — resembles a salary</span></div>
+        </div>
+      </div>
+
+      <h2 id="financial-risk">4. Financial Risk and Business-Like Behaviour</h2>
+      <p>Genuine contractors bear financial risk — they can lose money, they invest in their own equipment, and they can be held to account for substandard work. Employees don't bear these risks. Your contract should reflect this.</p>
+
+      <div class="checklist">
+        <div class="check-section">
+          <div class="check-section-title green">✅ Positive indicators</div>
+          <div class="check-item"><span class="check-icon">✅</span><span>You are responsible for rectifying defective work at your own cost and time</span></div>
+          <div class="check-item"><span class="check-icon">✅</span><span>You carry professional indemnity and public liability insurance (and the contract requires it)</span></div>
+          <div class="check-item"><span class="check-icon">✅</span><span>You provide your own equipment and tools where practicable</span></div>
+          <div class="check-item"><span class="check-icon">✅</span><span>Payment is conditional on delivery of agreed services — not a fixed regular amount regardless of output</span></div>
+        </div>
+        <div class="check-section">
+          <div class="check-section-title red">🚩 Red flags</div>
+          <div class="check-item"><span class="check-icon">🚩</span><span>Client provides all equipment and tools and you have no requirement to provide your own</span></div>
+          <div class="check-item"><span class="check-icon">🚩</span><span>No liability for defective work — client accepts all risk on delivery</span></div>
+          <div class="check-item"><span class="check-icon">🚩</span><span>Sick pay, holiday pay, or notice periods that mirror employment terms</span></div>
+        </div>
+      </div>
+
+      <h2 id="exclusivity">5. Exclusivity</h2>
+      <p>An exclusivity clause — requiring you not to work for other clients — is one of the strongest employment indicators in a contract. Genuine contractors are free to work for multiple clients. If a client insists on exclusivity, this needs to be flagged and ideally removed or limited.</p>
+
+      <div class="checklist">
+        <div class="check-section">
+          <div class="check-section-title green">✅ What you want</div>
+          <div class="check-item"><span class="check-icon">✅</span><span>No exclusivity clause — you are free to work for other clients simultaneously</span></div>
+          <div class="check-item"><span class="check-icon">✅</span><span>If a non-compete exists, it is narrowly defined (specific competitor names, limited duration)</span></div>
+        </div>
+        <div class="check-section">
+          <div class="check-section-title red">🚩 Red flags</div>
+          <div class="check-item"><span class="check-icon">🚩</span><span>You are required to give the client "first call" on your time or be available exclusively to them</span></div>
+          <div class="check-item"><span class="check-icon">🚩</span><span>Broad non-compete preventing you from working in your sector for other clients during the contract</span></div>
+        </div>
+      </div>
+
+      <div class="cta-banner">
+        <h3>Know the cost before you sign</h3>
+        <p>If you're uncertain whether a contract puts you inside or outside IR35, see exactly what the financial difference is at your day rate.</p>
+        <a href="/">Calculate your take-home →</a>
+      </div>
+
+      <h2 id="working-practices">6. Working Practices — What the Contract Can't Cover</h2>
+      <p>This is where many contractors trip up. A perfectly worded contract counts for less than people think if HMRC can demonstrate the day-to-day reality was different. HMRC will interview you, your client, and potentially your agency. They'll look for inconsistencies.</p>
+      <p>Keep an "outside IR35 evidence file" for each engagement. It doesn't need to be elaborate — a folder of documents that support your self-employed status:</p>
+
+      <div class="checklist">
+        <div class="check-section">
+          <div class="check-section-title green">✅ Evidence to keep</div>
+          <div class="check-item"><span class="check-icon">📄</span><span>Copies of all contracts and renewal letters</span></div>
+          <div class="check-item"><span class="check-icon">📄</span><span>Evidence of outcome-based working — project plans, deliverables, sign-off documents</span></div>
+          <div class="check-item"><span class="check-icon">📄</span><span>Invoices raised by your company (not timesheets for hours worked like an employee)</span></div>
+          <div class="check-item"><span class="check-icon">📄</span><span>Evidence of working for multiple clients — contracts or invoices for concurrent engagements</span></div>
+          <div class="check-item"><span class="check-icon">📄</span><span>Records of any substitutes provided, or offers of substitution</span></div>
+          <div class="check-item"><span class="check-icon">📄</span><span>Professional indemnity and liability insurance certificates</span></div>
+          <div class="check-item"><span class="check-icon">📄</span><span>Marketing materials — website, LinkedIn, any evidence of being in business generally</span></div>
+          <div class="check-item"><span class="check-icon">📄</span><span>Equipment purchase records if you provide your own tools</span></div>
+        </div>
+        <div class="check-section">
+          <div class="check-section-title red">🚩 Practices that undermine outside IR35</div>
+          <div class="check-item"><span class="check-icon">🚩</span><span>Using the client's email address as if you were an employee (john.smith@clientcompany.com)</span></div>
+          <div class="check-item"><span class="check-icon">🚩</span><span>Appearing on the client's org chart, internal directory, or website as staff</span></div>
+          <div class="check-item"><span class="check-icon">🚩</span><span>Attending company-wide all-hands meetings, social events, or team-building as if permanent staff</span></div>
+          <div class="check-item"><span class="check-icon">🚩</span><span>Working exclusively for one client for years with no gaps and no other work</span></div>
+          <div class="check-item"><span class="check-icon">🚩</span><span>Being managed, appraised, or performance-reviewed by the client's HR process</span></div>
+          <div class="check-item"><span class="check-icon">🚩</span><span>Submitting weekly timesheets for hours rather than invoicing for deliverables</span></div>
+        </div>
+      </div>
+
+      <h2 id="sds">7. Status Determination Statement (SDS) — Medium &amp; Large Clients</h2>
+      <p>If your client is a medium or large company (or any public sector body), they must issue a <strong>Status Determination Statement (SDS)</strong> before your engagement begins. This is their written assessment of your IR35 status and the reasons for it.</p>
+      <p>Key points on SDS:</p>
+      <ul>
+        <li>The client must take <strong>reasonable care</strong> when making the determination — blanket inside IR35 decisions applied to all contractors without individual assessment do not meet this standard</li>
+        <li>If you disagree with the determination, you have the right to formally challenge it — the client must respond within <strong>45 days</strong></li>
+        <li>If the client fails to issue an SDS at all, the tax liability falls on them, not you</li>
+        <li>A favourable SDS (outside IR35) provides some protection but does not guarantee HMRC will agree if they investigate</li>
+      </ul>
+
+      <div class="callout callout-blue">
+        <div class="callout-title">Small companies — self-assess</div>
+        <p>If your client qualifies as small (from 6 April 2026: turnover under £15m, balance sheet under £7.5m, or fewer than 50 employees — meeting at least two criteria), they are exempt from the off-payroll working rules. You self-assess your own IR35 status under the original Chapter 8 rules. See our guide to <a href="/blog/ir35-april-2026-small-company-threshold-changes.html">the April 2026 threshold changes</a> to understand whether your client now qualifies.</p>
+      </div>
+
+      <h2 id="when-to-get-reviewed">When to Get a Professional Review</h2>
+      <p>A self-review using this checklist is a useful starting point, but it has limits. A qualified IR35 specialist can identify nuanced language issues you might miss, advise on how to negotiate problem clauses, and provide a written opinion you can rely on if HMRC ever asks.</p>
+      <p>You should get a professional review when:</p>
+      <ul>
+        <li>Starting any new outside IR35 engagement, especially with a medium or large company</li>
+        <li>Renewing a contract where the wording has changed</li>
+        <li>You have any doubt about any clause in the contract</li>
+        <li>The client has issued an inside IR35 SDS and you want to challenge it</li>
+        <li>You are approaching a contract that has been continuously renewed for more than 2 years</li>
+      </ul>
+      <p>Specialist providers include Qdos, Bauer &amp; Cottrell, IR35 Shield, and Kingsbridge. Typical cost: £100–£250 per review. At most day rates, this is less than half a day's income — and the tax exposure it protects against is £10,000+ per year.</p>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <div class="faq-q">What is an IR35 contract review?</div>
+        <div class="faq-a">An assessment of your contractor contract by a qualified IR35 specialist, examining whether the clauses support an outside IR35 position — particularly around substitution, control, and mutuality of obligation. A good professional review also looks at working practices, not just the contract wording.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">How much does an IR35 contract review cost?</div>
+        <div class="faq-a">Typically £100–£250 from specialist providers. Some contractor accountants include reviews as part of their monthly fee. Given that being wrongly inside IR35 can cost £10,000–£20,000 per year in extra tax, the cost is small by comparison.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Do I need a new review each time my contract renews?</div>
+        <div class="faq-a">Yes — your IR35 status is assessed contract-by-contract. If wording has changed, a full review is recommended. If the contract is identical and nothing has changed in practice, a brief check at minimum. Don't assume a previous review covers a renewal.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">My client wants to keep me on continuously. Is this a problem?</div>
+        <div class="faq-a">Long-running continuous contracts are an HMRC risk factor — they start to look like employment rather than discrete project engagements. You can mitigate this by ensuring there are genuine gaps between contracts (even short ones), renegotiating scope at each renewal, and maintaining clear project deliverables rather than open-ended availability.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Can I challenge my client's inside IR35 determination?</div>
+        <div class="faq-a">Yes. If a medium or large client issues an inside IR35 SDS and you disagree, you have the right to formally challenge it using the client's status disagreement process. The client must respond in writing within 45 days explaining why they are maintaining or changing their determination. If you're not satisfied, you can still raise the matter with HMRC directly.</div>
+      </div>
+
+    </article>
+
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <h3>On this page</h3>
+        <ul class="toc-list">
+          <li><a href="#why-review">Why your contract matters</a></li>
+          <li><a href="#substitution-clause">1. Substitution clause</a></li>
+          <li><a href="#control-clause">2. Control and direction</a></li>
+          <li><a href="#moo-clause">3. Mutuality of obligation</a></li>
+          <li><a href="#financial-risk">4. Financial risk</a></li>
+          <li><a href="#exclusivity">5. Exclusivity</a></li>
+          <li><a href="#working-practices">6. Working practices</a></li>
+          <li><a href="#sds">7. SDS — what you need</a></li>
+          <li><a href="#when-to-get-reviewed">When to get reviewed</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <a href="/" class="sidebar-cta">IR35 Calculator →</a>
+        <p style="font-size:0.8rem;color:var(--text-light);text-align:center;margin:0;">See your take-home inside vs outside IR35</p>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Related guides</h3>
+        <a href="/blog/ir35-status-tests-explained.html" class="sidebar-link">The 3 IR35 status tests</a>
+        <a href="/blog/hmrc-cest-tool-problems.html" class="sidebar-link">Why CEST gets IR35 wrong</a>
+        <a href="/blog/what-is-ir35-explained.html" class="sidebar-link">What is IR35?</a>
+        <a href="/blog/ir35-april-2026-small-company-threshold-changes.html" class="sidebar-link">April 2026 threshold changes</a>
+        <a href="/blog/hmrc-ir35-investigation.html" class="sidebar-link">What happens in an HMRC investigation</a>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="/">Calculator</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+  </div>
+  <p>ir35guide.co.uk — For information only. Not legal or tax advice. Always consult a qualified adviser for your specific situation.</p>
+</footer>
+
+<div id="cookie-banner" role="dialog" aria-label="Cookie consent">
+  <p>We use cookies to measure site usage and improve your experience. See our <a href="/privacy.html">privacy policy</a>.</p>
+  <div class="cookie-btns">
+    <button class="btn-accept" onclick="cookieChoice(true)">Accept</button>
+    <button class="btn-decline" onclick="cookieChoice(false)">Decline</button>
+  </div>
+</div>
+
+<script>
+  function cookieChoice(accepted) {
+    localStorage.setItem('cookie_consent', accepted ? 'accepted' : 'declined');
+    document.getElementById('cookie-banner').classList.remove('show');
+    if (accepted) loadGA();
+  }
+  document.addEventListener('DOMContentLoaded', function() {
+    var consent = localStorage.getItem('cookie_consent');
+    if (!consent) {
+      setTimeout(function() { document.getElementById('cookie-banner').classList.add('show'); }, 1200);
+    } else if (consent === 'accepted') { loadGA(); }
+  });
+</script>
+</body>
+</html>

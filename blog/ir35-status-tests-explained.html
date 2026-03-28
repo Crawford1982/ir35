@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+
+<!-- Google Analytics 4 — loaded only after consent -->
+<script>
+  window.GA_ID = 'G-N961MFHTCS';
+  window._gaLoaded = false;
+  function loadGA() {
+    if (window._gaLoaded) return;
+    window._gaLoaded = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', window.GA_ID, { anonymize_ip: true });
+  }
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IR35 Status Tests Explained: SDC, Substitution & MOO (2026)</title>
+  <meta name="description" content="The 3 IR35 status tests that determine inside vs outside IR35 — supervision & control, right of substitution, and mutuality of obligation. Updated for the 2024 PGMOL ruling.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ir35guide.co.uk/blog/ir35-status-tests-explained.html">
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/favicon-32x32.png">
+  <meta property="og:title" content="IR35 Status Tests Explained: SDC, Substitution & MOO (2026)">
+  <meta property="og:description" content="The 3 IR35 status tests that determine inside vs outside IR35 — supervision & control, right of substitution, and mutuality of obligation. Updated for the 2024 PGMOL ruling.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ir35guide.co.uk/blog/ir35-status-tests-explained.html">
+  <meta property="og:site_name" content="IR35 Guide">
+  <meta property="og:image" content="https://ir35guide.co.uk/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://ir35guide.co.uk/og-image.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "IR35 Status Tests Explained: SDC, Right of Substitution & MOO (2026)",
+    "description": "A plain English guide to the three key IR35 status tests — supervision, direction and control (SDC), right of substitution, and mutuality of obligation (MOO) — including the 2024 PGMOL Supreme Court ruling that changed how MOO is assessed.",
+    "datePublished": "2026-03-28",
+    "dateModified": "2026-03-28",
+    "author": { "@type": "Organization", "name": "IR35 Guide", "url": "https://ir35guide.co.uk" },
+    "publisher": { "@type": "Organization", "name": "IR35 Guide", "url": "https://ir35guide.co.uk" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ir35guide.co.uk/blog/ir35-status-tests-explained.html" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What are the three IR35 status tests?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The three key IR35 status tests are: (1) Right of Substitution — can you send a substitute to do the work instead of you? (2) Supervision, Direction and Control (SDC) — does the client control how you work, or just the outcome? (3) Mutuality of Obligation (MOO) — are you obliged to accept work, and is the client obliged to offer it? No single test is conclusive on its own. HMRC looks at the overall picture, but a genuine right of substitution is the single strongest indicator of outside IR35 status."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is SDC in IR35?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SDC stands for Supervision, Direction and Control. It is one of the three key IR35 status tests. 'Supervision' means being watched to ensure work is done correctly. 'Direction' means being told how to do the work. 'Control' means being told what to work on and when. A genuine contractor should only be subject to the overall outcome required — the client should not control the method or process. If the client treats you like an employee in terms of how you work day to day, this points towards inside IR35."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the right of substitution in IR35?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The right of substitution means your contract gives you the contractual right to send a suitably qualified replacement to do the work instead of you, at your own cost, and without requiring the client's approval beyond reasonable suitability checks. It does not need to have been exercised — the contractual right existing is what matters. A genuine, unrestricted right of substitution is the single most powerful indicator of outside IR35 status, as employees cannot send substitutes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is mutuality of obligation (MOO) in IR35?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mutuality of obligation (MOO) refers to whether there is an ongoing obligation: the client is obliged to offer you work and you are obliged to accept it. This is characteristic of employment. Following the Supreme Court's 2024 PGMOL ruling, arguing that MOO does not exist at all has become very difficult — the Court ruled that some level of mutual obligation always exists within an engagement. MOO now carries less standalone weight in IR35 cases, with Control and Substitution being the dominant tests."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does my contract wording matter for IR35?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, but it is not the only thing that matters. HMRC looks at both the written contract and the actual working practices. A contract can say you have a right of substitution, but if the client has never allowed it in practice or would refuse it, the clause carries less weight. Similarly, a contract saying the client has no control means little if, in practice, they dictate your hours, location, and working methods. Both the contract and the reality must be consistent."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which IR35 test carries the most weight?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In practice, the right of substitution carries the most weight — a genuine, unfettered right to substitute is the strongest indicator of outside IR35 status in tribunal cases. Control (SDC) is the second most important factor. Following the 2024 PGMOL ruling, mutuality of obligation is now the weakest of the three tests as a standalone argument, since some degree of MOO is deemed to always exist within an engagement."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0f172a;
+      --blue: #2563eb;
+      --blue-light: #eff6ff;
+      --green: #16a34a;
+      --green-light: #f0fdf4;
+      --amber: #d97706;
+      --amber-light: #fffbeb;
+      --red: #dc2626;
+      --red-light: #fef2f2;
+      --purple: #7c3aed;
+      --purple-light: #f5f3ff;
+      --grey-50: #f8fafc;
+      --grey-100: #f1f5f9;
+      --grey-200: #e2e8f0;
+      --grey-400: #94a3b8;
+      --grey-600: #475569;
+      --grey-800: #1e293b;
+      --text: #1e293b;
+      --text-light: #64748b;
+      --border: #e2e8f0;
+      --radius: 10px;
+      --shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #f8fafc; color: var(--text); line-height: 1.7; }
+
+    nav { background: var(--navy); padding: 0 24px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.18); }
+    .nav-inner { max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-logo { color: #fff; font-weight: 700; font-size: 1.05rem; text-decoration: none; }
+    .nav-logo span { color: #60a5fa; }
+    .nav-cta { background: var(--blue); color: #fff; padding: 7px 16px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: 600; transition: background 0.15s; }
+    .nav-cta:hover { background: #1d4ed8; }
+
+    .page-wrap { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+    .hero { background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); color: #fff; padding: 52px 24px 44px; }
+    .hero-inner { max-width: 900px; margin: 0 auto; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); color: #c7d2fe; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em; padding: 4px 12px; border-radius: 20px; margin-bottom: 16px; }
+    .hero h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); font-weight: 700; line-height: 1.25; margin-bottom: 16px; }
+    .hero-sub { font-size: 1.05rem; color: #c7d2fe; max-width: 640px; margin-bottom: 28px; }
+    .hero-meta { font-size: 0.82rem; color: #a5b4fc; display: flex; gap: 20px; flex-wrap: wrap; }
+
+    .article-layout { display: grid; grid-template-columns: 1fr 280px; gap: 40px; padding: 40px 0 60px; align-items: start; }
+    @media (max-width: 720px) { .article-layout { grid-template-columns: 1fr; } .sidebar { display: none; } }
+
+    .prose h2 { font-size: 1.35rem; font-weight: 700; color: var(--navy); margin: 40px 0 14px; padding-bottom: 8px; border-bottom: 2px solid var(--grey-200); }
+    .prose h2:first-child { margin-top: 0; }
+    .prose h3 { font-size: 1.05rem; font-weight: 600; color: var(--navy); margin: 28px 0 10px; }
+    .prose p { margin-bottom: 16px; color: var(--text); line-height: 1.75; }
+    .prose ul, .prose ol { margin: 12px 0 18px 20px; }
+    .prose li { margin-bottom: 8px; line-height: 1.65; }
+    .prose strong { color: var(--navy); font-weight: 600; }
+    .prose a { color: var(--blue); text-decoration: underline; }
+
+    .table-wrap { overflow-x: auto; margin: 20px 0 28px; border-radius: var(--radius); border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th { background: var(--navy); color: #fff; padding: 12px 16px; text-align: left; font-weight: 600; font-size: 0.82rem; letter-spacing: 0.03em; }
+    td { padding: 11px 16px; border-bottom: 1px solid var(--border); color: var(--text); }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: var(--grey-50); }
+    .tag-yes { background: var(--green-light); color: var(--green); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
+    .tag-no { background: var(--red-light); color: var(--red); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
+    .tag-maybe { background: var(--amber-light); color: var(--amber); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
+
+    .callout { border-radius: var(--radius); padding: 20px 22px; margin: 24px 0; }
+    .callout-blue { background: var(--blue-light); border: 1px solid #bfdbfe; }
+    .callout-green { background: var(--green-light); border: 1px solid #bbf7d0; }
+    .callout-amber { background: var(--amber-light); border: 1px solid #fde68a; }
+    .callout-red { background: var(--red-light); border: 1px solid #fecaca; }
+    .callout-purple { background: var(--purple-light); border: 1px solid #ddd6fe; }
+    .callout-title { font-weight: 700; font-size: 0.9rem; margin-bottom: 8px; }
+    .callout-blue .callout-title { color: var(--blue); }
+    .callout-green .callout-title { color: var(--green); }
+    .callout-amber .callout-title { color: var(--amber); }
+    .callout-red .callout-title { color: var(--red); }
+    .callout-purple .callout-title { color: var(--purple); }
+    .callout p, .callout li { font-size: 0.92rem; line-height: 1.65; }
+    .callout ul { margin: 8px 0 0 18px; }
+
+    .test-block { border: 1px solid var(--border); border-radius: var(--radius); background: #fff; margin: 24px 0; overflow: hidden; }
+    .test-block-header { padding: 18px 22px; display: flex; align-items: center; gap: 14px; }
+    .test-block-header.outside { background: var(--green-light); border-bottom: 1px solid #bbf7d0; }
+    .test-block-header.inside { background: var(--red-light); border-bottom: 1px solid #fecaca; }
+    .test-block-header.neutral { background: var(--blue-light); border-bottom: 1px solid #bfdbfe; }
+    .test-block-badge { font-size: 0.75rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+    .badge-outside { background: var(--green); color: #fff; }
+    .badge-inside { background: var(--red); color: #fff; }
+    .badge-neutral { background: var(--blue); color: #fff; }
+    .test-block-header h3 { font-size: 1rem; font-weight: 700; color: var(--navy); margin: 0; }
+    .test-block-body { padding: 18px 22px; }
+    .test-block-body p { font-size: 0.9rem; line-height: 1.65; margin-bottom: 12px; color: var(--text); }
+    .test-block-body p:last-child { margin-bottom: 0; }
+
+    .score-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0; }
+    @media (max-width: 560px) { .score-grid { grid-template-columns: 1fr; } }
+    .score-card { border-radius: var(--radius); padding: 16px 18px; border: 1px solid var(--border); background: #fff; }
+    .score-card-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-light); margin-bottom: 6px; }
+    .score-card-value { font-size: 0.92rem; font-weight: 600; color: var(--navy); line-height: 1.4; }
+
+    .cta-banner { background: var(--navy); color: #fff; border-radius: var(--radius); padding: 28px; margin: 32px 0; text-align: center; }
+    .cta-banner h3 { font-size: 1.2rem; margin-bottom: 8px; }
+    .cta-banner p { color: #94a3b8; font-size: 0.9rem; margin-bottom: 20px; }
+    .cta-banner a { display: inline-block; background: var(--blue); color: #fff; padding: 12px 28px; border-radius: 8px; font-weight: 600; font-size: 0.95rem; text-decoration: none; }
+    .cta-banner a:hover { background: #1d4ed8; }
+
+    .faq-item { border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 12px; overflow: hidden; }
+    .faq-q { font-weight: 600; font-size: 0.95rem; padding: 16px 20px; background: #fff; color: var(--navy); }
+    .faq-a { padding: 0 20px 16px; background: var(--grey-50); font-size: 0.88rem; color: var(--text-light); line-height: 1.65; }
+
+    .sidebar { position: sticky; top: 72px; }
+    .sidebar-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin-bottom: 20px; box-shadow: var(--shadow); }
+    .sidebar-card h3 { font-size: 0.9rem; font-weight: 700; color: var(--navy); margin-bottom: 14px; }
+    .toc-list { list-style: none; padding: 0; margin: 0; }
+    .toc-list li { border-bottom: 1px solid var(--grey-100); }
+    .toc-list li:last-child { border-bottom: none; }
+    .toc-list a { display: block; padding: 8px 0; font-size: 0.83rem; color: var(--text-light); text-decoration: none; }
+    .toc-list a:hover { color: var(--blue); }
+    .sidebar-cta { display: block; background: var(--blue); color: #fff; text-align: center; padding: 13px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; text-decoration: none; margin-bottom: 12px; }
+    .sidebar-cta:hover { background: #1d4ed8; }
+    .sidebar-link { display: block; padding: 9px 0; font-size: 0.83rem; color: var(--text-light); text-decoration: none; border-bottom: 1px solid var(--grey-100); }
+    .sidebar-link:last-child { border-bottom: none; }
+    .sidebar-link:hover { color: var(--blue); }
+
+    footer { background: var(--navy); color: #94a3b8; padding: 32px 24px; font-size: 0.82rem; text-align: center; }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 24px; margin-bottom: 16px; }
+    .footer-links a { color: #94a3b8; text-decoration: none; }
+    .footer-links a:hover { color: #fff; }
+
+    /* ─── COOKIE BANNER ─── */
+    #cookie-banner {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 999;
+      background: #1e293b;
+      border-top: 1px solid #334155;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      box-shadow: 0 -8px 32px rgba(0,0,0,0.3);
+      transform: translateY(100%);
+      transition: transform 0.35s cubic-bezier(0.16,1,0.3,1);
+    }
+    #cookie-banner.show { transform: translateY(0); }
+    #cookie-banner p { font-size: 13px; color: #94a3b8; flex: 1; min-width: 200px; line-height: 1.6; margin: 0; }
+    #cookie-banner a { color: #60a5fa; text-decoration: none; }
+    #cookie-banner a:hover { text-decoration: underline; }
+    .cookie-btns { display: flex; gap: 8px; flex-shrink: 0; }
+    .btn-accept { padding: 8px 18px; background: #2563eb; color: #fff; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; transition: background 0.15s; }
+    .btn-accept:hover { background: #1d4ed8; }
+    .btn-decline { padding: 8px 16px; background: none; color: #94a3b8; border: 1px solid #475569; border-radius: 6px; font-size: 12px; cursor: pointer; transition: all 0.15s; }
+    .btn-decline:hover { color: #cbd5e1; border-color: #64748b; }
+
+    @media print {
+      header, nav, footer, .sidebar, #cookie-banner,
+      [class*="affiliate"], .alert-banner, .cookie-btns { display: none !important; }
+      body { background: #fff !important; color: #111 !important; }
+      a { color: #111 !important; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">ir35guide<span>.co.uk</span></a>
+    <a href="/" class="nav-cta">IR35 Calculator →</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">📋 Status Guide · Updated March 2026</div>
+    <h1>The 3 IR35 Status Tests: SDC, Substitution &amp; MOO Explained</h1>
+    <p class="hero-sub">Your IR35 status comes down to three tests. Get them right and you're outside IR35. Get them wrong — or ignore them — and HMRC will treat you as an employee. Here's exactly what each test means and how HMRC weighs them.</p>
+    <div class="hero-meta">
+      <span>⏱ 10 min read</span>
+      <span>📅 March 2026</span>
+      <span>⚖️ Includes 2024 PGMOL ruling</span>
+    </div>
+  </div>
+</div>
+
+<div class="page-wrap">
+  <div class="article-layout">
+    <article class="prose">
+
+      <h2 id="overview">Why These Tests Matter</h2>
+      <p>IR35 has no single bright line. HMRC doesn't look at your job title, your company name, or how long you've been contracting. It looks at the <strong>nature of the working relationship</strong> — specifically, whether it looks more like self-employment or more like employment.</p>
+      <p>Three tests, developed through decades of case law, do most of the heavy lifting. Together they determine whether a contractor is genuinely in business for themselves, or is effectively a disguised employee.</p>
+
+      <div class="callout callout-blue">
+        <div class="callout-title">The three IR35 status tests</div>
+        <ul>
+          <li><strong>Right of Substitution</strong> — can you send someone else to do the work?</li>
+          <li><strong>Supervision, Direction &amp; Control (SDC)</strong> — does the client control <em>how</em> you work?</li>
+          <li><strong>Mutuality of Obligation (MOO)</strong> — are you obliged to accept work, and is the client obliged to offer it?</li>
+        </ul>
+      </div>
+
+      <p>No single test is automatically decisive, but courts and HMRC have consistently found that a <strong>genuine, unfettered right of substitution</strong> is the single strongest indicator of outside IR35 status. If you can send a substitute, you are not personally providing your services — and personal service is a cornerstone of employment.</p>
+
+      <div class="callout callout-amber">
+        <div class="callout-title">⚠️ Contract vs reality</div>
+        <p>HMRC assesses both your <strong>written contract</strong> and your <strong>actual working practices</strong>. A contract that says all the right things but doesn't reflect how you actually work will not protect you. Both must be consistent.</p>
+      </div>
+
+      <h2 id="substitution">1. Right of Substitution</h2>
+      <p>The right of substitution is the most powerful IR35 indicator. It asks a simple question: <strong>does the client need <em>you personally</em>, or do they just need the service delivered?</strong></p>
+      <p>Employees cannot send someone else to do their job. Genuine contractors can. If your contract gives you a real, enforceable right to put a suitable replacement in your place — and the client can only object on reasonable grounds like suitability or security clearance — this is a strong indicator of outside IR35 status.</p>
+
+      <h3>What makes a substitution clause strong?</h3>
+      <ul>
+        <li>The right sits with your limited company, not you personally</li>
+        <li>The substitute does not need the client's approval — only needs to meet reasonable skills/suitability criteria</li>
+        <li>The cost of the substitute is met by you (your company), not the client</li>
+        <li>The right is genuine and unconditional — not "subject to client agreement" in practice</li>
+      </ul>
+
+      <h3>What weakens a substitution clause</h3>
+      <ul>
+        <li>"Subject to client approval" with no limit on what grounds approval can be refused</li>
+        <li>Named individual requirements ("Jim Crawford must personally perform the services")</li>
+        <li>A clause that exists on paper but has never been exercised or offered in the real relationship</li>
+        <li>Clients who've confirmed in writing or in practice they would never accept a substitute</li>
+      </ul>
+
+      <div class="callout callout-green">
+        <div class="callout-title">✅ You don't need to have actually used it</div>
+        <p>The right of substitution doesn't need to have been exercised for it to count. The fact that a genuine contractual right exists is sufficient — as confirmed in multiple tribunal cases. What matters is that the right is <em>real</em>, not theoretical.</p>
+      </div>
+
+      <div class="test-block">
+        <div class="test-block-header outside">
+          <span class="test-block-badge badge-outside">OUTSIDE IR35</span>
+          <h3>Strong substitution — what it looks like</h3>
+        </div>
+        <div class="test-block-body">
+          <p>"My company has the right to provide a suitably qualified substitute at any time. The client may reasonably object only if the substitute lacks the necessary skills or security clearance. The cost of the substitute is borne by my company."</p>
+        </div>
+      </div>
+
+      <div class="test-block">
+        <div class="test-block-header inside">
+          <span class="test-block-badge badge-inside">RISK — INSIDE IR35</span>
+          <h3>Weak substitution — what to watch for</h3>
+        </div>
+        <div class="test-block-body">
+          <p>"The contractor may not substitute without prior written consent from the client." — The word "consent" with no defined criteria gives the client a veto, making the right effectively meaningless.</p>
+          <p>Also watch for role descriptions that specify you personally ("the contractor agrees to personally carry out…") — this negates any substitution clause.</p>
+        </div>
+      </div>
+
+      <h2 id="sdc">2. Supervision, Direction &amp; Control (SDC)</h2>
+      <p>SDC examines who controls <strong>how the work is done</strong>, not just what needs to be delivered. It is three distinct concepts, though they often overlap:</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Component</th>
+              <th>What it means</th>
+              <th>Employment indicator</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Supervision</strong></td>
+              <td>Someone watches over your work to ensure it is done correctly and to their standard</td>
+              <td>Being performance-managed, reviewed, or monitored on process</td>
+            </tr>
+            <tr>
+              <td><strong>Direction</strong></td>
+              <td>Someone tells you <em>how</em> to complete the work — the method, approach, or process</td>
+              <td>Being given detailed instructions on how to do the job, not just what to deliver</td>
+            </tr>
+            <tr>
+              <td><strong>Control</strong></td>
+              <td>Someone tells you <em>what</em> to work on and <em>when</em></td>
+              <td>Being assigned tasks, expected to work specific hours, being on a rota or shift</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>A genuine contractor is engaged to deliver an outcome. The client says what they want — a working software module, a completed tax return, a finished building phase — but they don't dictate <em>how</em> you go about it. Your expertise is precisely why you were hired.</p>
+      <p>By contrast, an employee is supervised, told how to work, and expected to follow the employer's processes. If a contractor's day-to-day reality looks like this, SDC points toward inside IR35.</p>
+
+      <h3>SDC: inside vs outside in practice</h3>
+
+      <div class="score-grid">
+        <div class="score-card" style="border-left: 3px solid var(--green);">
+          <div class="score-card-label">🟢 Outside IR35 indicators</div>
+          <div class="score-card-value">
+            You decide <em>how</em> to deliver the work<br><br>
+            No line management or appraisals<br><br>
+            Flexible hours and location<br><br>
+            Outcome-based — no process prescription<br><br>
+            Not included in team meetings, rotas, or HR processes
+          </div>
+        </div>
+        <div class="score-card" style="border-left: 3px solid var(--red);">
+          <div class="score-card-label">🔴 Inside IR35 indicators</div>
+          <div class="score-card-value">
+            Client dictates method and process<br><br>
+            Required to follow internal policies like an employee<br><br>
+            Fixed hours, set desk, set location<br><br>
+            Performance reviews or KPIs apply<br><br>
+            Integrated into the client's team as if permanent
+          </div>
+        </div>
+      </div>
+
+      <div class="callout callout-amber">
+        <div class="callout-title">⚠️ Integration vs outcome</div>
+        <p>One of the most common IR35 red flags is <strong>integration</strong> — being treated as part of the permanent workforce. Using the client's email signature, appearing on their org chart, attending all-hands company meetings, being referred to as "our developer" — these are all factors HMRC considers when assessing control.</p>
+      </div>
+
+      <h2 id="moo">3. Mutuality of Obligation (MOO)</h2>
+      <p>MOO has historically been the most misunderstood of the three tests — and its significance changed significantly following the <strong>2024 Supreme Court PGMOL ruling</strong>.</p>
+
+      <h3>What is MOO?</h3>
+      <p>Mutuality of obligation refers to whether there is an ongoing, mutual commitment between the two parties: the client is obliged to offer work, and the contractor is obliged to accept it. This mirrors an employment relationship, where an employer offers regular work and an employee is expected to show up.</p>
+      <p>For genuine self-employment, neither party should be under such an obligation. A contractor takes on a specific project, delivers it, and the relationship ends. There is no expectation of further work, and the contractor is free to refuse future engagements.</p>
+
+      <h3>What changed with PGMOL (2024)?</h3>
+      <div class="callout callout-purple">
+        <div class="callout-title">⚖️ PGMOL Supreme Court ruling — April 2024</div>
+        <p>The Supreme Court's ruling in <em>HMRC v Professional Game Match Officials Ltd</em> (PGMOL) — a case about football referees — fundamentally changed how MOO is treated in IR35 cases.</p>
+        <p>The Court ruled that <strong>some degree of mutual obligation always exists within any engagement</strong>. The simple fact that a contractor accepts work and the client pays for it creates a "wage-work bargain" — a basic form of MOO. Arguing that MOO doesn't exist at all in an engagement is therefore no longer a viable strategy.</p>
+        <p>From 6 April 2026, MOO arguments carry significantly less standalone weight. The dominant tests are now <strong>Control</strong> and <strong>Right of Substitution</strong>.</p>
+      </div>
+
+      <h3>How MOO still matters</h3>
+      <p>MOO isn't irrelevant — it just can't be used as a standalone defence. Where MOO still has value is in demonstrating the <em>absence</em> of ongoing obligation <strong>between</strong> engagements. A contractor who works project-by-project with gaps between contracts, who genuinely has no guarantee of further work, and who is free to refuse further engagements, is in a stronger position than one on a rolling contract with continuous renewal.</p>
+      <p>What to document as evidence:</p>
+      <ul>
+        <li>Contracts have a defined end date (not open-ended)</li>
+        <li>Gaps between contracts — even short ones — where no work or pay is provided</li>
+        <li>No obligation to accept further work when offered</li>
+        <li>No expectation from either party of ongoing work beyond the current contract</li>
+      </ul>
+
+      <h2 id="weighting">How HMRC Weighs the Tests Together</h2>
+      <p>IR35 is not a checklist where you score points and pass or fail. It is a holistic assessment of the overall employment relationship. No single test automatically determines the outcome, and there is no fixed weighting.</p>
+      <p>That said, tribunals have consistently treated the tests as having a rough hierarchy in practice:</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Test</th>
+              <th>Practical weight</th>
+              <th>Direction since PGMOL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Right of Substitution</strong></td>
+              <td>Highest — a genuine right is the strongest outside IR35 indicator</td>
+              <td><span class="tag-yes">Unchanged</span></td>
+            </tr>
+            <tr>
+              <td><strong>Control (SDC)</strong></td>
+              <td>Very high — integration and day-to-day control are major factors</td>
+              <td><span class="tag-yes">Increased</span></td>
+            </tr>
+            <tr>
+              <td><strong>MOO</strong></td>
+              <td>Supporting evidence only — can't be used as standalone defence</td>
+              <td><span class="tag-maybe">Reduced</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Other factors HMRC also considers — sometimes called secondary tests — include: financial risk (does the contractor bear business risk?), equipment provision (does the contractor provide their own tools?), part and parcel of the organisation (is the contractor integrated into the permanent workforce?), and exclusivity (does the contractor work for multiple clients?).</p>
+
+      <div class="callout callout-blue">
+        <div class="callout-title">Working for multiple clients</div>
+        <p>Working for more than one client simultaneously is a strong indicator of genuine self-employment — employees don't have other employers. While not one of the three primary tests, it carries weight and is easy to demonstrate if you keep records of concurrent or sequential client work.</p>
+      </div>
+
+      <h2 id="contract-vs-reality">Contract vs Working Practices — Why Both Matter</h2>
+      <p>HMRC has the power to look beyond the written contract. The leading case is <em>Ready Mixed Concrete v MPNI</em> (1968), but modern IR35 cases confirm the same principle: if the contract says one thing and reality says another, HMRC will look at reality.</p>
+      <p>This matters because many contractors have "clean" contracts written by specialist IR35 lawyers — strong substitution rights, minimal control language — but work in ways that contradict those terms. Common examples:</p>
+      <ul>
+        <li>The contract has a substitution clause but the client has verbally confirmed they'd never allow a substitute in practice</li>
+        <li>The contract says hours are flexible but the contractor works 9-5 Monday to Friday like every other employee</li>
+        <li>The contract has an outcome-based scope but the contractor is line-managed and given daily task lists</li>
+      </ul>
+      <p>The solution is to ensure your working practices are <strong>consistent with your contract</strong> and that you can evidence this. Keep records of project deliverables, avoid being included in permanent staff processes, and ensure your contract is renewed (not rolled over indefinitely) with a clear scope each time.</p>
+
+      <div class="cta-banner">
+        <h3>See how much your IR35 status affects your pay</h3>
+        <p>Use our free calculator to compare inside vs outside IR35 take-home at your day rate.</p>
+        <a href="/">Calculate your take-home →</a>
+      </div>
+
+      <h2 id="self-assessment">Quick Self-Assessment: Where Do You Stand?</h2>
+      <p>Run through these questions honestly for your current engagement. More "yes" answers mean you're in a stronger outside IR35 position.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Question</th>
+              <th>Outside IR35</th>
+              <th>Inside IR35</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Does your contract include a genuine right of substitution?</td>
+              <td><span class="tag-yes">Yes ✓</span></td>
+              <td><span class="tag-no">No ✗</span></td>
+            </tr>
+            <tr>
+              <td>Could the client refuse a substitute for any reason?</td>
+              <td><span class="tag-yes">No ✓</span></td>
+              <td><span class="tag-no">Yes ✗</span></td>
+            </tr>
+            <tr>
+              <td>Does the client control <em>how</em> you do your work?</td>
+              <td><span class="tag-yes">No ✓</span></td>
+              <td><span class="tag-no">Yes ✗</span></td>
+            </tr>
+            <tr>
+              <td>Are you required to work set hours or from a specific location?</td>
+              <td><span class="tag-yes">No ✓</span></td>
+              <td><span class="tag-no">Yes ✗</span></td>
+            </tr>
+            <tr>
+              <td>Do you appear on the client's org chart or use their email address?</td>
+              <td><span class="tag-yes">No ✓</span></td>
+              <td><span class="tag-no">Yes ✗</span></td>
+            </tr>
+            <tr>
+              <td>Does the client have a continuous obligation to offer you work?</td>
+              <td><span class="tag-yes">No ✓</span></td>
+              <td><span class="tag-no">Yes ✗</span></td>
+            </tr>
+            <tr>
+              <td>Do you work for more than one client?</td>
+              <td><span class="tag-yes">Yes ✓</span></td>
+              <td><span class="tag-no">No ✗</span></td>
+            </tr>
+            <tr>
+              <td>Do you bear financial risk (e.g. fix mistakes at your own cost)?</td>
+              <td><span class="tag-yes">Yes ✓</span></td>
+              <td><span class="tag-no">No ✗</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-red">
+        <div class="callout-title">⚠️ Don't rely on CEST</div>
+        <p>HMRC's own CEST tool is unreliable for several reasons — it ignores Mutuality of Obligation entirely, returns "unable to determine" in roughly 20% of cases, and HMRC itself has refused to be bound by favourable CEST results in court. Use CEST as a starting point only. For any meaningful contract, a <a href="/blog/ir35-contract-review-checklist.html">professional IR35 contract review</a> is worth the cost.</p>
+      </div>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <div class="faq-q">Can I be outside IR35 if I've only got one client?</div>
+        <div class="faq-a">Yes — working for a single client doesn't automatically put you inside IR35. However, it does remove one of the secondary supporting factors (multiple clients) and HMRC may scrutinise the relationship more closely. The primary tests — substitution and control — still determine your status. If the contract and working practices are genuinely outside IR35, one client alone doesn't change that.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">My client says I'm outside IR35 but I'm not sure I am. What should I do?</div>
+        <div class="faq-a">For medium and large private sector clients (and all public sector), the client is responsible for issuing a Status Determination Statement (SDS). If you believe the determination is wrong, you have the right to formally challenge it — the client must respond within 45 days. If you're working with a small company (under the threshold), you self-assess. In either case, getting an independent professional IR35 review of your contract and working practices is the best way to get certainty.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Does working remotely help or hurt my IR35 status?</div>
+        <div class="faq-a">Remote working on its own neither helps nor hurts your IR35 status. What matters is whether the client controls how you work, not where you work from. A contractor working remotely but following strict client processes, set hours, and daily task management is still potentially inside IR35. A contractor working on-site but with total autonomy over their method and approach can still be outside IR35.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">How often should I review my IR35 status?</div>
+        <div class="faq-a">Every time a contract is renewed or a new engagement starts. Your IR35 status is assessed contract-by-contract — a previous outside IR35 determination doesn't protect you on your next contract. It's also worth reviewing mid-contract if the working practices change significantly (e.g. you start working set hours, or the client starts managing your work differently).</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">What's the difference between Chapter 8 and Chapter 10 IR35?</div>
+        <div class="faq-a">Chapter 8 IR35 (the original rules) applies when you work for a small company — you self-assess your status. Chapter 10 (the off-payroll working rules, reformed in 2017 and 2021) applies when you work for medium or large companies — they assess your status and are responsible for any tax owed if they get it wrong. From April 2026, more companies qualify as "small" due to rising thresholds, meaning more contractors move back to Chapter 8 self-assessment.</div>
+      </div>
+
+    </article>
+
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <h3>On this page</h3>
+        <ul class="toc-list">
+          <li><a href="#overview">Why these tests matter</a></li>
+          <li><a href="#substitution">1. Right of Substitution</a></li>
+          <li><a href="#sdc">2. SDC (Control)</a></li>
+          <li><a href="#moo">3. Mutuality of Obligation</a></li>
+          <li><a href="#weighting">How HMRC weighs them</a></li>
+          <li><a href="#contract-vs-reality">Contract vs reality</a></li>
+          <li><a href="#self-assessment">Self-assessment checklist</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <a href="/" class="sidebar-cta">IR35 Calculator →</a>
+        <p style="font-size:0.8rem;color:var(--text-light);text-align:center;margin:0;">See your take-home inside vs outside IR35</p>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Related guides</h3>
+        <a href="/blog/what-is-ir35-explained.html" class="sidebar-link">What is IR35?</a>
+        <a href="/blog/hmrc-cest-tool-problems.html" class="sidebar-link">Why CEST gets IR35 wrong</a>
+        <a href="/blog/ir35-contract-review-checklist.html" class="sidebar-link">IR35 contract review checklist</a>
+        <a href="/blog/inside-vs-outside-ir35-take-home-pay.html" class="sidebar-link">Inside vs outside take-home pay</a>
+        <a href="/blog/ir35-april-2026-small-company-threshold-changes.html" class="sidebar-link">April 2026 threshold changes</a>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="/">Calculator</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+  </div>
+  <p>ir35guide.co.uk — For information only. Not legal or tax advice. Always consult a qualified adviser for your specific situation.</p>
+</footer>
+
+<div id="cookie-banner" role="dialog" aria-label="Cookie consent">
+  <p>We use cookies to measure site usage and improve your experience. See our <a href="/privacy.html">privacy policy</a>.</p>
+  <div class="cookie-btns">
+    <button class="btn-accept" onclick="cookieChoice(true)">Accept</button>
+    <button class="btn-decline" onclick="cookieChoice(false)">Decline</button>
+  </div>
+</div>
+
+<script>
+  function cookieChoice(accepted) {
+    localStorage.setItem('cookie_consent', accepted ? 'accepted' : 'declined');
+    document.getElementById('cookie-banner').classList.remove('show');
+    if (accepted) loadGA();
+  }
+  document.addEventListener('DOMContentLoaded', function() {
+    var consent = localStorage.getItem('cookie_consent');
+    if (!consent) {
+      setTimeout(function() {
+        document.getElementById('cookie-banner').classList.add('show');
+      }, 1200);
+    } else if (consent === 'accepted') {
+      loadGA();
+    }
+  });
+</script>
+
+</body>
+</html>
