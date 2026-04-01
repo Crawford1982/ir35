@@ -33,6 +33,7 @@
   }
 </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="alternate" hreflang="en-GB" href="https://ir35guide.co.uk/blog/ir35-changes-2026-uk.html">
   <title>IR35 Changes 2026 UK: What's New from 6 April</title>
   <meta name="description" content="4 things change on 6 April 2026. 1 thing doesn't. Here's every IR35-related change for UK contractors — thresholds, umbrella PAYE, NI, and what stays put.">
   <meta name="robots" content="index, follow">
@@ -61,6 +62,18 @@
     "author": { "@type": "Organization", "name": "IR35 Guide", "url": "https://ir35guide.co.uk" },
     "publisher": { "@type": "Organization", "name": "IR35 Guide", "url": "https://ir35guide.co.uk" },
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ir35guide.co.uk/blog/ir35-changes-2026-uk.html" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ir35guide.co.uk/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ir35guide.co.uk/blog.html" },
+      { "@type": "ListItem", "position": 3, "name": "IR35 Changes 2026 UK: What's New from 6 April", "item": "https://ir35guide.co.uk/blog/ir35-changes-2026-uk.html" }
+    ]
   }
   </script>
 
@@ -294,7 +307,8 @@
     footer a { color: rgba(255,255,255,0.5); text-decoration: none; }
     footer a:hover { color: #fff; }
 
-    #cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #e2e8f0; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; z-index: 9999; font-size: 0.85rem; box-shadow: 0 -2px 12px rgba(0,0,0,0.3); }
+    #cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #e2e8f0; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; z-index: 9999; font-size: 0.85rem; box-shadow: 0 -2px 12px rgba(0,0,0,0.3); transform: translateY(100%); transition: transform 0.35s; }
+    #cookie-banner.show { transform: translateY(0); }
     #cookie-banner p { margin: 0; max-width: 640px; }
     .cookie-btns { display: flex; gap: 10px; flex-shrink: 0; }
     .btn-accept { background: var(--blue); color: #fff; border: none; padding: 8px 18px; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.85rem; }
@@ -596,6 +610,10 @@
           <span class="dd-icon">💷</span>
           <span class="dd-title">Inside vs outside IR35: real pay figures</span>
         </a>
+        <a href="/blog/ir35-rate-uplift-inside-ir35.html" onclick="gaEvent('hub_sidebar_click',{target:'rate_uplift'})">
+          <span class="dd-icon">📈</span>
+          <span class="dd-title">IR35 rate uplift: what day rate you need inside</span>
+        </a>
         <a href="/blog/ir35-status-determination-statement-template.html" onclick="gaEvent('hub_sidebar_click',{target:'sds'})">
           <span class="dd-icon">📋</span>
           <span class="dd-title">Free SDS template (inside &amp; outside IR35)</span>
@@ -637,8 +655,8 @@
 <div id="cookie-banner">
   <p>We use cookies to analyse site traffic. <a href="/privacy.html" style="color:#93c5fd;">Privacy Policy</a></p>
   <div class="cookie-btns">
-    <button class="btn-accept" onclick="acceptCookies()">Accept</button>
-    <button class="btn-decline" onclick="declineCookies()">Decline</button>
+    <button class="btn-accept" onclick="cookieChoice(true)">Accept Analytics</button>
+    <button class="btn-decline" onclick="cookieChoice(false)">Decline</button>
   </div>
 </div>
 
@@ -666,21 +684,21 @@
     }
   })();
 
-  // Cookie consent
-  (function() {
+  function cookieChoice(accepted) {
+    localStorage.setItem('cookie_consent', accepted ? 'accepted' : 'declined');
+    document.getElementById('cookie-banner').classList.remove('show');
+    if (accepted) loadGA();
+  }
+  document.addEventListener('DOMContentLoaded', function() {
     var consent = localStorage.getItem('cookie_consent');
-    if (consent === 'accepted') { loadGA(); document.getElementById('cookie-banner').style.display = 'none'; }
-    else if (consent === 'declined') { document.getElementById('cookie-banner').style.display = 'none'; }
-  })();
-  function acceptCookies() {
-    localStorage.setItem('cookie_consent', 'accepted');
-    document.getElementById('cookie-banner').style.display = 'none';
-    loadGA();
-  }
-  function declineCookies() {
-    localStorage.setItem('cookie_consent', 'declined');
-    document.getElementById('cookie-banner').style.display = 'none';
-  }
+    if (!consent) {
+      setTimeout(function() {
+        document.getElementById('cookie-banner').classList.add('show');
+      }, 1200);
+    } else if (consent === 'accepted') {
+      loadGA();
+    }
+  });
 
   // FAQ accordion
   function toggleFaq(el) {

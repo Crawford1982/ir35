@@ -33,6 +33,7 @@
   }
 </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="alternate" hreflang="en-GB" href="https://ir35guide.co.uk/blog/outside-ir35-evidence-checklist.html">
   <title>Outside IR35 Evidence Checklist: What HMRC Asks For</title>
   <meta name="description" content="Your contract says outside IR35 — but can you prove it? The evidence HMRC actually asks for: substitution records, working practice logs, and more.">
   <meta name="robots" content="index, follow">
@@ -61,6 +62,18 @@
     "author": { "@type": "Organization", "name": "IR35 Guide", "url": "https://ir35guide.co.uk" },
     "publisher": { "@type": "Organization", "name": "IR35 Guide", "url": "https://ir35guide.co.uk" },
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ir35guide.co.uk/blog/outside-ir35-evidence-checklist.html" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ir35guide.co.uk/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ir35guide.co.uk/blog.html" },
+      { "@type": "ListItem", "position": 3, "name": "Outside IR35 Evidence Checklist: What HMRC Asks For", "item": "https://ir35guide.co.uk/blog/outside-ir35-evidence-checklist.html" }
+    ]
   }
   </script>
 
@@ -283,7 +296,8 @@
     footer a { color: rgba(255,255,255,0.5); text-decoration: none; }
     footer a:hover { color: #fff; }
 
-    #cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #e2e8f0; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; z-index: 9999; font-size: 0.85rem; box-shadow: 0 -2px 12px rgba(0,0,0,0.3); }
+    #cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #e2e8f0; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; z-index: 9999; font-size: 0.85rem; box-shadow: 0 -2px 12px rgba(0,0,0,0.3); transform: translateY(100%); transition: transform 0.35s; }
+    #cookie-banner.show { transform: translateY(0); }
     #cookie-banner p { margin: 0; max-width: 640px; }
     .cookie-btns { display: flex; gap: 10px; flex-shrink: 0; }
     .btn-accept { background: var(--blue); color: #fff; border: none; padding: 8px 18px; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.85rem; }
@@ -693,26 +707,27 @@ Signed: <span class="field">[YOUR NAME]</span>   Date completed: <span class="fi
 <div id="cookie-banner">
   <p>We use cookies to analyse site traffic. <a href="/privacy.html" style="color:#93c5fd;">Privacy Policy</a></p>
   <div class="cookie-btns">
-    <button class="btn-accept" onclick="acceptCookies()">Accept</button>
-    <button class="btn-decline" onclick="declineCookies()">Decline</button>
+    <button class="btn-accept" onclick="cookieChoice(true)">Accept Analytics</button>
+    <button class="btn-decline" onclick="cookieChoice(false)">Decline</button>
   </div>
 </div>
 
 <script>
-  (function() {
+  function cookieChoice(accepted) {
+    localStorage.setItem('cookie_consent', accepted ? 'accepted' : 'declined');
+    document.getElementById('cookie-banner').classList.remove('show');
+    if (accepted) loadGA();
+  }
+  document.addEventListener('DOMContentLoaded', function() {
     var consent = localStorage.getItem('cookie_consent');
-    if (consent === 'accepted') { loadGA(); document.getElementById('cookie-banner').style.display = 'none'; }
-    else if (consent === 'declined') { document.getElementById('cookie-banner').style.display = 'none'; }
-  })();
-  function acceptCookies() {
-    localStorage.setItem('cookie_consent', 'accepted');
-    document.getElementById('cookie-banner').style.display = 'none';
-    loadGA();
-  }
-  function declineCookies() {
-    localStorage.setItem('cookie_consent', 'declined');
-    document.getElementById('cookie-banner').style.display = 'none';
-  }
+    if (!consent) {
+      setTimeout(function() {
+        document.getElementById('cookie-banner').classList.add('show');
+      }, 1200);
+    } else if (consent === 'accepted') {
+      loadGA();
+    }
+  });
 
   function copyLog() {
     var el = document.getElementById('log-template-text');
