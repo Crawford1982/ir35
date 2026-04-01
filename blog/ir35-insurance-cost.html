@@ -3,22 +3,30 @@
 <head>
   <meta charset="UTF-8">
 
-<!-- Google Analytics 4 — loaded only after consent -->
+<!-- GA4 Consent Mode v2 — cookieless pings by default, full tracking after consent -->
 <script>
-  window.GA_ID = 'G-N961MFHTCS';
-  window._gaLoaded = false;
-  function loadGA() {
-    if (window._gaLoaded) return;
-    window._gaLoaded = true;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('consent', 'default', {
+    'analytics_storage': 'denied',
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied'
+  });
+  if (localStorage.getItem('cookie_consent') === 'accepted') {
+    gtag('consent', 'update', { 'analytics_storage': 'granted' });
+  }
+  (function(id){
     var s = document.createElement('script');
     s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA_ID;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
     document.head.appendChild(s);
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    window.gtag = gtag;
-    gtag('js', new Date());
-    gtag('config', window.GA_ID, { anonymize_ip: true });
+  })('G-N961MFHTCS');
+  gtag('js', new Date());
+  gtag('config', 'G-N961MFHTCS', { anonymize_ip: true });
+  function loadGA() {
+    gtag('consent', 'update', { 'analytics_storage': 'granted' });
   }
   function gaEvent(name, params) {
     if (window.gtag) window.gtag('event', name, params || {});

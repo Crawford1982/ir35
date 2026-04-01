@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+
+<!-- GA4 Consent Mode v2 — cookieless pings by default, full tracking after consent -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('consent', 'default', {
+    'analytics_storage': 'denied',
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied'
+  });
+  if (localStorage.getItem('cookie_consent') === 'accepted') {
+    gtag('consent', 'update', { 'analytics_storage': 'granted' });
+  }
+  (function(id){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+    document.head.appendChild(s);
+  })('G-N961MFHTCS');
+  gtag('js', new Date());
+  gtag('config', 'G-N961MFHTCS', { anonymize_ip: true });
+  function loadGA() {
+    gtag('consent', 'update', { 'analytics_storage': 'granted' });
+  }
+  function gaEvent(name, params) {
+    if (window.gtag) window.gtag('event', name, params || {});
+  }
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IR35 Calculator 2026/27: Free Inside vs Outside Comparison</title>
+  <meta name="description" content="Free IR35 calculator for 2026/27. See your exact take-home inside vs outside IR35 at any day rate — no signup, runs in your browser.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ir35guide.co.uk/calculator.html">
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/favicon-32x32.png">
+  <meta property="og:title" content="IR35 Calculator 2026/27: Free Inside vs Outside Comparison">
+  <meta property="og:description" content="Free IR35 calculator for 2026/27. See your exact take-home inside vs outside IR35 at any day rate — no signup, runs in your browser.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ir35guide.co.uk/calculator.html">
+  <meta property="og:site_name" content="IR35 Guide">
+  <meta property="og:image" content="https://ir35guide.co.uk/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://ir35guide.co.uk/og-image.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "IR35 Calculator 2026/27 — Free Inside vs Outside Comparison",
+    "url": "https://ir35guide.co.uk/calculator.html",
+    "description": "Free UK IR35 calculator for 2026/27. Compare inside vs outside IR35 take-home pay at every day rate. Updated with April 2026 threshold changes and employer NI.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "dateModified": "2026-03-28",
+    "author": { "@type": "Organization", "name": "IR35 Guide", "url": "https://ir35guide.co.uk" },
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is there a free IR35 calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. IR35Guide.co.uk offers a free IR35 calculator covering 2025/26 and 2026/27 tax years. It compares inside vs outside IR35 take-home pay, umbrella vs limited company, and perm vs contract — all running in your browser with no signup required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How accurate is an IR35 calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our calculator uses the exact HMRC tax rates, NI thresholds, and dividend rates for 2025/26 and 2026/27. It includes the 15% employer NI rate, the correct secondary threshold (£5,000), Scottish income tax bands, and the optimal salary/dividend split for limited company contractors. All calculations run client-side using the same formulas a qualified accountant would use."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What day rate do I need inside IR35 to match my outside IR35 take-home?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Typically you need a 22-23% rate increase. At £500/day outside IR35, you'd need approximately £615/day inside IR35 to achieve the same net income. Use our Compare calculator to model your specific situation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the IR35 calculator include the April 2026 changes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The 2026/27 tax year option includes all April 2026 changes: the new small company IR35 thresholds, updated dividend tax rates, and the employer NI at 15% with the £5,000 secondary threshold."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between inside and outside IR35 take-home pay?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "At £500/day (220 days/year), outside IR35 through a limited company yields approximately £79,500 take-home. Inside IR35, that drops to approximately £63,500 — a gap of roughly £16,000 per year, or about 20% of take-home pay. The gap exists because inside IR35 you pay income tax and employee NI on the full amount, while outside IR35 you can extract profits as dividends taxed at lower rates."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0f172a;
+      --blue: #2563eb;
+      --blue-light: #eff6ff;
+      --green: #16a34a;
+      --green-light: #f0fdf4;
+      --amber: #d97706;
+      --amber-light: #fffbeb;
+      --red: #dc2626;
+      --red-light: #fef2f2;
+      --grey-50: #f8fafc;
+      --grey-100: #f1f5f9;
+      --grey-200: #e2e8f0;
+      --grey-400: #94a3b8;
+      --grey-600: #475569;
+      --grey-800: #1e293b;
+      --text: #1e293b;
+      --text-light: #64748b;
+      --border: #e2e8f0;
+      --radius: 10px;
+      --shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #f8fafc; color: var(--text); line-height: 1.7; }
+
+    nav { background: var(--navy); padding: 0 24px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.18); }
+    .nav-inner { max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-logo { color: #fff; font-weight: 700; font-size: 1.05rem; text-decoration: none; }
+    .nav-logo span { color: #60a5fa; }
+    .nav-links { display: flex; align-items: center; gap: 20px; }
+    .nav-link { color: #94a3b8; font-size: 0.88rem; font-weight: 500; text-decoration: none; transition: color 0.15s; }
+    .nav-link:hover { color: #fff; }
+    .nav-cta { background: var(--blue); color: #fff; padding: 7px 16px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: 600; transition: background 0.15s; }
+    .nav-cta:hover { background: #1d4ed8; }
+
+    .page-wrap { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+    .hero { background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%); color: #fff; padding: 52px 24px 44px; }
+    .hero-inner { max-width: 900px; margin: 0 auto; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); color: #93c5fd; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em; padding: 4px 12px; border-radius: 20px; margin-bottom: 16px; }
+    .hero h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); font-weight: 700; line-height: 1.25; margin-bottom: 16px; }
+    .hero-sub { font-size: 1.05rem; color: #93c5fd; max-width: 640px; margin-bottom: 28px; line-height: 1.7; }
+    .hero-meta { font-size: 0.82rem; color: #60a5fa; display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 28px; }
+    .hero-cta { display: inline-block; background: var(--blue); color: #fff; padding: 14px 32px; border-radius: 8px; font-weight: 700; font-size: 1.05rem; text-decoration: none; transition: background 0.15s; margin-right: 16px; }
+    .hero-cta:hover { background: #1d4ed8; }
+    .hero-link { font-size: 0.88rem; color: #93c5fd; text-decoration: underline; }
+    .hero-link:hover { color: #fff; }
+
+    .article-layout { display: grid; grid-template-columns: 1fr 280px; gap: 40px; padding: 40px 0 60px; align-items: start; }
+    @media (max-width: 720px) { .article-layout { grid-template-columns: 1fr; } .sidebar { display: none; } }
+
+    .prose h2 { font-size: 1.35rem; font-weight: 700; color: var(--navy); margin: 40px 0 14px; padding-bottom: 8px; border-bottom: 2px solid var(--grey-200); }
+    .prose h2:first-child { margin-top: 0; }
+    .prose h3 { font-size: 1.05rem; font-weight: 600; color: var(--navy); margin: 28px 0 10px; }
+    .prose p { margin-bottom: 16px; color: var(--text); line-height: 1.75; }
+    .prose ul, .prose ol { margin: 12px 0 18px 20px; }
+    .prose li { margin-bottom: 8px; line-height: 1.65; }
+    .prose strong { color: var(--navy); font-weight: 600; }
+    .prose a { color: var(--blue); text-decoration: underline; }
+
+    .table-wrap { overflow-x: auto; margin: 20px 0 28px; border-radius: var(--radius); border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th { background: var(--navy); color: #fff; padding: 12px 16px; text-align: left; font-weight: 600; font-size: 0.82rem; letter-spacing: 0.03em; }
+    td { padding: 11px 16px; border-bottom: 1px solid var(--border); color: var(--text); }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: var(--grey-50); }
+    .num { font-weight: 600; }
+    .num-green { color: var(--green); font-weight: 700; }
+    .num-amber { color: var(--amber); font-weight: 700; }
+    .num-red { color: var(--red); font-weight: 700; }
+
+    .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 24px 0 32px; }
+    @media (max-width: 560px) { .feature-grid { grid-template-columns: 1fr; } }
+    .feature-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); }
+    .feature-card h3 { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin: 0 0 8px; }
+    .feature-card p { font-size: 0.88rem; color: var(--text-light); line-height: 1.6; margin: 0; }
+
+    .why-list { list-style: none; padding: 0; margin: 16px 0 24px; }
+    .why-list li { display: flex; align-items: baseline; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--grey-100); font-size: 0.93rem; line-height: 1.65; }
+    .why-list li:last-child { border-bottom: none; }
+    .why-list li::before { content: "✓"; color: var(--green); font-weight: 700; flex-shrink: 0; }
+
+    .cta-banner { background: var(--navy); color: #fff; border-radius: var(--radius); padding: 28px; margin: 32px 0; text-align: center; }
+    .cta-banner h3 { font-size: 1.2rem; margin-bottom: 8px; }
+    .cta-banner p { color: #94a3b8; font-size: 0.9rem; margin-bottom: 20px; }
+    .cta-banner a { display: inline-block; background: var(--blue); color: #fff; padding: 12px 28px; border-radius: 8px; font-weight: 600; font-size: 0.95rem; text-decoration: none; }
+    .cta-banner a:hover { background: #1d4ed8; }
+
+    .sidebar { position: sticky; top: 72px; }
+    .sidebar-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin-bottom: 20px; box-shadow: var(--shadow); }
+    .sidebar-card h3 { font-size: 0.9rem; font-weight: 700; color: var(--navy); margin-bottom: 14px; }
+    .toc-list { list-style: none; padding: 0; margin: 0; }
+    .toc-list li { border-bottom: 1px solid var(--grey-100); }
+    .toc-list li:last-child { border-bottom: none; }
+    .toc-list a { display: block; padding: 8px 0; font-size: 0.83rem; color: var(--text-light); text-decoration: none; }
+    .toc-list a:hover { color: var(--blue); }
+    .sidebar-cta { display: block; background: var(--blue); color: #fff; text-align: center; padding: 13px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; text-decoration: none; margin-bottom: 12px; transition: background 0.15s; }
+    .sidebar-cta:hover { background: #1d4ed8; }
+
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-q { font-weight: 700; font-size: 1rem; color: var(--navy); padding: 20px 0 20px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .faq-q::after { content: "+"; font-size: 1.3rem; font-weight: 400; color: var(--text-light); flex-shrink: 0; transition: transform 0.2s; }
+    .faq-item.open .faq-q::after { content: "−"; }
+    .faq-a { font-size: 0.93rem; color: var(--text); line-height: 1.75; max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; padding: 0; }
+    .faq-item.open .faq-a { max-height: 500px; padding-bottom: 20px; }
+
+    footer { background: var(--navy); color: #94a3b8; padding: 32px 24px; font-size: 0.82rem; text-align: center; }
+    footer a { color: #60a5fa; text-decoration: none; }
+    .footer-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 12px; }
+
+    #cookie-banner {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 999;
+      background: #1e293b; border-top: 1px solid #334155; padding: 14px 24px;
+      display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+      box-shadow: 0 -8px 32px rgba(0,0,0,0.3);
+      transform: translateY(100%); transition: transform 0.35s cubic-bezier(0.16,1,0.3,1);
+    }
+    #cookie-banner.show { transform: translateY(0); }
+    #cookie-banner p { font-size: 13px; color: #94a3b8; flex: 1; min-width: 200px; line-height: 1.6; margin: 0; }
+    #cookie-banner a { color: #60a5fa; text-decoration: none; }
+    .cookie-btns { display: flex; gap: 8px; flex-shrink: 0; }
+    .btn-accept { padding: 8px 18px; background: #2563eb; color: #fff; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; }
+    .btn-decline { padding: 8px 16px; background: none; color: #94a3b8; border: 1px solid #475569; border-radius: 6px; font-size: 12px; cursor: pointer; }
+
+    @media print {
+      header, nav, footer, .sidebar, #cookie-banner,
+      .cookie-btns { display: none !important; }
+      body { background: #fff !important; color: #111 !important; }
+      a { color: #111 !important; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">IR35<span>Guide</span>.co.uk</a>
+    <div class="nav-links">
+      <a href="/" class="nav-link">Calculator</a>
+      <a href="/blog.html" class="nav-link">Blog</a>
+    </div>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">Free · No Signup · 2025/26 &amp; 2026/27</div>
+    <h1>IR35 Calculator: Free Inside vs Outside Comparison for UK Contractors</h1>
+    <p class="hero-sub">See exactly how much you take home inside vs outside IR35 at your day rate. Compare umbrella vs limited company, model the rate uplift you'd need, and plan for 2026/27 tax changes — all in one tool.</p>
+    <div class="hero-meta">
+      <span>📅 Updated March 2026</span>
+      <span>📊 Includes 15% employer NI</span>
+    </div>
+    <a href="/#calculator" class="hero-cta">Open the IR35 Calculator →</a>
+    <a href="/ir35_calculator.xlsx" class="hero-link">or download the Excel version</a>
+  </div>
+</div>
+
+<div class="page-wrap">
+  <div class="article-layout">
+    <main class="prose">
+
+      <h2 id="take-home-at-a-glance">Inside vs Outside IR35: Take-Home at a Glance</h2>
+      <p>Here's what the calculator shows at the most common UK contractor day rates (2025/26, 220 days, England/Wales):</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Day Rate</th>
+              <th>Outside IR35 (Ltd)</th>
+              <th>Inside IR35 (Umbrella)</th>
+              <th>Annual Gap</th>
+              <th>Rate Uplift Needed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">£300/day</td>
+              <td class="num-green">~£51,500</td>
+              <td class="num-amber">~£41,800</td>
+              <td class="num-red">~£9,700</td>
+              <td class="num">+23%</td>
+            </tr>
+            <tr>
+              <td class="num">£400/day</td>
+              <td class="num-green">~£65,500</td>
+              <td class="num-amber">~£52,800</td>
+              <td class="num-red">~£12,700</td>
+              <td class="num">+23%</td>
+            </tr>
+            <tr>
+              <td class="num">£500/day</td>
+              <td class="num-green">~£79,500</td>
+              <td class="num-amber">~£63,500</td>
+              <td class="num-red">~£16,000</td>
+              <td class="num">+23%</td>
+            </tr>
+            <tr>
+              <td class="num">£600/day</td>
+              <td class="num-green">~£91,800</td>
+              <td class="num-amber">~£74,200</td>
+              <td class="num-red">~£17,600</td>
+              <td class="num">+22%</td>
+            </tr>
+            <tr>
+              <td class="num">£700/day</td>
+              <td class="num-green">~£103,000</td>
+              <td class="num-amber">~£84,500</td>
+              <td class="num-red">~£18,500</td>
+              <td class="num">+22%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="cta-banner">
+        <h3>Calculate your exact figure</h3>
+        <p>The table above uses typical assumptions. Enter your own day rate, working days, and expenses to see your precise take-home.</p>
+        <a href="/#calculator">Calculate your exact figure →</a>
+      </div>
+
+      <h2 id="what-it-covers">What Our IR35 Calculator Covers</h2>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>📊 Compare: Inside vs Outside IR35</h3>
+          <p>Side-by-side take-home comparison at your day rate. See the exact annual gap and the rate uplift you'd need to break even inside IR35.</p>
+        </div>
+        <div class="feature-card">
+          <h3>🏢 Outside IR35 (Limited Company)</h3>
+          <p>Full limited company model: salary/dividend split, corporation tax, expenses, VAT flat rate, pension contributions, and accountancy fees. Automatically picks the optimal salary (£9,100 or £12,570).</p>
+        </div>
+        <div class="feature-card">
+          <h3>☂️ Umbrella Company</h3>
+          <p>Net pay after umbrella margin, employer NI, PAYE, and employee NI. Includes pension contribution modelling.</p>
+        </div>
+        <div class="feature-card">
+          <h3>💼 Perm vs Contract</h3>
+          <p>Compare a permanent salary (with employer pension) to a contract rate inside or outside IR35.</p>
+        </div>
+        <div class="feature-card">
+          <h3>🔄 Day Rate Converter</h3>
+          <p>Convert between day rate, hourly rate, and annual salary instantly.</p>
+        </div>
+        <div class="feature-card">
+          <h3>📅 2025/26 and 2026/27</h3>
+          <p>Switch between tax years. The 2026/27 option includes the April 2026 dividend rate changes.</p>
+        </div>
+      </div>
+
+      <h2 id="why-this-calculator">Why Use This IR35 Calculator?</h2>
+      <p>Most IR35 calculators online are outdated, gated behind email capture, or run on incorrect tax rates. This one is different:</p>
+
+      <ul class="why-list">
+        <li>Uses exact HMRC rates for 2025/26 and 2026/27 — not estimates</li>
+        <li>Includes the 15% employer NI rate (many older calculators still use 13.8%)</li>
+        <li>Covers Scottish income tax bands</li>
+        <li>Runs entirely in your browser — your data never leaves your device</li>
+        <li>No signup, no email capture, no paywall</li>
+      </ul>
+
+      <div class="cta-banner">
+        <h3>Ready to see your numbers?</h3>
+        <p>Enter your day rate and get an instant inside vs outside IR35 comparison.</p>
+        <a href="/#calculator">Open the IR35 Calculator →</a>
+      </div>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Is there a free IR35 calculator?</div>
+        <div class="faq-a">Yes. IR35Guide.co.uk offers a free IR35 calculator covering 2025/26 and 2026/27 tax years. It compares inside vs outside IR35 take-home pay, umbrella vs limited company, and perm vs contract — all running in your browser with no signup required.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How accurate is an IR35 calculator?</div>
+        <div class="faq-a">Our calculator uses the exact HMRC tax rates, NI thresholds, and dividend rates for 2025/26 and 2026/27. It includes the 15% employer NI rate, the correct secondary threshold (£5,000), Scottish income tax bands, and the optimal salary/dividend split for limited company contractors. All calculations run client-side using the same formulas a qualified accountant would use.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What day rate do I need inside IR35 to match my outside IR35 take-home?</div>
+        <div class="faq-a">Typically you need a 22–23% rate increase. At £500/day outside IR35, you'd need approximately £615/day inside IR35 to achieve the same net income. Use our Compare calculator to model your specific situation.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Does the IR35 calculator include the April 2026 changes?</div>
+        <div class="faq-a">Yes. The 2026/27 tax year option includes all April 2026 changes: the new small company IR35 thresholds, updated dividend tax rates, and the employer NI at 15% with the £5,000 secondary threshold.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What's the difference between inside and outside IR35 take-home pay?</div>
+        <div class="faq-a">At £500/day (220 days/year), outside IR35 through a limited company yields approximately £79,500 take-home. Inside IR35, that drops to approximately £63,500 — a gap of roughly £16,000 per year, or about 20% of take-home pay. The gap exists because inside IR35 you pay income tax and employee NI on the full amount, while outside IR35 you can extract profits as dividends taxed at lower rates.</div>
+      </div>
+
+    </main>
+
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <h3>Contents</h3>
+        <ul class="toc-list">
+          <li><a href="#take-home-at-a-glance">Take-home at a glance</a></li>
+          <li><a href="#what-it-covers">What it covers</a></li>
+          <li><a href="#why-this-calculator">Why this calculator</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card" style="background:var(--blue-light);border-color:#bfdbfe;">
+        <h3 style="color:var(--blue);">🧮 Use the Calculator</h3>
+        <a href="/#calculator" class="sidebar-cta">Open the IR35 Calculator →</a>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>📖 Related Guides</h3>
+        <ul style="list-style:none;padding:0;margin:0;">
+          <li style="padding:8px 0;border-bottom:1px solid var(--grey-100);"><a href="/blog/inside-vs-outside-ir35-take-home-pay.html" style="font-size:0.85rem;color:var(--navy);text-decoration:none;">Inside vs outside: full breakdown →</a></li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--grey-100);"><a href="/blog/ir35-changes-2026-uk.html" style="font-size:0.85rem;color:var(--navy);text-decoration:none;">All IR35 changes 2026 →</a></li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--grey-100);"><a href="/blog/ir35-april-2026-small-company-threshold-changes.html" style="font-size:0.85rem;color:var(--navy);text-decoration:none;">April 2026 threshold changes →</a></li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--grey-100);"><a href="/blog/umbrella-vs-limited-company-ir35.html" style="font-size:0.85rem;color:var(--navy);text-decoration:none;">Umbrella vs limited company →</a></li>
+          <li style="padding:8px 0;"><a href="/blog/ir35-insurance-cost.html" style="font-size:0.85rem;color:var(--navy);text-decoration:none;">IR35 insurance cost →</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="/">Calculator</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/blog/umbrella-company-april-2026-paye-changes.html">Umbrella April 2026</a>
+    <a href="/blog/ir35-april-2026-small-company-threshold-changes.html">April 2026 Changes</a>
+    <a href="/blog/hmrc-cest-tool-problems.html">CEST Tool Problems</a>
+  </div>
+  <p>IR35Guide.co.uk — Free contractor tax tools. Not financial or legal advice. Always consult a qualified adviser for your specific circumstances.</p>
+  <p style="margin-top:8px;">© 2026 IR35Guide.co.uk</p>
+</footer>
+
+<div id="cookie-banner" role="dialog" aria-label="Cookie consent">
+  <p>We use cookies to understand how you use this site and improve it. No personal data is sold or shared. See our <a href="/privacy.html">Privacy Policy</a>.</p>
+  <div class="cookie-btns">
+    <button class="btn-decline" onclick="cookieChoice(false)">Decline</button>
+    <button class="btn-accept" onclick="cookieChoice(true)">Accept Analytics</button>
+  </div>
+</div>
+
+<script>
+function cookieChoice(accepted) {
+  localStorage.setItem('cookie_consent', accepted ? 'accepted' : 'declined');
+  document.getElementById('cookie-banner').classList.remove('show');
+  if (accepted) loadGA();
+}
+document.addEventListener('DOMContentLoaded', function() {
+  var consent = localStorage.getItem('cookie_consent');
+  if (!consent) {
+    setTimeout(function() {
+      document.getElementById('cookie-banner').classList.add('show');
+    }, 1200);
+  } else if (consent === 'accepted') {
+    loadGA();
+  }
+});
+</script>
+</body>
+</html>
