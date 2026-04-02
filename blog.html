@@ -43,8 +43,12 @@
   <meta property="og:image" content="https://ir35guide.co.uk/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="IR35 Guide — UK IR35 calculator and contractor tax guides">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog – IR35 Guides &amp; Contractor Tax Articles | IR35 Guide">
+  <meta name="twitter:description" content="16 free IR35 guides: status tests, HMRC investigations, pensions, mortgages, rate uplift, and more. Written for UK contractors, updated for April 2026.">
   <meta name="twitter:image" content="https://ir35guide.co.uk/og-image.png">
+  <meta name="twitter:image:alt" content="IR35 Guide — UK IR35 calculator and contractor tax guides">
   <link rel="canonical" href="https://ir35guide.co.uk/blog.html">
   <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="/favicon-32x32.png">
@@ -103,6 +107,14 @@
     .nav-link.active { color: var(--accent); }
 
     .page { max-width: 720px; margin: 0 auto; padding: 48px 24px 60px; }
+    .breadcrumb { font-size: 13px; margin-bottom: 16px; color: var(--text3); }
+    .breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: 0; align-items: center; padding: 0; margin: 0; }
+    .breadcrumb li { display: inline-flex; align-items: center; }
+    .breadcrumb li:not(:last-child)::after { content: '/'; margin: 0 0.5rem; color: var(--border); }
+    .breadcrumb a { color: var(--text2); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--accent); }
+    .breadcrumb [aria-current="page"] { color: var(--text); font-weight: 500; }
+
     .blog-title { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; }
     .blog-intro { font-size: 15px; color: var(--text2); margin-bottom: 40px; line-height: 1.7; }
 
@@ -199,6 +211,12 @@
 </header>
 
 <main class="page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li aria-current="page">Blog</li>
+    </ol>
+  </nav>
   <h1 class="blog-title">Blog</h1>
   <p class="blog-intro">Guides on IR35, contractor take-home pay, and the April 2026 changes. Use the <a href="/" style="color:var(--accent);">calculator</a> to see your numbers.</p>
 
