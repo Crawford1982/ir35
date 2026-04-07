@@ -700,13 +700,21 @@ function cookieChoice(accepted) {
 }
 document.addEventListener('DOMContentLoaded', function() {
   var consent = localStorage.getItem('cookie_consent');
-  if (!consent) {
-    setTimeout(function() {
+  if (consent === 'accepted') { loadGA(); return; }
+  if (consent === 'declined') return;
+  var bannerTriggered = false;
+  function showBanner() {
+    if (!bannerTriggered) {
+      bannerTriggered = true;
       document.getElementById('cookie-banner').classList.add('show');
-    }, 1200);
-  } else if (consent === 'accepted') {
-    loadGA();
+    }
   }
+  function scrollTriggerBanner() {
+    var scrolled = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+    if (scrolled > 0.30) { showBanner(); window.removeEventListener('scroll', scrollTriggerBanner); }
+  }
+  setTimeout(showBanner, 4000);
+  window.addEventListener('scroll', scrollTriggerBanner, { passive: true });
 });
 </script>
 </body>

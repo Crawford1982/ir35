@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+
+<!-- GA4 Consent Mode v2 — cookieless pings by default, full tracking after consent -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('consent', 'default', {
+    'analytics_storage': 'denied',
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied'
+  });
+  if (localStorage.getItem('cookie_consent') === 'accepted') {
+    gtag('consent', 'update', { 'analytics_storage': 'granted' });
+  }
+  (function(id){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+    document.head.appendChild(s);
+  })('G-N961MFHTCS');
+  gtag('js', new Date());
+  gtag('config', 'G-N961MFHTCS', { anonymize_ip: true });
+  function loadGA() {
+    gtag('consent', 'update', { 'analytics_storage': 'granted' });
+  }
+  function gaEvent(name, params) {
+    if (window.gtag) window.gtag('event', name, params || {});
+  }
+</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="alternate" hreflang="en-GB" href="https://ir35guide.co.uk/blog/ir35-april-2026-now-in-effect.html">
+  <title>IR35 April 2026: The Changes Are Now In Effect</title>
+  <meta name="description" content="6 April 2026 has passed. The small company threshold changed, umbrella PAYE rules are live. Here's what UK contractors need to do right now.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ir35guide.co.uk/blog/ir35-april-2026-now-in-effect.html">
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/favicon-32x32.png">
+  <meta property="og:title" content="IR35 April 2026: The Changes Are Now In Effect">
+  <meta property="og:description" content="6 April 2026 has passed. The small company threshold changed, umbrella PAYE rules are live. Here's what UK contractors need to do right now.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ir35guide.co.uk/blog/ir35-april-2026-now-in-effect.html">
+  <meta property="og:site_name" content="IR35 Guide">
+  <meta property="og:image" content="https://ir35guide.co.uk/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="IR35 April 2026 changes now in effect">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IR35 April 2026: The Changes Are Now In Effect">
+  <meta name="twitter:description" content="6 April 2026 has passed. The small company threshold changed, umbrella PAYE rules are live. Here's what UK contractors need to do right now.">
+  <meta name="twitter:image" content="https://ir35guide.co.uk/og-image.png">
+  <meta name="twitter:image:alt" content="IR35 April 2026 changes now in effect">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "IR35 April 2026: The Changes Are Now In Effect",
+    "description": "6 April 2026 has passed. Here is everything that changed for UK contractors — the small company threshold increase, umbrella PAYE rules, and what you need to do now.",
+    "datePublished": "2026-04-07",
+    "dateModified": "2026-04-07",
+    "author": { "@type": "Organization", "name": "IR35 Guide", "url": "https://ir35guide.co.uk" },
+    "publisher": { "@type": "Organization", "name": "IR35 Guide", "url": "https://ir35guide.co.uk" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ir35guide.co.uk/blog/ir35-april-2026-now-in-effect.html" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ir35guide.co.uk/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ir35guide.co.uk/blog.html" },
+      { "@type": "ListItem", "position": 3, "name": "IR35 April 2026: The Changes Are Now In Effect", "item": "https://ir35guide.co.uk/blog/ir35-april-2026-now-in-effect.html" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Are the IR35 April 2026 changes now in effect?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The changes took effect from 6 April 2026. The small company threshold increased (turnover £15m, balance sheet £7.5m), approximately 14,000 companies reclassified as small, and umbrella company PAYE rules changed so agencies must deduct tax and NI directly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "My client is now a small company — what does that mean for my IR35 status?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It means you — through your Personal Service Company (PSC) — are now responsible for determining your own IR35 status. Your client no longer needs to issue a Status Determination Statement (SDS). You should review your current contract and working practices against the three IR35 status tests: supervision/direction/control, right of substitution, and mutuality of obligation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a new IR35 contract now the April 2026 changes are in effect?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If your client has reclassified as small and IR35 responsibility has shifted to your PSC, you should ensure your contract reflects genuine outside IR35 working arrangements. If you've been working on an inside IR35 basis with your client issuing an SDS, and they're now small, you can potentially move to outside IR35 — but your working practices must also reflect this. A professional contract review is strongly recommended before making any changes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What changed for umbrella company contractors from April 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "From 6 April 2026, agencies that supply workers through umbrella companies must operate PAYE directly on payments to umbrella workers. This restructures the payment chain. For workers on compliant umbrella arrangements, the practical impact is mainly administrative — but your take-home pay calculations should be re-modelled for 2026/27. If your agency hasn't explained how this affects your payslip, ask them now."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Have the IR35 rules themselves changed in April 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The core IR35 legislation is unchanged. The status tests — the SDC test (supervision, direction, control), substitution, and mutuality of obligation — remain exactly the same. What changed is which companies qualify as small (exempt from the off-payroll rules), and the tax and NI rates that apply when a contractor is inside IR35."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I get IR35 insurance now I'm self-assessing my status?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you're now responsible for your own IR35 determination — because your client reclassified as small — IR35 insurance is worth serious consideration. It covers professional defence fees and any tax liability if HMRC opens a compliance check. Qdos IR35 insurance starts from around £99/year; Kingsbridge IR35 Protect from around £199/year. Get cover before you need it."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0f172a;
+      --blue: #2563eb;
+      --blue-light: #eff6ff;
+      --green: #16a34a;
+      --green-light: #f0fdf4;
+      --purple: #7c3aed;
+      --purple-light: #f5f3ff;
+      --amber: #d97706;
+      --amber-light: #fffbeb;
+      --red: #dc2626;
+      --red-light: #fef2f2;
+      --grey-50: #f8fafc;
+      --grey-100: #f1f5f9;
+      --grey-200: #e2e8f0;
+      --grey-400: #94a3b8;
+      --grey-600: #475569;
+      --grey-800: #1e293b;
+      --text: #1e293b;
+      --text-light: #64748b;
+      --border: #e2e8f0;
+      --radius: 10px;
+      --shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #f8fafc; color: var(--text); line-height: 1.7; }
+
+    nav { background: var(--navy); padding: 0 24px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.18); }
+    .nav-inner { max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-logo { color: #fff; font-weight: 700; font-size: 1.05rem; text-decoration: none; }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.875rem; transition: color 0.15s; }
+    .nav-links a:hover { color: #fff; }
+
+    .live-banner { background: #16a34a; color: #fff; text-align: center; padding: 10px 24px; font-size: 0.9rem; font-weight: 600; letter-spacing: 0.01em; }
+
+    .hero { background: linear-gradient(135deg, #0a3d1a 0%, #14532d 50%, #16a34a 100%); padding: 52px 24px 44px; }
+    .hero-inner { max-width: 900px; margin: 0 auto; }
+    .hero-badge { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; font-size: 0.75rem; font-weight: 600; padding: 4px 12px; border-radius: 20px; margin-bottom: 16px; letter-spacing: 0.04em; text-transform: uppercase; }
+
+    .breadcrumb { font-size: 0.82rem; margin-bottom: 14px; }
+    .breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: 0; align-items: center; padding: 0; margin: 0; }
+    .breadcrumb li { display: inline-flex; align-items: center; color: #a5b4fc; }
+    .breadcrumb li:not(:last-child)::after { content: '/'; margin: 0 0.5rem; color: rgba(255,255,255,0.35); font-weight: 400; }
+    .breadcrumb a { color: #bbf7d0; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb [aria-current="page"] { color: #d1fae5; font-weight: 500; }
+
+    .hero h1 { font-size: clamp(1.6rem, 4vw, 2.3rem); font-weight: 700; color: #fff; line-height: 1.25; margin-bottom: 14px; }
+    .hero-sub { color: rgba(255,255,255,0.9); font-size: 1.05rem; max-width: 640px; margin-bottom: 28px; }
+    .hero-date { color: rgba(255,255,255,0.65); font-size: 0.82rem; }
+
+    /* Status pills */
+    .status-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 4px; }
+    .status-pill { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25); border-radius: 8px; padding: 12px 16px; display: flex; align-items: center; gap: 10px; }
+    .status-pill .sp-icon { font-size: 1.2rem; flex-shrink: 0; }
+    .status-pill .sp-text { color: #fff; font-size: 0.9rem; font-weight: 600; line-height: 1.3; }
+    .status-pill .sp-sub { color: rgba(255,255,255,0.65); font-size: 0.75rem; }
+
+    /* SVG status board */
+    .status-board { margin: 28px 0; border-radius: var(--radius); overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.12); }
+
+    .layout { max-width: 900px; margin: 0 auto; padding: 40px 24px; display: grid; grid-template-columns: 1fr 280px; gap: 32px; align-items: start; }
+    @media(max-width: 700px) { .layout { grid-template-columns: 1fr; } .sidebar { display: none; } }
+
+    .prose h2 { font-size: 1.3rem; font-weight: 700; color: var(--navy); margin: 36px 0 12px; padding-top: 8px; }
+    .prose h3 { font-size: 1.05rem; font-weight: 600; color: var(--navy); margin: 22px 0 8px; }
+    .prose p { margin-bottom: 16px; }
+    .prose ul { margin: 0 0 16px 20px; }
+    .prose ul li { margin-bottom: 6px; }
+    .prose a { color: var(--blue); text-decoration: none; }
+    .prose a:hover { text-decoration: underline; }
+    .prose strong { font-weight: 600; }
+
+    /* Change cards */
+    .change-card { border-radius: var(--radius); border: 1.5px solid var(--border); background: #fff; margin-bottom: 20px; overflow: hidden; box-shadow: var(--shadow); }
+    .change-card-header { padding: 14px 20px; display: flex; align-items: center; gap: 12px; }
+    .change-card-header .cc-check { width: 32px; height: 32px; border-radius: 50%; color: #fff; font-size: 1rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .change-card-header h3 { font-size: 1rem; font-weight: 700; margin: 0; flex: 1; }
+    .change-card-header .cc-status { font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; white-space: nowrap; text-transform: uppercase; letter-spacing: 0.04em; background: #dcfce7; color: #15803d; }
+    .change-card-body { padding: 0 20px 18px; }
+    .change-card-body p { font-size: 0.93rem; margin-bottom: 10px; }
+    .change-card-body .detail-link { display: inline-block; font-size: 0.85rem; font-weight: 600; padding: 7px 14px; border-radius: 7px; text-decoration: none; margin-top: 4px; }
+
+    .card-threshold .change-card-header { background: #eff6ff; border-bottom: 1.5px solid #bfdbfe; }
+    .card-threshold .cc-check { background: var(--blue); }
+    .card-threshold .detail-link { background: var(--blue); color: #fff; }
+    .card-threshold .detail-link:hover { background: #1d4ed8; }
+
+    .card-umbrella .change-card-header { background: #f0fdf4; border-bottom: 1.5px solid #bbf7d0; }
+    .card-umbrella .cc-check { background: var(--green); }
+    .card-umbrella .detail-link { background: var(--green); color: #fff; }
+    .card-umbrella .detail-link:hover { background: #15803d; }
+
+    .card-fiscal .change-card-header { background: var(--amber-light); border-bottom: 1.5px solid #fde68a; }
+    .card-fiscal .cc-check { background: var(--amber); }
+    .card-fiscal .detail-link { background: var(--amber); color: #fff; }
+    .card-fiscal .detail-link:hover { background: #b45309; }
+
+    /* Key fact box */
+    .key-fact { background: var(--green-light); border: 2px solid #86efac; border-radius: var(--radius); padding: 18px 22px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
+    .key-fact .kf-icon { font-size: 1.5rem; flex-shrink: 0; margin-top: 2px; }
+    .key-fact h4 { font-size: 0.9rem; font-weight: 700; color: var(--green); margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.04em; }
+    .key-fact p { font-size: 0.9rem; margin: 0; }
+
+    /* Warning box */
+    .warning-box { background: #fffbeb; border: 2px solid #fde68a; border-radius: var(--radius); padding: 18px 22px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
+    .warning-box .kf-icon { font-size: 1.5rem; flex-shrink: 0; margin-top: 2px; }
+    .warning-box h4 { font-size: 0.9rem; font-weight: 700; color: var(--amber); margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.04em; }
+    .warning-box p { font-size: 0.9rem; margin: 0; }
+
+    /* Action checklist */
+    .action-checklist { background: var(--navy); border-radius: var(--radius); padding: 24px 26px; margin: 28px 0; color: #fff; }
+    .action-checklist h2 { color: #fff; font-size: 1.15rem; margin: 0 0 16px; padding: 0; border: none; }
+    .action-item { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .action-item:last-child { border-bottom: none; }
+    .action-num { width: 26px; height: 26px; border-radius: 50%; background: var(--green); color: #fff; font-weight: 700; font-size: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+    .action-item-content h4 { color: #fff; font-size: 0.9rem; font-weight: 600; margin-bottom: 2px; }
+    .action-item-content p { color: rgba(255,255,255,0.65); font-size: 0.83rem; margin: 0; }
+    .action-item-content a { color: #60a5fa; text-decoration: underline; }
+
+    /* FAQ */
+    .faq-section { margin: 36px 0; }
+    .faq-item { border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 10px; overflow: hidden; }
+    .faq-q { padding: 16px 20px; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #fff; user-select: none; font-size: 0.95rem; }
+    .faq-q:hover { background: var(--grey-50); }
+    .faq-icon { color: var(--green); font-size: 1.1rem; flex-shrink: 0; transition: transform 0.2s; }
+    .faq-a { padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.25s ease, padding 0.25s ease; font-size: 0.93rem; color: var(--text-light); line-height: 1.65; }
+    .faq-item.open .faq-a { padding: 0 20px 16px; max-height: 400px; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-a a { color: var(--blue); }
+
+    /* Sidebar */
+    .sidebar { display: flex; flex-direction: column; gap: 20px; }
+    .sidebar-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); }
+    .sidebar-card h3 { font-size: 0.9rem; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid var(--border); }
+
+    .calc-card { border-top: 3px solid var(--green); }
+    .calc-card a.calc-btn { display: block; background: var(--green); color: #fff; text-align: center; padding: 10px; border-radius: 8px; font-weight: 600; font-size: 0.88rem; text-decoration: none; margin-top: 12px; }
+    .calc-card a.calc-btn:hover { background: #15803d; }
+
+    .deep-dives a { display: flex; align-items: flex-start; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--grey-200); text-decoration: none; }
+    .deep-dives a:last-child { border-bottom: none; }
+    .deep-dives a:hover .dd-title { text-decoration: underline; }
+    .dd-icon { font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
+    .dd-title { color: var(--blue); font-size: 0.85rem; font-weight: 500; line-height: 1.4; }
+
+    .insurance-card { border-top: 3px solid var(--amber); }
+    .ins-item { padding: 10px 0; border-bottom: 1px solid var(--grey-200); }
+    .ins-item:last-of-type { border-bottom: none; }
+    .ins-name { font-weight: 600; font-size: 0.88rem; }
+    .ins-price { font-size: 0.82rem; color: var(--text-light); margin: 2px 0 4px; }
+    .ins-link { display: inline-block; background: var(--amber); color: #fff; font-size: 0.78rem; font-weight: 600; padding: 4px 10px; border-radius: 6px; text-decoration: none; }
+    .ins-link:hover { background: #b45309; }
+
+    footer { background: var(--navy); color: rgba(255,255,255,0.6); text-align: center; padding: 32px 24px; font-size: 0.82rem; }
+    footer a { color: rgba(255,255,255,0.5); text-decoration: none; }
+    footer a:hover { color: #fff; }
+
+    #cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #e2e8f0; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; z-index: 9999; font-size: 0.85rem; box-shadow: 0 -2px 12px rgba(0,0,0,0.3); transform: translateY(100%); transition: transform 0.35s; }
+    #cookie-banner.show { transform: translateY(0); }
+    #cookie-banner p { margin: 0; max-width: 640px; }
+    .cookie-btns { display: flex; gap: 10px; flex-shrink: 0; }
+    .btn-accept { background: var(--blue); color: #fff; border: none; padding: 8px 18px; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.85rem; }
+    .btn-decline { background: transparent; color: rgba(255,255,255,0.6); border: 1px solid rgba(255,255,255,0.3); padding: 8px 14px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">IR35 Guide</a>
+    <ul class="nav-links">
+      <li><a href="/">Calculator</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="live-banner">✅ 6 April 2026 has passed — these changes are now in effect for the 2026/27 tax year</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li aria-current="page">IR35 April 2026: Now In Effect</li>
+      </ol>
+    </nav>
+
+    <div class="hero-badge">✅ 7 April 2026 — Live Update</div>
+    <h1>IR35 April 2026: The Changes Are Now In Effect</h1>
+    <p class="hero-sub">6 April came and went. The IR35 landscape has shifted. Here's exactly what changed, what didn't, and what you need to do this week.</p>
+    <p class="hero-date">Published 7 April 2026 · Updated for 2026/27 tax year</p>
+
+    <div class="status-grid" style="margin-top:24px;">
+      <div class="status-pill">
+        <span class="sp-icon">✅</span>
+        <div>
+          <div class="sp-text">Small company threshold</div>
+          <div class="sp-sub">Now £15m turnover — live</div>
+        </div>
+      </div>
+      <div class="status-pill">
+        <span class="sp-icon">✅</span>
+        <div>
+          <div class="sp-text">Umbrella PAYE rules</div>
+          <div class="sp-sub">Agency-direct deduction — live</div>
+        </div>
+      </div>
+      <div class="status-pill">
+        <span class="sp-icon">⚠️</span>
+        <div>
+          <div class="sp-text">Your IR35 status</div>
+          <div class="sp-sub">Check if your client changed</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="layout">
+  <main class="prose">
+
+    <h2>What Just Changed</h2>
+    <p>Three things took effect on 6 April 2026. One of them directly changes who is responsible for your IR35 determination if your client is now a small company. Here's the rundown.</p>
+
+    <!-- Status board SVG -->
+    <figure class="status-board" aria-label="IR35 April 2026 change status board">
+      <svg viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Status board showing IR35 April 2026 changes all now live" style="display:block;width:100%;height:auto;background:#0f172a;">
+        <!-- Header -->
+        <rect width="700" height="44" fill="#16a34a"/>
+        <text x="20" y="28" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="white">✅  IR35 APRIL 2026 — STATUS BOARD</text>
+        <rect x="560" y="10" width="122" height="24" rx="12" fill="rgba(255,255,255,0.2)"/>
+        <text x="621" y="27" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="white" text-anchor="middle">NOW IN EFFECT</text>
+
+        <!-- Row 1: Threshold -->
+        <rect x="0" y="44" width="700" height="56" fill="#0f172a"/>
+        <rect x="16" y="58" width="28" height="28" rx="14" fill="#16a34a"/>
+        <text x="30" y="78" font-family="Inter, system-ui, sans-serif" font-size="16" fill="white" text-anchor="middle">✓</text>
+        <text x="56" y="72" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="white">Small company threshold increased</text>
+        <text x="56" y="90" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#94a3b8">Turnover £10.2m → £15m · Balance sheet £5.1m → £7.5m · ~14,000 firms reclassify</text>
+        <rect x="535" y="58" width="148" height="22" rx="11" fill="#dcfce7"/>
+        <text x="609" y="73" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="700" fill="#16a34a" text-anchor="middle">LIVE FROM 6 APR</text>
+
+        <!-- Divider -->
+        <line x1="16" y1="100" x2="684" y2="100" stroke="#1e293b" stroke-width="1"/>
+
+        <!-- Row 2: Umbrella -->
+        <rect x="0" y="100" width="700" height="56" fill="#0f172a"/>
+        <rect x="16" y="114" width="28" height="28" rx="14" fill="#16a34a"/>
+        <text x="30" y="134" font-family="Inter, system-ui, sans-serif" font-size="16" fill="white" text-anchor="middle">✓</text>
+        <text x="56" y="128" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="white">Umbrella PAYE rules changed</text>
+        <text x="56" y="146" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#94a3b8">Agencies must now deduct PAYE directly on umbrella worker pay</text>
+        <rect x="535" y="114" width="148" height="22" rx="11" fill="#dcfce7"/>
+        <text x="609" y="129" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="700" fill="#16a34a" text-anchor="middle">LIVE FROM 6 APR</text>
+
+        <!-- Divider -->
+        <line x1="16" y1="156" x2="684" y2="156" stroke="#1e293b" stroke-width="1"/>
+
+        <!-- Row 3: Tax bands -->
+        <rect x="0" y="156" width="700" height="56" fill="#0f172a"/>
+        <rect x="16" y="170" width="28" height="28" rx="14" fill="#d97706"/>
+        <text x="30" y="190" font-family="Inter, system-ui, sans-serif" font-size="14" fill="white" text-anchor="middle">!</text>
+        <text x="56" y="184" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="white">Income tax bands — still frozen</text>
+        <text x="56" y="202" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#94a3b8">Personal allowance £12,570 · Higher rate threshold £50,270 · Fiscal drag ongoing</text>
+        <rect x="535" y="170" width="148" height="22" rx="11" fill="#fef3c7"/>
+        <text x="609" y="185" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="700" fill="#d97706" text-anchor="middle">ONGOING — UNCHANGED</text>
+      </svg>
+    </figure>
+
+    <!-- Change 1: Small Company Threshold -->
+    <div class="change-card card-threshold">
+      <div class="change-card-header">
+        <div class="cc-check">✓</div>
+        <h3>Change 1: Small Company Threshold — Now £15m</h3>
+        <div class="cc-status">✅ Live</div>
+      </div>
+      <div class="change-card-body">
+        <p><strong>From 6 April 2026,</strong> a company is now classified as small if it meets two of three criteria: turnover under <strong>£15 million</strong> (was £10.2m), balance sheet under <strong>£7.5 million</strong> (was £5.1m), or fewer than 50 employees (unchanged).</p>
+        <p>This means roughly <strong>14,000 companies have reclassified as small</strong> as of this week. Small companies are exempt from the off-payroll working rules — they don't need to issue a <a href="/blog/ir35-status-determination-statement-template.html">Status Determination Statement (SDS)</a> and IR35 status determination shifts back to your Personal Service Company (PSC).</p>
+        <p><strong>If your current client has just become small:</strong> you are now responsible for your own IR35 determination. This is a significant shift if you've been relying on their SDS for the past few years.</p>
+        <a href="/blog/ir35-april-2026-small-company-threshold-changes.html" class="detail-link" onclick="gaEvent('now_in_effect_click',{target:'threshold'})">Full threshold changes guide →</a>
+      </div>
+    </div>
+
+    <div class="warning-box">
+      <span class="kf-icon">⚠️</span>
+      <div>
+        <h4>Is your client now a small company?</h4>
+        <p>Check their last filed accounts at <a href="https://find-and-update.company-information.service.gov.uk" rel="nofollow noopener">Companies House</a>. If their turnover is now below £15m (and they meet one other criteria), they've reclassified. You need to self-assess your IR35 status immediately.</p>
+      </div>
+    </div>
+
+    <!-- Change 2: Umbrella PAYE -->
+    <div class="change-card card-umbrella">
+      <div class="change-card-header">
+        <div class="cc-check">✓</div>
+        <h3>Change 2: Umbrella PAYE — Agencies Now Deduct Direct</h3>
+        <div class="cc-status">✅ Live</div>
+      </div>
+      <div class="change-card-body">
+        <p><strong>From 6 April 2026,</strong> agencies that supply workers through umbrella companies must operate PAYE directly on payments to those workers. This restructures the payment chain and closes a route used by non-compliant umbrella companies operating disguised remuneration schemes.</p>
+        <p>For standard umbrella workers on compliant arrangements, the practical impact is mostly administrative — but <strong>your payslip structure may look different</strong>, and your take-home pay calculations should be re-modelled for 2026/27. If your agency hasn't explained what's changed, ask them this week.</p>
+        <a href="/blog/umbrella-company-april-2026-paye-changes.html" class="detail-link" onclick="gaEvent('now_in_effect_click',{target:'umbrella'})">Full umbrella PAYE changes guide →</a>
+      </div>
+    </div>
+
+    <!-- Change 3: Fiscal drag -->
+    <div class="change-card card-fiscal">
+      <div class="change-card-header">
+        <div class="cc-check">!</div>
+        <h3>Ongoing: Tax Band Freeze — Fiscal Drag Continues</h3>
+        <div class="cc-status">⚠️ Ongoing</div>
+      </div>
+      <div class="change-card-body">
+        <p>The personal allowance (£12,570) and higher rate threshold (£50,270) remain frozen for 2026/27, and are set to stay frozen until at least 2028. As contractors negotiate rate increases, a greater share of that extra income falls into higher tax bands — this is <strong>fiscal drag</strong>, and it bites harder every year the freeze continues.</p>
+        <p>If you moved from £400/day to £450/day in the past two years, you're likely paying a noticeably higher effective rate, even though the band thresholds look unchanged. Now is a good time to <a href="/blog/inside-vs-outside-ir35-take-home-pay.html">model your 2026/27 take-home</a> and check whether your day rate still makes sense.</p>
+        <a href="/" class="detail-link" onclick="gaEvent('now_in_effect_click',{target:'calculator'})">Model your 2026/27 take-home →</a>
+      </div>
+    </div>
+
+    <div class="key-fact">
+      <span class="kf-icon">✅</span>
+      <div>
+        <h4>The core IR35 rules did NOT change</h4>
+        <p>The fundamental IR35 legislation is unchanged. The three status tests — supervision/direction/control, right of substitution, and mutuality of obligation — remain exactly the same. <a href="/blog/ir35-status-tests-explained.html">What those tests mean for your situation</a> hasn't changed; what changed is <em>who</em> applies them for you.</p>
+      </div>
+    </div>
+
+    <!-- Action checklist -->
+    <div class="action-checklist">
+      <h2>🎯 Your April 2026 Action List — Do This Week</h2>
+      <div class="action-item">
+        <div class="action-num">1</div>
+        <div class="action-item-content">
+          <h4>Check if your client has reclassified as small</h4>
+          <p>Look up their filed accounts at Companies House. If turnover &lt; £15m and balance sheet &lt; £7.5m (or fewer than 50 employees), they're now small. This is the single most important thing to check.</p>
+        </div>
+      </div>
+      <div class="action-item">
+        <div class="action-num">2</div>
+        <div class="action-item-content">
+          <h4>If they reclassified — review your contract and working practices</h4>
+          <p>You're now self-assessing your IR35 status. Use the <a href="/blog/outside-ir35-evidence-checklist.html">outside IR35 evidence checklist</a> and consider a <a href="/blog/ir35-contract-review-checklist.html">professional contract review</a>. This is not optional — if HMRC investigates and you haven't done this, you're exposed.</p>
+        </div>
+      </div>
+      <div class="action-item">
+        <div class="action-num">3</div>
+        <div class="action-item-content">
+          <h4>If you're outside IR35 and self-assessing — get insurance</h4>
+          <p>IR35 insurance covers defence fees and tax if HMRC investigates. Qdos starts from ~£99/year. Get cover before you need it — especially if your client has just reclassified and this is your first time self-assessing in years.</p>
+        </div>
+      </div>
+      <div class="action-item">
+        <div class="action-num">4</div>
+        <div class="action-item-content">
+          <h4>Umbrella workers: ask your agency what changed on your payslip</h4>
+          <p>The new PAYE rules may have changed how your pay is structured. If your agency hasn't communicated this, follow up. Your 2026/27 take-home should be confirmed before your next payment.</p>
+        </div>
+      </div>
+      <div class="action-item">
+        <div class="action-num">5</div>
+        <div class="action-item-content">
+          <h4>Re-model your take-home pay for 2026/27</h4>
+          <p>The frozen tax bands mean your effective rate has crept up if your rate has risen. <a href="/">Run the free IR35 calculator</a> with your current day rate and see what inside vs outside IR35 means for you this year.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>What Didn't Change</h2>
+    <p>It's worth being clear about what's <em>not</em> different:</p>
+    <ul>
+      <li><strong>IR35 status tests:</strong> supervision/direction/control, substitution, and mutuality of obligation — all unchanged.</li>
+      <li><strong>Employer National Insurance rate:</strong> 15% — this rose in April 2025 and has not changed again for 2026/27.</li>
+      <li><strong>Off-payroll rules for medium and large companies:</strong> medium and large companies still issue SDS and are responsible for IR35 status. That hasn't changed.</li>
+      <li><strong>HMRC enforcement approach:</strong> HMRC has not announced any relaxation of IR35 investigations. The risk profile for contractors hasn't changed.</li>
+    </ul>
+
+    <p>See the full picture: <a href="/blog/ir35-changes-2026-uk.html">complete guide to all April 2026 IR35 changes</a>.</p>
+
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-section">
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Are the IR35 April 2026 changes now in effect? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Yes. All changes took effect from 6 April 2026. The small company threshold increased, umbrella PAYE rules changed, and income tax bands remain frozen. If your client reclassified as small, you're already in the new regime.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">My client is now a small company — what do I do? <span class="faq-icon">+</span></div>
+        <div class="faq-a">You're now responsible for your own IR35 determination through your PSC. First, check your current contract reflects genuine outside IR35 working arrangements. Use the <a href="/blog/outside-ir35-evidence-checklist.html">outside IR35 evidence checklist</a> to document your working practices. If you're uncertain, get a <a href="/blog/ir35-contract-review-checklist.html">professional contract review</a>. And consider IR35 insurance if you don't already have it.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Do I need a new contract now my client is small? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Not necessarily a new contract, but your existing contract should reflect outside IR35 characteristics — substitution clauses, no mutuality of obligation, limited control. If your contract was written when you were inside IR35 (with your client determining status), it may need updating. A contract review can confirm this.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">I've been inside IR35 for years — can I now move outside? <span class="faq-icon">+</span></div>
+        <div class="faq-a">If your client reclassified as small and IR35 responsibility has shifted to your PSC, then yes — you can potentially operate outside IR35 if your contract and working practices genuinely reflect self-employment. But you can't simply declare yourself outside without reviewing the substance. Your working arrangements must support it. Don't just change the label without changing the reality.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Should I get IR35 insurance now? <span class="faq-icon">+</span></div>
+        <div class="faq-a">If you're now self-assessing your IR35 status — especially for the first time in years — IR35 insurance is strongly worth considering. It covers HMRC investigation defence costs and any resulting tax liability. <a href="/blog/ir35-insurance-cost.html">Qdos IR35 insurance</a> starts from around £99/year; Kingsbridge from around £199/year. Get it before you need it.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">What changed for umbrella company workers? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Agencies supplying workers through umbrella companies must now operate PAYE directly on payments. For workers on compliant schemes, the change is mainly administrative. Ask your agency how your payslip has changed and re-model your 2026/27 take-home pay with updated figures. See the <a href="/blog/umbrella-company-april-2026-paye-changes.html">full umbrella PAYE changes guide</a> for detail.</div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-card calc-card">
+      <h3>IR35 Calculator</h3>
+      <p style="font-size:0.85rem;color:var(--text-light);margin-bottom:0;">Model your inside vs outside take-home for 2026/27 — updated April rates.</p>
+      <a href="/" class="calc-btn" onclick="gaEvent('internal_link_click',{from:'now_in_effect_sidebar',to:'calculator'})">Open Calculator →</a>
+    </div>
+
+    <div class="sidebar-card" style="border-top:3px solid var(--blue);">
+      <h3>Essential Guides</h3>
+      <div class="deep-dives">
+        <a href="/blog/ir35-april-2026-small-company-threshold-changes.html" onclick="gaEvent('sidebar_click',{target:'threshold'})">
+          <span class="dd-icon">🏢</span>
+          <span class="dd-title">Small company threshold changes — full guide</span>
+        </a>
+        <a href="/blog/ir35-status-determination-statement-template.html" onclick="gaEvent('sidebar_click',{target:'sds'})">
+          <span class="dd-icon">📋</span>
+          <span class="dd-title">Free SDS template (inside &amp; outside IR35)</span>
+        </a>
+        <a href="/blog/outside-ir35-evidence-checklist.html" onclick="gaEvent('sidebar_click',{target:'evidence'})">
+          <span class="dd-icon">🗂️</span>
+          <span class="dd-title">Outside IR35 evidence checklist</span>
+        </a>
+        <a href="/blog/ir35-contract-review-checklist.html" onclick="gaEvent('sidebar_click',{target:'contract_review'})">
+          <span class="dd-icon">✅</span>
+          <span class="dd-title">IR35 contract review checklist</span>
+        </a>
+        <a href="/blog/ir35-status-tests-explained.html" onclick="gaEvent('sidebar_click',{target:'tests'})">
+          <span class="dd-icon">⚖️</span>
+          <span class="dd-title">The 3 IR35 status tests explained</span>
+        </a>
+        <a href="/blog/inside-vs-outside-ir35-take-home-pay.html" onclick="gaEvent('sidebar_click',{target:'takehome'})">
+          <span class="dd-icon">💷</span>
+          <span class="dd-title">Inside vs outside IR35: real take-home figures</span>
+        </a>
+        <a href="/blog/ir35-changes-2026-uk.html" onclick="gaEvent('sidebar_click',{target:'hub'})">
+          <span class="dd-icon">📅</span>
+          <span class="dd-title">All April 2026 IR35 changes — full hub</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="sidebar-card insurance-card">
+      <h3>IR35 Insurance</h3>
+      <p style="font-size:0.85rem;color:var(--text-light);margin-bottom:12px;">Newly self-assessing? Get cover before HMRC knocks.</p>
+      <div class="ins-item">
+        <div class="ins-name">Qdos IR35 Insurance</div>
+        <div class="ins-price">From £99/year — up to £250k cover</div>
+        <a href="https://www.goqdos.com/ir35/ir35-insurance" class="ins-link" rel="noopener sponsored" onclick="gaEvent('affiliate_click',{affiliate:'qdos_insurance',position:'now_in_effect_sidebar'})">Get a quote →</a>
+      </div>
+      <div class="ins-item">
+        <div class="ins-name">Kingsbridge IR35 Protect</div>
+        <div class="ins-price">From ~£199/year — covers contractor &amp; agency</div>
+        <a href="https://www.kingsbridge.co.uk/contractor-insurance/ir35-insurance/" class="ins-link" rel="noopener sponsored" onclick="gaEvent('affiliate_click',{affiliate:'kingsbridge_insurance',position:'now_in_effect_sidebar'})">Get a quote →</a>
+      </div>
+      <a href="/blog/ir35-insurance-cost.html" style="display:block;font-size:0.8rem;color:var(--blue);margin-top:10px;text-decoration:none;">Compare insurance costs in full →</a>
+    </div>
+
+  </aside>
+</div>
+
+<footer>
+  <p>IR35 Guide — For information only. Not legal or tax advice. <a href="/privacy.html">Privacy Policy</a></p>
+</footer>
+
+<div id="cookie-banner">
+  <p>We use cookies to analyse site traffic. <a href="/privacy.html" style="color:#93c5fd;">Privacy Policy</a></p>
+  <div class="cookie-btns">
+    <button class="btn-accept" onclick="cookieChoice(true)">Accept Analytics</button>
+    <button class="btn-decline" onclick="cookieChoice(false)">Decline</button>
+  </div>
+</div>
+
+<script>
+  function cookieChoice(accepted) {
+    localStorage.setItem('cookie_consent', accepted ? 'accepted' : 'declined');
+    document.getElementById('cookie-banner').classList.remove('show');
+    if (accepted) loadGA();
+  }
+
+  // Scroll-triggered consent banner — shows when reader is engaged (30% through article)
+  var bannerTriggered = false;
+  function scrollTriggerBanner() {
+    if (!bannerTriggered) {
+      var scrolled = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+      if (scrolled > 0.30) {
+        bannerTriggered = true;
+        document.getElementById('cookie-banner').classList.add('show');
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var consent = localStorage.getItem('cookie_consent');
+    if (!consent) {
+      window.addEventListener('scroll', scrollTriggerBanner, { passive: true });
+      // Fallback: show after 4s even if no scroll
+      setTimeout(function() {
+        if (!bannerTriggered) {
+          bannerTriggered = true;
+          document.getElementById('cookie-banner').classList.add('show');
+        }
+      }, 4000);
+    } else if (consent === 'accepted') {
+      loadGA();
+    }
+  });
+
+  // FAQ accordion
+  function toggleFaq(el) {
+    var item = el.parentElement;
+    var wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(function(i) { i.classList.remove('open'); });
+    if (!wasOpen) item.classList.add('open');
+  }
+</script>
+
+</body>
+</html>
