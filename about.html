@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+
+<!-- GA4 Consent Mode v2 — cookieless pings by default, full tracking after consent -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('consent', 'default', {
+    'analytics_storage': 'denied',
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied'
+  });
+  if (localStorage.getItem('cookie_consent') === 'accepted') {
+    gtag('consent', 'update', { 'analytics_storage': 'granted' });
+  }
+  (function(id){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+    document.head.appendChild(s);
+  })('G-N961MFHTCS');
+  gtag('js', new Date());
+  gtag('config', 'G-N961MFHTCS', { anonymize_ip: true });
+  function loadGA() {
+    gtag('consent', 'update', { 'analytics_storage': 'granted' });
+  }
+  function gaEvent(name, params) {
+    if (window.gtag) window.gtag('event', name, params || {});
+  }
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="alternate" hreflang="en-GB" href="https://ir35guide.co.uk/about.html">
+<title>About – ir35guide.co.uk</title>
+<meta name="description" content="About ir35guide.co.uk and its author James Crawford. Information on content sources and how this site is maintained.">
+<link rel="canonical" href="https://ir35guide.co.uk/about.html">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="About – ir35guide.co.uk">
+<meta property="og:description" content="About ir35guide.co.uk and its author James Crawford. Information on content sources and how this site is maintained.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ir35guide.co.uk/about.html">
+<meta property="og:image" content="https://ir35guide.co.uk/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="IR35 Guide — UK IR35 calculator and contractor tax guides">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About – ir35guide.co.uk">
+<meta name="twitter:description" content="About ir35guide.co.uk and its author James Crawford. Information on content sources and how this site is maintained.">
+<meta name="twitter:image" content="https://ir35guide.co.uk/og-image.png">
+<meta name="twitter:image:alt" content="IR35 Guide — UK IR35 calculator and contractor tax guides">
+<link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0c10;
+    --bg2: #0f1218;
+    --bg3: #151a22;
+    --border: #1e2a38;
+    --border2: #253344;
+    --text: #e2e8f0;
+    --text2: #8b9ab0;
+    --text3: #4a5568;
+    --accent: #00d4aa;
+    --accent2: #00b894;
+    --accent-dim: rgba(0,212,170,0.12);
+    --mono: 'IBM Plex Mono', monospace;
+    --sans: 'IBM Plex Sans', sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+  header { border-bottom: 1px solid var(--border); padding: 0 24px; background: rgba(10,12,16,0.96); }
+  .header-inner { max-width: 900px; margin: 0 auto; display: flex; align-items: center; gap: 8px; height: 56px; }
+  .logo { font-family: var(--mono); font-size: 16px; font-weight: 600; color: var(--accent); text-decoration: none; }
+  .logo span { color: var(--text2); font-weight: 400; }
+  .back-link { margin-left: auto; font-size: 13px; color: var(--text2); text-decoration: none; padding: 6px 12px; border-radius: 6px; transition: all 0.15s; }
+  .back-link:hover { color: var(--text); background: var(--bg3); }
+
+  .page { max-width: 720px; margin: 0 auto; padding: 52px 24px 80px; }
+
+  .breadcrumb { font-size: 13px; margin-bottom: 16px; color: var(--text3); }
+  .breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: 0; align-items: center; padding: 0; margin: 0; }
+  .breadcrumb li { display: inline-flex; align-items: center; }
+  .breadcrumb li:not(:last-child)::after { content: '/'; margin: 0 0.5rem; color: var(--border); }
+  .breadcrumb a { color: var(--text2); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--accent); }
+  .breadcrumb [aria-current="page"] { color: var(--text); font-weight: 500; }
+
+  .eyebrow { font-family: var(--mono); font-size: 11px; color: var(--accent); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+  .eyebrow::before { content: ''; display: inline-block; width: 24px; height: 1px; background: var(--accent); }
+
+  h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; }
+  .updated { font-size: 13px; color: var(--text3); font-family: var(--mono); margin-bottom: 40px; }
+
+  h2 { font-size: 18px; font-weight: 600; color: var(--text); margin: 36px 0 12px; letter-spacing: -0.3px; }
+  h2:first-of-type { margin-top: 0; }
+  p { font-size: 14px; color: var(--text2); line-height: 1.8; margin-bottom: 14px; }
+  p:last-child { margin-bottom: 0; }
+  ul, ol { padding-left: 20px; margin-bottom: 14px; }
+  li { font-size: 14px; color: var(--text2); line-height: 1.8; margin-bottom: 4px; }
+  strong { color: var(--text); font-weight: 600; }
+  a { color: var(--accent); }
+  a:hover { text-decoration: underline; }
+
+  .info-box {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin: 20px 0;
+  }
+  .info-box p { margin: 0; font-size: 13px; }
+
+  .section-divider { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+
+  footer { border-top: 1px solid var(--border); padding: 24px; background: var(--bg2); }
+  .footer-inner { max-width: 900px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .footer-text { font-size: 12px; color: var(--text3); }
+  .footer-links { display: flex; gap: 20px; }
+  .footer-link { font-size: 12px; color: var(--text3); text-decoration: none; }
+  .footer-link:hover { color: var(--text2); }
+
+    /* ─── COOKIE BANNER ─── */
+    #cookie-banner {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 999;
+      background: #1e293b;
+      border-top: 1px solid #334155;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      box-shadow: 0 -8px 32px rgba(0,0,0,0.3);
+      transform: translateY(100%);
+      transition: transform 0.35s cubic-bezier(0.16,1,0.3,1);
+    }
+    #cookie-banner.show { transform: translateY(0); }
+    #cookie-banner p { font-size: 13px; color: #94a3b8; flex: 1; min-width: 200px; line-height: 1.6; margin: 0; }
+    #cookie-banner a { color: #60a5fa; text-decoration: none; }
+    #cookie-banner a:hover { text-decoration: underline; }
+    .cookie-btns { display: flex; gap: 8px; flex-shrink: 0; }
+    .btn-accept {
+      padding: 8px 18px;
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .btn-accept:hover { background: #1d4ed8; }
+    .btn-decline {
+      padding: 8px 16px;
+      background: none;
+      color: #94a3b8;
+      border: 1px solid #475569;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .btn-decline:hover { color: #cbd5e1; border-color: #64748b; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">ir35guide<span>.co.uk</span></a>
+    <a href="/#calculator" class="back-link">← Back to calculator</a>
+  </div>
+</header>
+
+<div class="page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li aria-current="page">About</li>
+    </ol>
+  </nav>
+  <div class="eyebrow">About</div>
+  <h1>About ir35guide.co.uk</h1>
+  <div class="updated">Last updated: October 2026</div>
+
+  <div class="info-box">
+    <p><strong>Quick summary:</strong> ir35guide.co.uk is an independent UK contractor tax resource built by James Crawford. All content is based on published HMRC guidance and UK tax legislation. This site provides general information only — it is not professional tax advice.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2 id="author">Author &amp; Publisher</h2>
+  <p><strong>James Crawford</strong> is the author and publisher of ir35guide.co.uk. He built this site and its calculators to provide UK contractors with free, accessible information about IR35 and contractor tax rules.</p>
+
+  <h2 id="content">Content &amp; Sources</h2>
+  <p>All content on this site is based on:</p>
+  <ul>
+    <li>Published HMRC guidance and official government resources</li>
+    <li>Current UK tax legislation (Income Tax (Earnings and Pensions) Act 2003, Finance Acts, and related statutory instruments)</li>
+    <li>Publicly available tax rates, thresholds, and allowances from HMRC.gov.uk</li>
+  </ul>
+  <p>Tax rates, National Insurance thresholds, and legislative changes are reviewed and updated regularly to reflect current UK tax years.</p>
+
+  <h2 id="review">Review &amp; Updates</h2>
+  <p>Content and calculators are reviewed and updated throughout the year, with particular attention given to:</p>
+  <ul>
+    <li>April tax year changes (new rates, thresholds, and IR35 rule changes)</li>
+    <li>Budget announcements and Finance Act updates</li>
+    <li>HMRC guidance updates and case law developments</li>
+  </ul>
+  <p>This page was last updated in <strong>October 2026</strong>.</p>
+
+  <h2 id="not-advice">Not Professional Tax Advice</h2>
+  <p>This site provides <strong>general information only</strong> and is not professional tax, legal, or financial advice. The calculators provide estimates based on standard tax rules — your individual circumstances may differ.</p>
+  <p><strong>Always consult a qualified accountant or tax adviser for advice specific to your situation.</strong> This is especially important for:</p>
+  <ul>
+    <li>IR35 status assessments and contract reviews</li>
+    <li>Complex tax scenarios (multiple income sources, non-standard expenses, etc.)</li>
+    <li>HMRC investigations or disputes</li>
+    <li>Business structuring and tax planning decisions</li>
+  </ul>
+
+  <h2 id="contact">Contact</h2>
+  <p>For questions, corrections, or feedback:</p>
+  <p><strong>Email:</strong> <a href="mailto:hello@ir35guide.co.uk">hello@ir35guide.co.uk</a></p>
+
+  <hr class="section-divider">
+
+  <p style="font-size:12px;color:var(--text3);">This site is not affiliated with HMRC, any accountancy firm, or government body. It is an independent resource for UK contractors.</p>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-text">ir35guide.co.uk — Free UK IR35 guide & contractor calculator. Not financial advice. Last updated: October 2026.</div>
+    <div class="footer-links">
+      <a href="/#calculator" class="footer-link">Calculator</a>
+      <a href="/blog.html" class="footer-link">Blog</a>
+      <a href="/about.html" class="footer-link">About</a>
+      <a href="/privacy.html" class="footer-link">Privacy</a>
+      <a href="/terms.html" class="footer-link">Terms</a>
+      <a href="mailto:hello@ir35guide.co.uk" class="footer-link">Contact</a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ─── COOKIE CONSENT BANNER ─── -->
+<div id="cookie-banner" role="dialog" aria-label="Cookie consent">
+  <p>
+    We use cookies to understand how you use this site and improve it. No personal data is sold or shared.
+    See our <a href="/privacy.html">Privacy Policy</a>.
+  </p>
+  <div class="cookie-btns">
+    <button class="btn-decline" onclick="cookieChoice(false)">Decline</button>
+    <button class="btn-accept" onclick="cookieChoice(true)">Accept Analytics</button>
+  </div>
+</div>
+
+<script>
+function cookieChoice(accepted) {
+  localStorage.setItem('cookie_consent', accepted ? 'accepted' : 'declined');
+  document.getElementById('cookie-banner').classList.remove('show');
+  if (accepted) loadGA();
+}
+document.addEventListener('DOMContentLoaded', function() {
+  var consent = localStorage.getItem('cookie_consent');
+  if (!consent) {
+    setTimeout(function() {
+      document.getElementById('cookie-banner').classList.add('show');
+    }, 1200);
+  } else if (consent === 'accepted') {
+    loadGA();
+  }
+});
+</script>
+</body>
+</html>
